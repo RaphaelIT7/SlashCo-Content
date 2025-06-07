@@ -5,33 +5,6 @@ concurrency:
   cancel-in-progress: false
 
 on:
-  workflow_dispatch:
-    inputs:
-      fastcompile:
-        description: 'Fast Compile'
-        required: true
-        type: boolean
-        default: false
-      createexportbsp:
-        description: 'Create a .bsp_export File without the Content'
-        required: true
-        type: boolean
-      debug:
-        description: 'Enables debug prints'
-        required: true
-        type: boolean
-      gamepath:
-        description: 'Gmod Path'
-        default: 'gmod/garrysmod'
-        required: false
-        type: text
-      map:
-        description: 'Map'
-        required: true
-        type: choice
-        options:
-          - sc_lobby
-
   workflow_call:
     inputs:
       fastcompile:
