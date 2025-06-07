@@ -1,10 +1,10 @@
-name: sc_lobby
+name: sc_lobby_v2
 
 on:
   workflow_dispatch:
   push:
     paths:
-      - 'maps/sc_lobby/**'
+      - 'maps/sc_lobby_v2/**'
 
 jobs:
   compile:
@@ -14,4 +14,4 @@ jobs:
       fastcompile: false
       createexportbsp: false
       debug: false
-      map: "sc_lobby"
+      map: "sc_lobby_v2"
