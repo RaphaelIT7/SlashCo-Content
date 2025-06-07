@@ -1,10 +1,10 @@
 // Created by Crowbar 0.64
 
-$modelname "slashco\shadowman.mdl"
+$modelname "slashco\hatman.mdl"
 
-$bodygroup "ShadowMan"
+$bodygroup "hatman"
 {
-	studio "ShadowMan.smd"
+	studio "hatman.smd"
 }
 
 $surfaceprop "flesh"
@@ -17,7 +17,7 @@ $eyeposition 0 0 73
 
 $opaque
 
-$cdmaterials "models\slashco\shadowman\"
+$cdmaterials "models\slashco\hatman\"
 
 $cbox 0 0 0 0 0 0
 
