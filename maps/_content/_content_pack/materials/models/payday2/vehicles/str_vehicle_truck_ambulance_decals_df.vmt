@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/payday2/vehicles/str_vehicle_truck_ambulance_decals_df"
+	
+$halflambert 0
+$phong 1
+$diffuseexp 1
+$translucent 1
+
+
+
+$phongfresnelranges "[1.5 .9 1]"
+$phongboost .1
+$phongexponent 40
+}

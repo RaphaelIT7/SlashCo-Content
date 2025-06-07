@@ -1,0 +1,13 @@
+patch
+{
+	include "materials/models/props_foliage/tree_sway.vmt"
+
+	insert
+	{
+	"$basetexture" "models/props_foliage/oak_tree_001_leaves"
+	"$alphatest" 1
+	"$allowalphatocoverage" 1
+$FlashlightNoLambert 1
+	"$nocull" 1
+	}
+}

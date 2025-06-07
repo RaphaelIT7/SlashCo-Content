@@ -1,0 +1,23 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/corpses/Male_GN_Intestines_Diff"
+	"$bumpmap" "models/corpses/Male_GN_Intestines_Norm"
+
+	$halflambert 1
+	
+	$nocull 1
+	
+	$lightwarptexture "models\corpses\lightwarp_flesh"
+
+	$phong 1
+	$phongexponenttexture	"models\corpses\albedo_tintdefine"
+	$phongalbedotint 1
+	$phongexponent 7
+	$phongboost 5
+	$phongfresnelranges "[1.5 2.5 12.0]"
+	
+	
+	$rimlight 1 
+	$rimlightexponent 20
+	$rimlightboost 1
+}

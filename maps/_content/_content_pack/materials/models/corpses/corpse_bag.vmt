@@ -1,0 +1,13 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/corpses/corpse_bag"
+	"$bumpmap" "models/corpses/corpse_bag_n"
+	"$envmap" "cubemap"
+	"$envmapmask" "models/corpses/corpse_bag_n"
+	"$phong" 1
+	"$phongboost" "2"
+	"$halflambert" "1"
+	"$phongexponenttexture" "models/corpses/corpse_bag"
+	"$phongalbedotint" "1"										
+	"$phongfresnelranges"	"[.1 .5 1.0]"
+}

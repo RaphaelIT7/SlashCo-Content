@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "nh_textures/wall_hosptial_white6"
+	"$surfaceprop" "concrete"
+	"%keywords" "nh"
+	"$detail" "detail/plaster_detail_01"
+	"$detailscale" 5
+}

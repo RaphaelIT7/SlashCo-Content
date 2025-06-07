@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "nh_textures/powerbox2"
+	"$surfaceprop" "metal"
+	"%keywords" "nh"
+	"$detail" "detail/plaster_detail_01"
+	"$detailscale" 5
+}

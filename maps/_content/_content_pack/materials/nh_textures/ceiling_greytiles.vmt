@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "nh_textures/ceiling_greytiles"
+	"$surfaceprop" "plaster"
+	"%keywords" "nh"
+	"$detail" "detail/plaster_detail_01"
+	"$detailscale" 5
+}

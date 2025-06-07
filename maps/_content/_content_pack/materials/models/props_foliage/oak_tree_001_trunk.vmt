@@ -1,0 +1,10 @@
+patch
+{
+	include "materials/models/props_foliage/tree_sway.vmt"
+
+	insert
+	{
+
+	"$basetexture" "models/props_foliage/oak_tree_001_trunk"
+	}
+}
