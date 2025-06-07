@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/METAL/METALPIPE005A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sc_lobby_d/c822_-71_-167"
+	}
+}

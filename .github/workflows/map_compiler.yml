@@ -1,0 +1,361 @@
+name: Map Compiler
+
+concurrency:
+  group: map-compile
+  cancel-in-progress: false
+
+on:
+  workflow_dispatch:
+    inputs:
+      fastcompile:
+        description: 'Fast Compile'
+        required: true
+        type: boolean
+        default: false
+      createexportbsp:
+        description: 'Create a .bsp_export File without the Content'
+        required: true
+        type: boolean
+      debug:
+        description: 'Enables debug prints'
+        required: true
+        type: boolean
+      gamepath:
+        description: 'Gmod Path'
+        default: 'gmod/garrysmod'
+        required: false
+        type: text
+      map:
+        description: 'Map'
+        required: true
+        type: choice
+        options:
+          - sc_lobby
+
+  workflow_call:
+    inputs:
+      fastcompile:
+        description: 'Fast Compile'
+        required: true
+        type: boolean
+        default: false
+      createexportbsp:
+        description: 'Create a .bsp_export File without the Content'
+        required: true
+        type: boolean
+      debug:
+        description: 'Enables debug prints'
+        required: true
+        type: boolean
+      gamepath:
+        description: 'Gmod Path'
+        default: 'gmod/garrysmod'
+        required: false
+        type: string
+      map:
+        description: 'Map'
+        required: true
+        type: string
+      workshop:
+        description: ''
+        required: false
+        type: string
+      vrad:
+        description: ''
+        required: false
+        type: string
+
+env:
+  PROJECT_PATH: 'gohttpserver/map_compile/'
+  MAP_PATH: ${{ format('gohttpserver/map_compile/{0}', inputs.map) }}
+  COMPILE_PATH: ${{ format('gohttpserver/map_compile/{0}/{1}', inputs.map, inputs.map) }}
+  CONTENT_PATH: 'gohttpserver/map_compile/_content'
+  DEBUG_ARGS: ${{ format('{0} ', inputs.debug && '' || '-q') }}
+  THREADS: 3
+
+# Map repo structure
+#
+# _content | Contains subfolders that contain content for all the different maps. NOTE: You should throw everything into a single folder as it greatly improves the speed of the lua script.
+# - map1 | content for map1
+# - create_content.lua | lua script to find & create the __content_map folder
+# - struct.lua | dependency required by create_content.lua
+# - utils.lua | contains many helper functions used by create_content.lua
+# - bspzip-list.out | Linux binary to create a filelist of a folder, we could do this in Lua but for some reason I had decided to do it in C++.
+# map1 | Contains the map .vmf file
+
+jobs:
+ prepare:
+    runs-on: ubuntu-latest
+    name: Prepare and Compile
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - uses: leafo/gh-actions-lua@v10
+        with:
+          luaVersion: "5.1.5"
+
+      # the Lua script first reads the vmf and figures out all the content it uses and then searches in the _content/ for all the content required, it will then move all used files into the _content/__content_map folder which is later uploaded & used when compiling/packing the map
+      - name: Find and collect map content
+        run: |
+          cd maps
+          cd _content/
+          lua create_content.lua "../${{inputs.map}}/${{inputs.map}}.vmf"
+
+      # Puts the map folder and the _content/__content_map folder into a zip which is then uploaded.
+      - name: Pack repo
+        run: |
+          cd maps
+          zip ${{env.DEBUG_ARGS}} -r repo.zip _content/__content_map/
+          zip ${{env.DEBUG_ARGS}} repo.zip _content/bspzip-list.out
+          zip ${{env.DEBUG_ARGS}} -r repo.zip ${{inputs.map}}/
+          ls -l repo.zip
+
+      # If any other compile is actively running somehow we'll wait until it's done before we compile.
+      - name: Wait for any running compile to finish
+        uses: appleboy/ssh-action@v1.2.1
+        with:
+          command_timeout: "60m"
+          host: ${{secrets.HOST_IP}}
+          username: ${{secrets.HOST_USERNAME}} 
+          password: ${{secrets.HOST_PASSWORD}}
+          port: ${{secrets.HOST_PORT}}
+          script: |
+            while [ -f compile_lock.txt ]; do
+              sleep 1
+            done
+
+      # We're now compiling so we create a lock file preventing any other compile from possibly conflicting.
+      - name: Create lock file
+        uses: appleboy/ssh-action@v1.2.1
+        with:
+          host: ${{secrets.HOST_IP}}
+          username: ${{secrets.HOST_USERNAME}} 
+          password: ${{secrets.HOST_PASSWORD}}
+          port: ${{secrets.HOST_PORT}}
+          script: |
+            echo "Compiling" > compile_lock.txt
+
+      # Remove old project files & sets new gohttpserver access rules as we don't want to somehow leak the vmf.
+      - name: Prepare Compiler (Docker container)
+        uses: appleboy/ssh-action@v1.2.1
+        with:
+          host: ${{secrets.HOST_IP}}
+          username: ${{secrets.HOST_USERNAME}} 
+          password: ${{secrets.HOST_PASSWORD}}
+          port: ${{secrets.HOST_PORT}}
+          script: |
+            rm -rf ${{env.PROJECT_PATH}}
+            mkdir -p ${{env.PROJECT_PATH}}
+            cd ${{env.PROJECT_PATH}}
+            echo 'accessTables:' >> .ghs.yml
+            echo '- regex: .*\.vmf$' >> .ghs.yml
+            echo '  allow: false' >> .ghs.yml
+            echo '- regex: .*\.zip$' >> .ghs.yml
+            echo '  allow: false' >> .ghs.yml
+
+      # We upload the repo onto the server, why don't we use SFTP? because... welll... I tried & it failed as the docker container the compiler is running in doesn't seem to allow SFTP.
+      - name: Upload repo
+        run: |
+          cd maps
+          curl -F "repo=@repo.zip" http://${{secrets.HOST_IP}}:${{secrets.HOST_HTTPPORT}}/upload.php
+
+      # Move the repo into the proper folder & unzip it.
+      - name: Unpack repo
+        uses: appleboy/ssh-action@v1.2.1
+        with:
+          host: ${{secrets.HOST_IP}}
+          username: ${{secrets.HOST_USERNAME}} 
+          password: ${{secrets.HOST_PASSWORD}}
+          port: ${{secrets.HOST_PORT}}
+          script: |
+            cd ${{env.PROJECT_PATH}}
+            mv /var/www/uploads/repo.zip ./
+            unzip ${{env.DEBUG_ARGS}} repo.zip
+            rm -f repo.zip
+
+      # VBSP fun
+      - name: VBSP
+        uses: appleboy/ssh-action@v1.2.1
+        with:
+          host: ${{secrets.HOST_IP}}
+          username: ${{secrets.HOST_USERNAME}} 
+          password: ${{secrets.HOST_PASSWORD}}
+          port: ${{secrets.HOST_PORT}}
+          script: |
+            wine gmod/bin/vbsp.exe -threads ${{env.THREADS}} -notjunc -game "gmod/garrysmod" "${{env.COMPILE_PATH}}"
+
+            if [ -f "${{env.COMPILE_PATH}}.lin" ]; then
+              echo "::error::Map has a leak! Fix it."
+              exit 1
+            fi
+
+            if [ ! -f "${{env.COMPILE_PATH}}.bsp" ]; then
+              echo "::error::BSP file is missing? Read the logs, VBSP had a error!"
+              exit 1
+            fi
+
+      # VVIS fun, NOTE: Were using a custom VVIS built since it's far faster.
+      - name: VVIS
+        uses: appleboy/ssh-action@v1.2.1
+        with:
+          command_timeout: '300m'
+          host: ${{secrets.HOST_IP}}
+          username: ${{secrets.HOST_USERNAME}} 
+          password: ${{secrets.HOST_PASSWORD}}
+          port: ${{secrets.HOST_PORT}}
+          script: |
+            wine gmod/bin/vvis.exe -threads ${{env.THREADS}} -game "gmod/garrysmod" "${{env.COMPILE_PATH}}.bsp"
+  
+      # VRAD fun
+      - name: VRAD
+        uses: appleboy/ssh-action@v1.2.1
+        with:
+          command_timeout: '300m'
+          host: ${{secrets.HOST_IP}}
+          username: ${{secrets.HOST_USERNAME}} 
+          password: ${{secrets.HOST_PASSWORD}}
+          port: ${{secrets.HOST_PORT}}
+          script: |
+            wine gmod/bin/vrad.exe -ldr ${{inputs.fastcompile && '-fast' || '-final'}} -threads ${{env.THREADS}} ${{inputs.VRAD}} -game "gmod/garrysmod" "${{env.COMPILE_PATH}}.bsp"
+      
+      # Nukes the old .bsp_export, in reality this doesn't really do anything as the bsp_export should NEVER exist at this point.
+      - name: Removing old compile
+        uses: appleboy/ssh-action@v1.2.1
+        with:
+          host: ${{secrets.HOST_IP}}
+          username: ${{secrets.HOST_USERNAME}} 
+          password: ${{secrets.HOST_PASSWORD}}
+          port: ${{secrets.HOST_PORT}}
+          script: |
+            rm -rf ${{env.COMPILE_PATH}}.bsp_export
+      
+      # Renames the compiled map from .bsp to .bsp_export for the next step
+      - name: Renaming files
+        uses: appleboy/ssh-action@v1.2.1
+        with:
+          host: ${{secrets.HOST_IP}}
+          username: ${{secrets.HOST_USERNAME}} 
+          password: ${{secrets.HOST_PASSWORD}}
+          port: ${{secrets.HOST_PORT}}
+          script: |
+            cd ${{env.MAP_PATH}}
+            mv ${{inputs.map}}.bsp ${{inputs.map}}.bsp_export 
+          
+      # bspzip-list reads the __content_map folder going through all sub-folders and creates a file list for bspzip. I think i lost the source for it ._.
+      - name: Create content list & Pack bsp with content
+        uses: appleboy/ssh-action@v1.2.1
+        with:
+          host: ${{secrets.HOST_IP}}
+          username: ${{secrets.HOST_USERNAME}} 
+          password: ${{secrets.HOST_PASSWORD}}
+          port: ${{secrets.HOST_PORT}}
+          script: |
+            chmod 777 ${{env.CONTENT_PATH}}/bspzip-list.out
+            cd ${{env.CONTENT_PATH}}
+            ./bspzip-list.out __content_map
+            cd ~
+            wine gmod/bin/bspzip.exe -addlist "${{env.COMPILE_PATH}}.bsp_export" "${{env.CONTENT_PATH}}/__content_map.txt" "${{env.COMPILE_PATH}}.bsp" -game "gmod/garrysmod"
+
+      # We don't want the unpacked bsp? then Nuke it.
+      - name: Removing unpacked BSP
+        uses: appleboy/ssh-action@v1.2.1
+        if: ${{inputs.createexportbsp != 'true'}}
+        with:
+          host: ${{secrets.HOST_IP}}
+          username: ${{secrets.HOST_USERNAME}} 
+          password: ${{secrets.HOST_PASSWORD}}
+          port: ${{secrets.HOST_PORT}}
+          script: |
+            rm -rf ${{env.COMPILE_PATH}}.bsp_export
+            
+      # GMA fun
+      - name: Creating GMA
+        if: false
+        uses: appleboy/ssh-action@v1.2.1
+        with:
+          host: ${{secrets.HOST_IP}}
+          username: ${{secrets.HOST_USERNAME}} 
+          password: ${{secrets.HOST_PASSWORD}}
+          port: ${{secrets.HOST_PORT}}
+          script: |
+            cd ${{env.PROJECT_PATH}}
+            mkdir workshop
+            mkdir workshop/maps
+            cp "${{inputs.map}}/${{inputs.map}}.bsp" "workshop/maps"
+            cp "${{inputs.map}}/addon.json" "workshop"
+            cd ~
+            wine gmod/bin/gmad.exe create -folder "${{env.PROJECT_PATH}}workshop" -out "${{env.PROJECT_PATH}}${{inputs.map}}"
+
+      # Moves the final BSP into the finished compiles folder, ONLY then it is accessable through the gohttpserver.
+      - name: Moving BSP
+        uses: appleboy/ssh-action@v1.2.1
+        with:
+          host: ${{secrets.HOST_IP}}
+          username: ${{secrets.HOST_USERNAME}} 
+          password: ${{secrets.HOST_PASSWORD}}
+          port: ${{secrets.HOST_PORT}}
+          script: |
+            cp "${{env.COMPILE_PATH}}.bsp" "gohttpserver/map_finished_compiles/"
+
+      # Same as above but for the .gma
+      - name: Moving GMA
+        if: false
+        uses: appleboy/ssh-action@v1.2.1
+        with:
+          host: ${{secrets.HOST_IP}}
+          username: ${{secrets.HOST_USERNAME}} 
+          password: ${{secrets.HOST_PASSWORD}}
+          port: ${{secrets.HOST_PORT}}
+          script: |
+            cp "${{env.PROJECT_PATH}}${{inputs.map}}.gma" "gohttpserver/map_finished_compiles/"
+
+      # Same as above but for the .bsp_export
+      - name: Moving Unpacked BSP
+        uses: appleboy/ssh-action@v1.2.1
+        if: ${{inputs.createexportbsp == 'true'}}
+        with:
+          host: ${{secrets.HOST_IP}}
+          username: ${{secrets.HOST_USERNAME}} 
+          password: ${{secrets.HOST_PASSWORD}}
+          port: ${{secrets.HOST_PORT}}
+          script: |
+            cp "${{env.COMPILE_PATH}}.bsp_export" "gohttpserver/map_finished_compiles/"
+
+      # Deletes the project files after a successful compile, Why don't we ALWAYS delete them even if it fails? because then debugging issues would be a lot more pain.
+      - name: Cleanup
+        uses: appleboy/ssh-action@v1.2.1
+        with:
+          host: ${{secrets.HOST_IP}}
+          username: ${{secrets.HOST_USERNAME}} 
+          password: ${{secrets.HOST_PASSWORD}}
+          port: ${{secrets.HOST_PORT}}
+          script: |
+            rm -rf ${{env.PROJECT_PATH}}
+          
+      # This never worked.
+      - name: Workshop Upload
+        if: false
+        shell: cmd
+        run: |
+          mkdir "workshop/maps"
+          Xcopy /y /e "${{inputs.map}}\${{inputs.map}}.bsp" "workshop/maps"
+          Xcopy /y /e "${{inputs.map}}\addon.json" "workshop"
+          "${{inputs.gamepath}}\bin\gmad.exe" create -folder "workshop" -out "workshop"
+          "${{inputs.gamepath}}\bin\gmpublish.exe" update -addon "workshop.gma" -id ${{env.WORKSHOP}} -changes "Map Update"
+          del /f workshop.gma
+          del /f "workshop/addon.json"
+          del /f "workshop/maps/${{inputs.map}}.bsp"
+
+      # Removes the lock file & kills any wine processes stopping any broken compiles that might secretly continue to run indefinetly
+      - name: Post-Compile cleanup
+        if: always()
+        uses: appleboy/ssh-action@v1.2.1
+        with:
+          host: ${{secrets.HOST_IP}}
+          username: ${{secrets.HOST_USERNAME}} 
+          password: ${{secrets.HOST_PASSWORD}}
+          port: ${{secrets.HOST_PORT}}
+          script: |
+            rm -rf compile_lock.txt
+            screen -dmS killwine bash -c "sleep 5 && killall -q wine"

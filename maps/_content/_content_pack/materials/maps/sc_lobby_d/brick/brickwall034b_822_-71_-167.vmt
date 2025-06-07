@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/BRICK/BRICKWALL034B.vmt"
+	"replace"
+	{
+		"LightmappedGeneric_DX9"
+		{
+			"$envmap"		"maps/sc_lobby_d/c822_-71_-167"
+		}
+	}
+}

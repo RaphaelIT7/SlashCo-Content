@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/DE_NUKE/NUKWINDOWB_LIGHT.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sc_lobby_d/c652_-414_107"
+	}
+}

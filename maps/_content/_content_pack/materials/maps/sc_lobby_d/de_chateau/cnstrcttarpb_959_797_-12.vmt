@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/DE_CHATEAU/CNSTRCTTARPB.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sc_lobby_d/c959_797_-12"
+	}
+}
