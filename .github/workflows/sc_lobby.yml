@@ -9,6 +9,7 @@ on:
 jobs:
   compile:
     uses: RaphaelIT7/SlashCo-Content/.github/workflows/map_compiler.yml@main
+    secrets: inherit
     with:
       fastcompile: false
       createexportbsp: false
