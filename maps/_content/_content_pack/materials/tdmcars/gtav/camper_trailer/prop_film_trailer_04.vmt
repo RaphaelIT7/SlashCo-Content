@@ -1,0 +1,12 @@
+patch
+{
+	include "materials/models/tdmcars/gtav/generic_truck_dash_detail.vmt"
+	insert
+	{
+		"$basetexturetransform" ""
+		"$alphatest" "0"
+		"$basetexture" "models/tdmcars/gtav/camper_trailer/prop_film_trailer_04"
+		"$basemapalphaphongmask" "1"
+		"$color2" "{200 200 200}"
+	}
+}

@@ -1,0 +1,24 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/tdmcars/gtav/tractor/epsilon_plate"
+	"$bumpmap" "models/tdmcars/gtav/flat_nm"
+	"$nodecal" "1"
+	"$phong" 1
+	"$phongexponent" 5
+	"$phongboost"	0.5
+	"$phongfresnelranges" "[1 1 1]"
+	"$rimlight" 1
+	"$rimlightboost" 0.5
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[0.07 0.07 0.07]"
+	"$normalmapalphaenvmapmask" 1
+	"$colorfix" "{255 255 255}"
+	Proxies
+	{
+		Equals
+		{
+			srcVar1	$colorfix
+			resultVar	$color
+		}
+	}
+}

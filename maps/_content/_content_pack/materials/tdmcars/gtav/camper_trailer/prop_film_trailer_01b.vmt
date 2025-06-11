@@ -1,0 +1,12 @@
+patch
+{
+	include "materials/models/tdmcars/gtav/generic_truck_dash_detail.vmt"
+	insert
+	{
+		"$basetexturetransform" ""
+		"$basetexture" "models/tdmcars/gtav/camper_trailer/prop_film_trailer_01b"
+		"$bumpmap" "models/tdmcars/gtav/camper_trailer/mp_glass_s_n"
+		"$phongfresnelranges" "[.42 .75 .3]" 
+		"$phongexponent" "100" 
+	}
+}

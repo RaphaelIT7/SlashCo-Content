@@ -1,0 +1,20 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/tdmcars/gtav/generic_truck_dash_detail"
+	"$nodecal" "1"
+	"$halflambert" 1
+	"$phong" "1" 
+	"$phongboost" "0.8" 
+	"$phongfresnelranges" "[.3 .5 1]" 
+	"$phongexponent" 5
+	"$colorfix" "{255 255 255}"
+	"$BasemapAlphaPhongMask" "1"
+	"Proxies"
+	{
+		"Equals"
+		{
+			srcVar1 $colorfix
+			resultVar	$color
+		}
+	}
+}
