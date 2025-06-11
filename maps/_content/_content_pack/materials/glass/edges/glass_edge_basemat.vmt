@@ -1,0 +1,10 @@
+"Refract"
+{
+	"$bluramount" "10"
+	"$refractamount" 	"0.075"
+	"$refracttint"	"{41 213 127}"
+	"$envmap" "env_cubemap"
+	"$surfaceprop" "glass"
+// This defines the base color and blur for all the other edge types
+// created by Glitchvid.com
+}

@@ -1,0 +1,4 @@
+VertexLitGeneric
+{
+    $basetexture "models\props_suburbs\towelrack01_diff"
+}

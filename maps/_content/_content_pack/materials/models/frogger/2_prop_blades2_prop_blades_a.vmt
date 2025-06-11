@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/Frogger/2_prop_blades2_prop_blades_a"
+	"$alphatest" 1
+}

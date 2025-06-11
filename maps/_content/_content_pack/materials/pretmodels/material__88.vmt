@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+
+	$basetexture "Pretmodels/pretbek_Scarecrow_Alpha"
+
+
+	"$alphatest" 1
+	"$AlphaTestReference" "0.5"
+
+}

@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/aoc_trees/bark_pine_tall_snow_diff"
+	"$bumpmap" "models/aoc_trees/bark_pine_tall_snow_nm"
+	"$surfaceprop" "Wood_Solid"
+}

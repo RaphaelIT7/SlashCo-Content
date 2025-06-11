@@ -1,0 +1,5 @@
+LightmappedGeneric
+{
+$baseTexture "HobbyStore/hobby_woodwall_01"
+$surfaceprop "wood"
+}

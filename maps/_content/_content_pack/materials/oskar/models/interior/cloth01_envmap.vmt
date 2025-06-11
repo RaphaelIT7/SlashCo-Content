@@ -1,0 +1,9 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "Oskar/models/interior/cloth01"
+	"$bumpmap" "Oskar/models/interior/cloth01_normal"
+	"$surfaceprop" "wood"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+
+}

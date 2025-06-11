@@ -1,0 +1,5 @@
+VertexLitGeneric
+{
+    $basetexture "models\props_suburbs\bedCovers_messy01_diff"
+    $bumpmap "models\props_suburbs\bedCovers_messy01_norm"
+}

@@ -1,0 +1,6 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "jahti/blinders"
+	"$surfaceprop" "wood_plank"
+	"$alphatest" 1
+}

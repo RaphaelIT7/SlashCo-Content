@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+    "$basetexture" "decals/fl_symbols/no_eyes"
+    "$translucent" 1
+    "$decal" 1
+    "$decalscale" 1
+}

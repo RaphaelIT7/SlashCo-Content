@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\diolator/car"
+//	$bumpmap "models\diolator/_n"
+//	"$normalmapalphaenvmapmask" "1"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "0.6"
+	"$envmapmask" "models\diolator/car_s"
+	$envmapcontrast "-0.8"
+
+
+}

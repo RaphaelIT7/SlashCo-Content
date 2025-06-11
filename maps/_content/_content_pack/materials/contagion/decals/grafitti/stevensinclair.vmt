@@ -1,0 +1,10 @@
+Patch
+{
+    include             "materials/contagion/decals/grafitti/grafitti_paint_shared.vmt"
+    insert
+    {
+        $basetexture    "contagion/decals/grafitti/stevensinclair"
+        $translucent    0
+        $alphatest      1
+    }
+}

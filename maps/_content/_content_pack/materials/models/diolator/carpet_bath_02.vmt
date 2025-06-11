@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\diolator/carpet_bath_02"
+//	$bumpmap "models\diolator/carpet_bath_n"
+
+		"$detail" "detail/fabric/carpet_02"
+		"$detailblendfactor" "1"
+		"$detailscale" "[2.15 1.07]"
+}

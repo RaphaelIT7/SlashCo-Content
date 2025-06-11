@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/scenery/furniture/fancybed/fancybed"
+	"$detail"						    "models/detail/Detail_Cloth"
+	"$detailscale" 				"15"
+	"$nocull" 1
+}

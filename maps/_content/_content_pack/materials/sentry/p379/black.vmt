@@ -1,0 +1,13 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "sentry/p379/black"	
+	"$bumpmap" "sentry/p379/skin_nm"	
+
+	"$blendtintbybasealpha" 1
+    $surfaceprop "metal"
+    $phong "1"
+    $phongexponent "7"
+    $phongboost "10"
+    $phongfresnelranges "[.05 .3 1]"
+    "$nocull" "1"
+}

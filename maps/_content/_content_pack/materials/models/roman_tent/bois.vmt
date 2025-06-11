@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/roman_tent/bois"
+	"$surfaceprop" "Wood_Solid"
+	"$surfaceprop2" "Wood_Solid"
+}

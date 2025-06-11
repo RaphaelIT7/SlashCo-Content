@@ -1,0 +1,7 @@
+"lightmappedGeneric"
+{
+	"$baseTexture" "dm_stad/decals/crack04"
+	"$decal" 1
+	"$decalscale" 0.35
+	"$translucent" 1
+}

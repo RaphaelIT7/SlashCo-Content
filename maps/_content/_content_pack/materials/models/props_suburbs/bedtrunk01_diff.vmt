@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+    $basetexture "models\props_suburbs\bedTrunk01_diff"
+    $envmap env_cubemap
+    $envmaptint "[.2 .2 .2]"
+}

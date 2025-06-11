@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/scenery/furniture/sinka/sinkmetal"
+//	"$envmapmask" "models/scenery/furniture/sinka/sinkmetal_ref"
+//	"$envmap" "env_cubemap"
+	"$surfaceprop"	"metal"
+
+	"$bumpmap" "models\scenery\furniture\sinka\sinkmetal_n"
+
+	"$normalmapalphaenvmapmask" 1
+
+	"$phong" "1"	
+	"$phongexponent" "10"
+	"$phongboost"	"2"
+	"$phongfresnelranges"	"[2 2 2]"
+}

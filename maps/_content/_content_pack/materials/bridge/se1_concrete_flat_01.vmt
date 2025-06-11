@@ -1,0 +1,11 @@
+"lightmappedgeneric"
+{
+	"$basetexture" "BRIDGE/SE1_concrete_flat_01"
+	"$surfaceprop" "concrete"
+	"$bumpmap" "BRIDGE/SE1_concrete_flat_01_Normal"
+	"$envmap" "env_cubemap"
+	"$envmapconstrast" "1"
+	"$normalmapalphaenvmapmask" 1
+	"%keywords" "bridge"
+} 
+

@@ -1,0 +1,36 @@
+"VertexLitGeneric"
+{
+
+	"$nocull"		"0"
+
+	"$envmap" "env_cubemap"
+	//"$normalmapalphaenvmapmask" "1"
+	"$envmapfresnel" ".35"
+	"$envmaptint"	"[.075 .075 .075]"
+
+
+	"$baseTexture" 		"themask/SBMP/Tools/CleaningUtils/floorbuffer_01_col"
+	"$translucent"		"0"
+	"$alphatest" 		"0"
+
+	"$bumpmap" 			"themask/SBMP/Tools/CleaningUtils/floorbuffer_01_col_N"
+
+	//"$Lightwarptexture"	"themask/shared/lightwarp_elchulus"
+
+	//"$selfillum"		"0"
+	//"$selfillummask"	"path"
+	//"$selfillumtint"	"[0 0 0]"
+
+	"$phong" "1"
+	//"$phongexponent" "64"
+	"$phongexponenttexture" 	"themask/SBMP/Tools/CleaningUtils/floorbuffer_01_col_S"
+	"$phongalbedotint" "1"
+	"$phongboost" "4" 
+	"$phongfresnelranges"	"[.2 1 3]"
+
+	//"$detail" "themask/SBMP/Tools/CleaningUtils/floorbuffer_01_col"
+	//$detailscale 1
+	//$detailblendfactor 0
+	//$detailblendmode 0
+
+}

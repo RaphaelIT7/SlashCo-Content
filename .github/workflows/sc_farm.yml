@@ -1,0 +1,17 @@
+name: sc_farm
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'maps/sc_farm/**'
+
+jobs:
+  compile:
+    uses: RaphaelIT7/SlashCo-Content/.github/workflows/map_compiler.yml@main
+    secrets: inherit
+    with:
+      fastcompile: true
+      createexportbsp: false
+      debug: false
+      map: "sc_farm"

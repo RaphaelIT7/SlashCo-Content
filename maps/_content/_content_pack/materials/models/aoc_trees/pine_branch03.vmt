@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	 $alphatest 1
+ 	"$nocull" 1
+	"$baseTexture" "models\aoc_trees/Pine_branch03"
+	"$bumpmap" "models\aoc_trees/Pine_branch03_nm"
+}

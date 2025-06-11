@@ -1,0 +1,11 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "Oskar/models/foliage/tree02_branches"
+	"$AlphaTest" "1"
+	"$AlphaTestReference" "0.4"
+	"$nocull" 1
+	"$nodecal" 1
+
+
+}
+

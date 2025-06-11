@@ -1,0 +1,23 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/vehicles/Truck_glass"
+
+
+    "$surfaceprop" "glass"
+
+"$phong" "1"
+ "$phongexponent" 12
+	"$cloakPassEnabled" 		"1"
+ "$phongfresnelranges" "[0.25 0.15 0.05]"
+
+$rimlight 1
+ $rimlightexponent 0.5
+ $rimlightboost .1
+
+
+	"$PhongAlbedoTint" "1"	
+
+	"$nocull" "1"
+
+	"$translucent" "1"
+}

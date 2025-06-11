@@ -1,0 +1,10 @@
+patch
+{
+	include "materials/models/tdmcars/shared/glass.vmt"
+	insert
+	{
+		"$basetexturetransform" ""
+		"$basetexture" "models/tdmcars/gtav/camper_trailer/prop_green_glass_a3bprop_glass_02b_a"
+		"$translucent" "1"
+	}
+}

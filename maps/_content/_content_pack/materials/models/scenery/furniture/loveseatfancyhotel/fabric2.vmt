@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 				"models/scenery/furniture/loveseatfancyhotel/fabric2"
+	"$bumpmap" 					"models/scenery/furniture/loveseatfancyhotel/fabric2_normal"
+
+	"$detail"					"models/detail/Detail_Cloth"
+	"$detailscale" 				"12"
+	"$surfaceprop"				"wood"
+	"$nocull"					"1"
+}

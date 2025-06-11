@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/scenery/structural/handraila/handraila"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "1"
+	"$envmapmask" "models/scenery/furniture/sink2/handraila_ref"
+	"$surfaceprop" "metal"
+}

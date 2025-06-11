@@ -1,0 +1,11 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "sentry/p379/books"
+	"$bumpmap" "sentry/p379/skin_nm"
+    $surfaceprop "metal"
+    $phong "1"
+    $phongexponent "7"
+    $phongboost "10"
+    $phongfresnelranges "[.05 .3 1]"
+}
+

@@ -1,0 +1,8 @@
+LightmappedGeneric
+{
+	$baseTexture "steinman/slasher/tile_bone"
+	$bumpmap "steinman/slasher/tile_normal"
+	$surfaceprop "tile"
+	$envmap "env_cubemap"
+	$envmaptint	"[.2 .2 .2]"
+}

@@ -1,0 +1,21 @@
+"VertexLitGeneric"
+{
+
+	"$model"		"1"
+
+
+	"$baseTexture" 		"themask/SBMP/Furniture/Deco/Animal_Polar_Bear_01_D"
+	"$translucent"		"0"
+	"$alphatest" 		"0"
+
+	"$bumpmap" 		"themask/SBMP/Furniture/Deco/Animal_Polar_Bear_01_D_N"
+
+	"$phong" "1"
+	//"$phongexponent" "32"
+	"$phongexponenttexture" "themask/SBMP/Furniture/Deco/Animal_Polar_Bear_01_D_S"
+	"$phongalbedotint" "1"
+	"$phongboost" "8" 
+	"$phongfresnelranges"	"[.2 1 3]"
+
+
+}

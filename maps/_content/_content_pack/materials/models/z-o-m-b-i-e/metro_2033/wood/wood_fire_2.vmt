@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "z-o-m-b-i-e/metro_2033/wood/wood_fire_2"
+	"$bumpmap" "z-o-m-b-i-e/metro_2033/wood/wood_fire_2_norm"
+	"$surfaceprop" "wood"
+	"$detail" "z-o-m-b-i-e/metro_2033/det/det_wood_doski_det2"
+	"$detailscale" "6.00"
+	"$detailblendfactor" "0.8"
+	"$detailblendmode" "0"
+}

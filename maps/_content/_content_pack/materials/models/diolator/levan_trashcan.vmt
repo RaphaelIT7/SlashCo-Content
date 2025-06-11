@@ -1,0 +1,17 @@
+
+"VertexLitGeneric"
+{	
+	"$basetexture" "Models/diolator/levan_trashcan"
+	$alphatest 1
+
+	$bumpmap "models\diolator/levan_trashcan_n"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "0.3"
+
+	"$phong" "1"
+	"$phongexponent" "10"
+	"$phongboost"	"1"
+	$phongfresnelranges	"[1 1 1]"
+}
+

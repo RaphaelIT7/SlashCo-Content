@@ -1,0 +1,5 @@
+VertexLitGeneric
+{
+    $basetexture "models\props_downtown\silverware_holder_diff"
+    $halflambert 1
+}

@@ -1,0 +1,17 @@
+LightmappedGeneric
+{
+	$baseTexture "wood/cabinets12"
+	$surfaceprop wood
+
+// added by psycho-a
+	"$bumpmap" "wood/cabinets11_normal"
+
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "0.11"
+
+	"LightmappedGeneric_HDR_DX9"
+	{
+		"$envmaptint" "0.19"
+	}
+}

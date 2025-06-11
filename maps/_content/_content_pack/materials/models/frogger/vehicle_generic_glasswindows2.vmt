@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/Frogger/vehicle_generic_glasswindows2"
+	"$translucent" 1
+}

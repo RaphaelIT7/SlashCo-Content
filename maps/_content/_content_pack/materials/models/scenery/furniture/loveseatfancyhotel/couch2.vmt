@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 				"models/scenery/furniture/loveseatfancyhotel/couch2"
+	"$envmap" 					"env_cubemap"
+	"$envmapmask"				"models/scenery/furniture/loveseatfancyhotel/couch2_env"
+
+	"$detail"					"models/detail/Detail_Wood"
+	"$detailscale" 				"12"
+	"$surfaceprop"				"wood"
+	"$nocull"					"1"
+}

@@ -1,0 +1,7 @@
+LightmappedGeneric
+{
+$baseTexture "brick/brick_ext_06"
+$surfaceprop brick
+$ssbump 1
+$bumpmap "brick/brick_ext_02_height-ssbump"
+}

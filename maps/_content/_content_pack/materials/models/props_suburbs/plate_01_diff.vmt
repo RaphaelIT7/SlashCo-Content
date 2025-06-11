@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+    $basetexture "models\props_suburbs\plate_01_diff"
+    $envmap env_cubemap
+    $envmaptint "[.37 .37 .37]"
+}

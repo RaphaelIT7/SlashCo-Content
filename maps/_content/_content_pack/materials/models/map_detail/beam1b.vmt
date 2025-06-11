@@ -1,0 +1,5 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "suomimateriaalit/hki/beam1b"
+	"$surfaceprop" "metal"
+}

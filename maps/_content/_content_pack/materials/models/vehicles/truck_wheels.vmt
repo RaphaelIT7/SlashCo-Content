@@ -1,0 +1,24 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/vehicles/truck_wheels"
+"$bumpmap" "models/vehicles/truck_wheels_normal"
+
+    "$surfaceprop" "metal"
+
+"$phong" "1"
+ "$phongexponent" 12
+	"$cloakPassEnabled" 		"1"
+ "$phongfresnelranges" "[0.25 0.15 0.05]"
+
+$rimlight 1
+ $rimlightexponent 0.5
+ $rimlightboost .1
+
+	"$phongexponenttexture" "models/vehicles/truck_wheels_exp"
+	"$phongboost" "1"						
+	"$phongfresnelranges"	"[ .2 1.2 8]"	
+
+	"$PhongAlbedoTint" "1"	
+
+	"$nocull" "1"
+}

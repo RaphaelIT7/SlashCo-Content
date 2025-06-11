@@ -1,0 +1,10 @@
+patch
+{
+	include "materials/glass/edges/glass_edge_basemat.vmt"
+	insert
+	{
+		"$normalmap" "glass/edges/glass_edge_114_nrm"
+		"%tooltexture" "glass/edges/glass_edge_114_nrm"
+	}
+	$nocull 1
+}

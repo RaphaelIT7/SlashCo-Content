@@ -1,0 +1,32 @@
+"VertexLitGeneric"
+{
+
+	"$nocull"		"0"
+
+	//"$ambientocclusion"	"0"
+
+	//"$envmap" "env_cubemap"
+	//"$normalmapalphaenvmapmask" "1"
+	//"$envmapfresnel" ".6"
+	//"$envmaptint"	"[.03 .03 .03]"
+
+
+	"$baseTexture" 		"themask/SBMP/Furniture/Cabinetstuff/gnb_wood_rustic_col"
+	"$translucent"		"0"
+	"$alphatest" 		"0"
+
+	"$bumpmap" 		"themask/SBMP/Furniture/Cabinetstuff/gnb_wood_rustic_col_N"
+
+	"$phong" "1"
+	//"$phongexponent" "48"
+	"$phongexponenttexture" "themask/SBMP/Furniture/Cabinetstuff/gnb_wood_rustic_col_S"
+	"$phongalbedotint" "1"
+	"$phongboost" ".5" 
+	"$phongfresnelranges"	"[.35 3 5]"
+
+	//"$detail" "themask/SBMP/Furniture/Cabinetstuff/gnb_wood_rustic_col"
+	$detailscale 1
+	$detailblendfactor 0
+	$detailblendmode 0
+
+}

@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/aoc_trees/leaves_pine_c_diff"
+	"$surfaceprop" "Grass"
+	"$nocull" 1
+	 $alphatest 1
+}

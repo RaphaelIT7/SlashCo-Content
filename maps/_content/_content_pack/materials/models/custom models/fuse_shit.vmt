@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/custom models/fuse_shit"
+	$surfaceprop "metal"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "models/custom models/fuse_shit_ref"
+}

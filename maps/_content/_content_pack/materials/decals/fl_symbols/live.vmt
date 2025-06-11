@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+    "$basetexture" "decals/fl_symbols/live"
+    "$translucent" 1
+    "$decal" 1
+    "$decalscale" 0.5
+}

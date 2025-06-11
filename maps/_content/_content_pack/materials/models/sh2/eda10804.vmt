@@ -1,0 +1,13 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\sh2\/eda10804"
+	"$bumpmap" "models\sh2\/eda10804_normal"
+	"$model" 1
+        "$phong" "1"
+	"$phongexponent" "50"
+	"$phongexponenttexture" "driverpl\/eda10804s"
+	"$phongboost" "1"	
+	"$phongfresnelranges"	"[0.1 0.1 0.1]"
+//	"$halflambert" "1"
+	"$phongalbedotint" "1"
+}

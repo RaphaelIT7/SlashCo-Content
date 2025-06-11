@@ -1,0 +1,34 @@
+"VertexLitGeneric"
+{
+
+	"$model"		"1"
+
+	//"$nocull"		"0"
+
+
+	//"$envmap" "env_cubemap"
+	//"$normalmapalphaenvmapmask" "1"
+	//"$envmapfresnel" ".45"
+	//"$envmaptint"	"[.08 .08 .08]"
+
+	"$baseTexture" 		"themask/SBMP/Furniture/Outdoor/PicnicTableA_DIFF"
+	"$translucent"		"0"
+	"$alphatest" 		"0"
+	"$ambientocclusion"	"1"
+
+	"$bumpmap" 			"themask/SBMP/Furniture/Outdoor/PicnicTableA_DIFF_N"
+
+	"$phong" "1"
+	//"$phongexponent" "16"
+	"$phongexponenttexture" "themask/SBMP/Furniture/Outdoor/PicnicTableA_DIFF_S"
+	//"$phongwarptexture"	"themask/SBMP/shared/anisotropic"
+	"$phongalbedotint" "1"
+	"$phongboost" "6" 
+	"$phongfresnelranges"	"[.2 1 3]"
+
+	//"$detail" "themask/SBMP/Furniture/Outdoor/PicnicTableA_DIFF"
+	//$detailscale 1
+	//$detailblendfactor 0
+	//$detailblendmode 0
+
+}

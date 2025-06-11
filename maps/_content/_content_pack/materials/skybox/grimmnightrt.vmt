@@ -1,6 +1,7 @@
-"unlitgeneric"
+"UnlitGeneric"
 {
-	"$basetexture" "skybox/grimmnightrt"
-	"$nofog" 1
-	$ignorez 1
+// Original shader: BaseTexture
+"$basetexture" "skybox/grimmnightrt"
+"$nofog" 1
+$ignorez 1
 }

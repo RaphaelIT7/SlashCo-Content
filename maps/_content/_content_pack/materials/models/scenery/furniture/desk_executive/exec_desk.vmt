@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/scenery/furniture/desk_executive/exec_desk"
+	"$envmapmask" "models/scenery/furniture/desk_executive/exec_desk_env"
+	"$envmap" 		"env_cubemap"
+	"$detail"						    "models/detail/Detail_Wood"
+	"$detailscale" 				"7"
+	"$surfaceprop"				"wood"
+}

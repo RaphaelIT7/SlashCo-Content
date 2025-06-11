@@ -1,0 +1,30 @@
+"VertexLitGeneric"
+{
+
+	//"$envmap" "env_cubemap"
+	//"$normalmapalphaenvmapmask" "1"
+	//"$envmapfresnel" ".2"
+	//"$envmaptint"	"[.03 .03 .03]"
+
+
+	"$baseTexture" 		"themask/SBMP/Furniture/Bathroom/tx_soap_bowl_01_d"
+	"$translucent"		"0"
+	"$alphatest" 		"0"
+
+	"$bumpmap" 		"themask/SBMP/Furniture/Bathroom/tx_soap_bowl_01_d_N"
+
+	"$phong" "1"
+	//"$phongexponent" "64"
+	"$phongexponenttexture" "themask/SBMP/Furniture/Bathroom/tx_soap_bowl_01_d_S"
+	"$phongwarptexture"	"themask/SBMP/shared/anisotropic"
+	"$phongalbedotint" "1"
+	"$phongboost" "4" 
+	"$phongfresnelranges"	"[.2 .4 .5]"
+
+
+	//"$detail" "themask/shared/detail_metal"
+	$detailscale 4
+	$detailblendfactor 1.4
+	$detailblendmode 0
+
+}

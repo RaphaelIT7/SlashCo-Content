@@ -1,0 +1,18 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\scenery\furniture\chairfancyhotel\chairfabric"
+	"$bumpmap" 	"models/scenery/furniture/chairfancyhotel\chairfabric_n"
+	"$nocull" "1"
+	"$halflambert" "1"
+
+	"$phong" "1"
+	"$phongexponenttexture" "models/scenery/furniture/fabric_exp"
+//	"$phongexponent" 5
+	"$phongboost" ".2"
+	"$phongfresnelranges"	"[ .3 1.2 2]"
+	"$PhongAlbedoTint" "1"
+
+	"$detail"						    "models/detail/Detail_Cloth"
+	"$detailscale" 				"3"
+
+}

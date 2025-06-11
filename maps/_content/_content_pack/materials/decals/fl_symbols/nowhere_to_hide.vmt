@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+    "$basetexture" "decals/fl_symbols/nowhere_to_hide"
+    "$translucent" 1
+    "$decal" 1
+    "$decalscale" 1
+}

@@ -1,0 +1,6 @@
+"decalmodulate"
+{
+    "$basetexture" "blacksnow/decal_rise"
+    "$decalscale" "0.15"
+    "$translucent" "1"
+}

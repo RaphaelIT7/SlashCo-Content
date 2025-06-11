@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\downpour/furniture02_din_ao_d"
+	"$bumpmap" "models\downpour/furniture02_din_ao_n"
+	"$phong" "1"	
+	"$phongexponent" "36"
+	"$phongboost"	"2"
+	"$phongfresnelranges"	"[1 1 1]"
+}

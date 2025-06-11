@@ -1,0 +1,24 @@
+"VertexLitGeneric"
+{
+
+	"$model"		"1"
+
+	"$baseTexture" 		"themask/SBMP/Env_Objects/Lumber_Wood/com_wood_log_col"
+	"$translucent"		"0"
+	"$alphatest" 		"0"
+
+	"$bumpmap" 			"themask/SBMP/Env_Objects/Lumber_Wood/com_wood_log_col_N"
+
+	"$phong" "1"
+	"$phongexponent" "16"
+	"$phongexponenttexture" "themask/SBMP/shared/Phong_exp_B_030_C_062"
+	"$phongalbedotint" "1"
+	"$phongboost" "8" 
+	"$phongfresnelranges"	"[.1 .6 1]"
+
+	"$detail" "themask/SBMP/shared/detail/detail_dirt4"
+	$detailscale 4
+	$detailblendfactor 1
+	$detailblendmode 0
+
+}

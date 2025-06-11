@@ -1,0 +1,11 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\scenery\furniture\chairfancyhotel\chairwood"
+	"$envmapmask" "models/scenery/furniture/chairfancyhotel/chairwood_env"
+	"$envmap" 				"env_cubemap"
+//	"$envmap" 				"envmap/asylum"
+	"$surfaceprop"				"wood"
+	"$detail"						    "models/detail/Detail_Wood"
+	"$detailscale" 				"7"
+
+}

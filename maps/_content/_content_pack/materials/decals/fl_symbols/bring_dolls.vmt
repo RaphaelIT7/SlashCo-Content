@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+    "$basetexture" "decals/fl_symbols/bring_dolls"
+    "$translucent" 1
+    "$decal" 1
+    "$decalscale" 0.5
+}

@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/scenery/furniture/showerhead/showheadknob"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "models/scenery/furniture/showerhead/showheadknob_ref"
+	"$surfaceprop"	"metal"
+}

@@ -1,0 +1,8 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "uusi/lasi_2"
+	"$envmap" "env_cubemap"
+	"$surfaceprop" "glass"
+	"$envmapcontrast" 1
+	"$translucent" 1
+}

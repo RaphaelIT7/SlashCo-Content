@@ -1,0 +1,8 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\scenery\furniture\desk_executive\handles"
+	"$envmap" 		"env_cubemap"
+	"$detail"						    "models/detail/Detail_Metal"
+	"$detailscale" 				"7"
+
+}

@@ -1,0 +1,9 @@
+LightmappedGeneric
+{
+    $basetexture    "black"
+    $decal          "1"
+    $decalscale     "0.2"
+    //$envmap         "engine\eye-reflection-cubemap-"
+    //$envmaptint     "[0.01 0.01 0.01]"
+    $translucent    1
+}

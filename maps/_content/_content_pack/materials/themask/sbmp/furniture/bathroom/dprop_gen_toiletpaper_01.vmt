@@ -1,0 +1,25 @@
+"VertexLitGeneric"
+{
+
+	"$nocull"		"1"
+
+
+	"$baseTexture" 		"themask/SBMP/Furniture/Bathroom/DPROP_GEN_ToiletPaper_01"
+	"$translucent"		"0"
+	"$alphatest" 		"0"
+
+	"$bumpmap" 		"themask/SBMP/Furniture/Bathroom/DPROP_GEN_ToiletPaper_01_N"
+
+	"$phong" "1"
+	"$phongexponent" "10"
+	"$phongexponenttexture" "themask/SBMP/Furniture/Bathroom/shared/Phong_exp_B_030_C_090"
+	"$phongalbedotint" "1"
+	"$phongboost" "3" 
+	"$phongfresnelranges"	"[.2 1.2 3.6]"
+
+	//"$detail" "themask/shared/rock01_detail"
+	$detailscale 4
+	$detailblendfactor .6
+	$detailblendmode 0
+
+}

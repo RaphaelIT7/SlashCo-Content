@@ -1,0 +1,25 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/scenery/furniture/Grandpiano/GP"
+	"$bumpmap" 	"models/scenery/furniture/Grandpiano/GP_n"
+	"$nocull" "1"
+	"$halflambert" "1"
+
+	"$normalmapalphaenvmapmask" 1
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[ 0.15 0.15 0.15 ]"
+	"$envmapsaturation" ".01"
+	"$envmapcontrast" "0.1"
+ 	"$envmapFresnel" "1"
+
+	"$phong" "1"
+	"$phongexponenttexture" "models/scenery/furniture/safe/safe_exp"
+//	"$phongexponent" 30
+	"$phongboost" "2"
+	"$phongfresnelranges"	"[ .3 1.2 8]"
+//	"$PhongAlbedoTint" "1"
+
+
+	"$surfaceprop"				"wood"
+
+}

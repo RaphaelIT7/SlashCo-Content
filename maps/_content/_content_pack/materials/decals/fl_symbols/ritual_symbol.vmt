@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+    "$basetexture" "decals/fl_symbols/ritual_symbol"
+    "$translucent" 1
+    "$decal" 1
+    "$decalscale" 0.5
+}

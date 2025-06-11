@@ -1,0 +1,13 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\scenery\furniture\sinka\sinkc"
+	"$bumpmap" "models\scenery\furniture\sinka\sinkc_n"
+
+	"$normalmapalphaenvmapmask" 1
+
+	"$phong" "1"	
+	"$phongexponent" "25"
+	"$phongboost"	"2"
+	"$phongfresnelranges"	"[2 2 2]"
+
+}

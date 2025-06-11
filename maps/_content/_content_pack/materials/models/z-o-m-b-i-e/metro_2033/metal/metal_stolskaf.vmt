@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "z-o-m-b-i-e/metro_2033/metal/metal_stolskaf"
+	"$bumpmap" "z-o-m-b-i-e/metro_2033/metal/metal_stolskaf_norm"
+	"$surfaceprop" "metal"
+	"$detail" "z-o-m-b-i-e/STALKER/detail/detail_metall_det1"
+	"$detailscale" "10.00"
+	"$detailblendfactor" "1.0"
+	"$detailblendmode" "0"
+}

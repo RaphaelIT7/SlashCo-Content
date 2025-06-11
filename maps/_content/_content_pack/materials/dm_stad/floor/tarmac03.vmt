@@ -1,0 +1,9 @@
+"lightmappedGeneric"
+{
+	"$baseTexture" "dm_stad/floor/tarmac03"
+	"$surfaceprop" "concrete"
+	"$bumpmap" "dm_stad/floor/tarmac01_normal"
+//	"$envmap" "env_cubemap"
+//	"$envmaptint" "[.2 .2 .2]"
+//	"$normalmapalphaenvmapmask" 1
+}

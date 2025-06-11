@@ -1,0 +1,8 @@
+VertexLitGeneric
+{
+    $basetexture "models\halloween\cobweb_diff01"
+    //$envmap env_cubemap
+    //$envmaptint "[.03 .03 .01]"
+    $nocull "1"
+    $translucent "1"
+}

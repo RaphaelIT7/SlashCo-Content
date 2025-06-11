@@ -1,0 +1,8 @@
+VertexLitGeneric
+{
+    $basetexture "models\halloween\spider"
+    //$envmap env_cubemap
+    //$envmaptint "[.03 .03 .01]"
+    $nocull "1"
+    $translucent "1"
+}

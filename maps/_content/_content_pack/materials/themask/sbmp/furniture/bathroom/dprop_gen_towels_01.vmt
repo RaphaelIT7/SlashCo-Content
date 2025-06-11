@@ -1,0 +1,25 @@
+"VertexLitGeneric"
+{
+
+	"$nocull"		"1"
+
+
+	"$baseTexture" 		"themask/SBMP/Furniture/Bathroom/DPROP_GEN_Towels_01"
+	"$translucent"		"0"
+	"$alphatest" 		"0"
+
+	"$bumpmap" 		"themask/SBMP/Furniture/Bathroom/DPROP_GEN_Towels_01_N"
+
+	"$phong" "1"
+	"$phongexponent" "6"
+	"$phongexponenttexture" "themask/SBMP/Furniture/Bathroom/shared/Phong_exp_B_030_C_094"
+	"$phongalbedotint" "1"
+	"$phongboost" "4" 
+	"$phongfresnelranges"	"[.2 3 6]"
+
+	"$detail" ""themask/SBMP/Furniture/Bathroom/shared/detail/detail_cloth2"
+	$detailscale 8
+	$detailblendfactor .8
+	$detailblendmode 0
+
+}

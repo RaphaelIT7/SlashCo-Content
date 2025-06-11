@@ -1,0 +1,7 @@
+"vertexlitGeneric"
+{
+	"$basetexture" "models/kidalma/0fe10d8f"
+	"$nocull" 1
+	"$translucent" 1
+	"$alphatest" 1
+}

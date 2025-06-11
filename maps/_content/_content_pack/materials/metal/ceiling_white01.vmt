@@ -1,0 +1,6 @@
+LightmappedGeneric
+{
+	$baseTexture "metal/ceiling_white01"
+	$bumpmap "metal/ceiling_white01_normal"
+	$surfaceprop metalvent
+}

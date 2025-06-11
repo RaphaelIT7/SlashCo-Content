@@ -1,0 +1,6 @@
+LightmappedGeneric
+{
+	"$basetexture" "lifepunch_cinema/cinema_ceiling_001a"
+	"$bumpmap" "lifepunch_cinema/cinema_ceiling_001a_normal"
+	"$surfaceprop" "ceiling_tile"
+}

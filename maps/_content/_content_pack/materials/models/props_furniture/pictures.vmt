@@ -1,0 +1,8 @@
+VertexLitGeneric
+{
+$baseTexture "models\props_furniture/pictures"
+
+$envmap env_cubemap
+$envmapmask "models\props_furniture\pictures_ref"
+$envmaptint "[.20 .20 .20]"
+}

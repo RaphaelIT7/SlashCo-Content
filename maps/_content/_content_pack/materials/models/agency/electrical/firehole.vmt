@@ -1,0 +1,15 @@
+VertexLitGeneric
+{
+$baseTexture "models\agency\electrical\firehole"
+$bumpmap "models\agency\electrical\firehole_n"
+$model 1
+
+$normalmapalphaphongmask "1"
+$phong 1
+$phongBoost 15
+$phongExponent 45
+$phongfresnelranges "[0.8 0.8 1]"
+$phongTint "{160 190 231}"
+
+//"%keywords" agency
+}

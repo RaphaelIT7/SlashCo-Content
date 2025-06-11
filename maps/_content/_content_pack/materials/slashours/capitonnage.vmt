@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "slashours/capitonnage"
+	"$surfaceprop" "concrete"
+	"$detail" "detail/plaster_detail_01"
+	"$detailscale" 5
+}

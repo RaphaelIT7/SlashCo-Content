@@ -1,0 +1,17 @@
+"LightMappedGeneric"
+{
+      "$basetexture" "contagion/tiles/tilebath002"
+      
+      // NORMAL MAP
+      "$bumpmap" "contagion/tiles/tilebath002_normal"
+
+      // SPECULAR MAP
+      "$envmap" "env_cubemap"
+      "$normalmapalphaenvmapmask" 1
+      "$envmaptint" "[.1 .1 .13]"
+      "$envmapcontrast" "0.2"
+
+      // EXTRA PARAMETERS
+      "$surfaceprop" "concrete"
+      "%keywords" "cont, policestation, tiles"
+}
