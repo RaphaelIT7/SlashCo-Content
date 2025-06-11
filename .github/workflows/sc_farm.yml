@@ -11,7 +11,7 @@ jobs:
     uses: RaphaelIT7/SlashCo-Content/.github/workflows/map_compiler.yml@main
     secrets: inherit
     with:
-      fastcompile: true
+      fastcompile: false
       createexportbsp: false
       debug: false
       map: "sc_farm"
