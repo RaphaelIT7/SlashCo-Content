@@ -610,3 +610,36 @@ function getVMTRessources(vmt_tbl)
 
 	return tbl
 end
+
+function getFileName(filePath)
+	return filePath:match(".*/([^/]+)%.vmf")
+end
+
+local function findLuaModelEntries(filename)
+	local file = io.open(filename, "r")
+	if not file then
+		return nil
+	end
+
+	local matches = {}
+	local pattern = [["model"%s*,%s*"([^"]+)"]]
+	for line in file:lines() do
+		for match in line:gmatch(pattern) do
+			if not matches[match] and match:sub(1, 1) ~= "*" then
+				matches[match] = true
+				table.insert(matches, match)
+			end
+		end
+	end
+
+	file:close()
+	return matches
+end
+
+function LoadAdditionalContentFile(filePath, materials, models)
+	local entries = findLuaModelEntries(filePath)
+
+	for _, entry in ipairs(entries or {}) do
+		table.insert(models, entry)
+	end
+end

@@ -81,8 +81,10 @@ local function AddContent(path)
 	end
 end
 
-local vmfFilePath = ({...})[1]
+local vmfFile = ({...})[1]
+local vmfFilePath = "../" .. vmfFile .. "/" .. vmfFile .. ".vmf"
 local vmfMaterials, vmfModels = readVMF(vmfFilePath)
+LoadAdditionalContentFile("../" .. vmfFile .. "/" .. vmfFile .. ".lua", vmfMaterials, vmfModels)
 
 print("Materials:")
 for _, material in ipairs(vmfMaterials) do

@@ -73,7 +73,7 @@ jobs:
         run: |
           cd maps
           cd _content/
-          lua create_content.lua "../${{inputs.map}}/${{inputs.map}}.vmf"
+          lua create_content.lua "${{inputs.map}}"
 
       # Puts the map folder and the _content/__content_map folder into a zip which is then uploaded.
       - name: Pack repo
