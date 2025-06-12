@@ -590,17 +590,20 @@ function getVMTRessources(vmt_tbl)
 				end
 
 				if not (v == "env_cubemap") then
+					local found = false
 					local path = FindFile("materials/" .. SafePath(v:lower()) .. ".vmt")
 					if path then
 						tbl[v] = path
+						found = true
 					end
 
 					local path = FindFile("materials/" .. SafePath(v:lower()) .. ".vtf") -- Smack both vtf and vmt in there :D
 					if path then
 						tbl[v] = path
+						found = true
 					end
 
-					if not path then
+					if not found then
 						print("Failed to find: " .. v .. " (" .. SafePath(v:lower()) .. ")")
 					end
 				end
@@ -615,6 +618,7 @@ function getFileName(filePath)
 	return filePath:match(".*/([^/]+)%.vmf")
 end
 
+-- Simple function, it reads a file, line by line and searches for any "model", "[model file]" occurences, this for example is used by Momo's Map Manipulation Tool where it sets the key values.
 local function findLuaModelEntries(filename)
 	local file = io.open(filename, "r")
 	if not file then
