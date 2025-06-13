@@ -8,7 +8,7 @@ on:
   workflow_call:
     inputs:
       fastcompile:
-        description: 'Fast Compile'
+        description: 'Fast Compile flag for VRAD'
         required: true
         type: boolean
         default: false
@@ -17,24 +17,24 @@ on:
         required: true
         type: boolean
       debug:
-        description: 'Enables debug prints'
+        description: 'Enables debug prints when creating the content zip file'
         required: true
         type: boolean
       gamepath:
-        description: 'Gmod Path'
+        description: 'Gmod Path, dont change this'
         default: 'gmod/garrysmod'
         required: false
         type: string
       map:
-        description: 'Map'
+        description: 'The map name, has to be the folder name!'
         required: true
         type: string
       workshop:
-        description: ''
+        description: 'worksop id, this is unused.'
         required: false
         type: string
       vrad:
-        description: ''
+        description: 'Additional options for VRAD'
         required: false
         type: string
 
