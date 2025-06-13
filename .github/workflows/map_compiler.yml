@@ -1,9 +1,5 @@
 name: Map Compiler
 
-concurrency:
-  group: map-compile
-  cancel-in-progress: false
-
 on:
   workflow_call:
     inputs:
@@ -20,11 +16,6 @@ on:
         description: 'Enables debug prints when creating the content zip file'
         required: true
         type: boolean
-      gamepath:
-        description: 'Gmod Path, dont change this'
-        default: 'gmod/garrysmod'
-        required: false
-        type: string
       map:
         description: 'The map name, has to be the folder name!'
         required: true
@@ -44,12 +35,13 @@ on:
         default: '-ldr'
 
 env:
-  PROJECT_PATH: 'gohttpserver/map_compile/'
-  MAP_PATH: ${{ format('gohttpserver/map_compile/{0}', inputs.map) }}
-  COMPILE_PATH: ${{ format('gohttpserver/map_compile/{0}/{1}', inputs.map, inputs.map) }}
-  CONTENT_PATH: 'gohttpserver/map_compile/_content'
+  PROJECT_PATH: 'gohttpserver/map_compile/${{github.run_id}}/'
+  MAP_PATH: ${{ format('gohttpserver/map_compile/{0}/{1}', github.run_id, inputs.map) }}
+  COMPILE_PATH: ${{ format('gohttpserver/map_compile/{0}/{1}/{2}', github.run_id, inputs.map, inputs.map) }}
+  CONTENT_PATH: 'gohttpserver/map_compile/${{github.run_id}}/_content'
   DEBUG_ARGS: ${{ format('{0} ', inputs.debug && '' || '-q') }}
-  THREADS: 3
+  GMOD_PATH: 'gmod_compile_${{github.run_id}}'
+  THREADS: 5
 
 # Map repo structure
 #
@@ -69,7 +61,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - uses: leafo/gh-actions-lua@v10
+      - uses: leafo/gh-actions-lua@v11
         with:
           luaVersion: "5.1.5"
 
@@ -89,31 +81,6 @@ jobs:
           zip ${{env.DEBUG_ARGS}} -r repo.zip ${{inputs.map}}/
           ls -l repo.zip
 
-      # If any other compile is actively running somehow we'll wait until it's done before we compile.
-      - name: Wait for any running compile to finish
-        uses: appleboy/ssh-action@v1.2.1
-        with:
-          command_timeout: "60m"
-          host: ${{secrets.HOST_IP}}
-          username: ${{secrets.HOST_USERNAME}} 
-          password: ${{secrets.HOST_PASSWORD}}
-          port: ${{secrets.HOST_PORT}}
-          script: |
-            while [ -f compile_lock.txt ]; do
-              sleep 1
-            done
-
-      # We're now compiling so we create a lock file preventing any other compile from possibly conflicting.
-      - name: Create lock file
-        uses: appleboy/ssh-action@v1.2.1
-        with:
-          host: ${{secrets.HOST_IP}}
-          username: ${{secrets.HOST_USERNAME}} 
-          password: ${{secrets.HOST_PASSWORD}}
-          port: ${{secrets.HOST_PORT}}
-          script: |
-            echo "Compiling" > compile_lock.txt
-
       # Remove old project files & sets new gohttpserver access rules as we don't want to somehow leak the vmf.
       - name: Prepare Compiler (Docker container)
         uses: appleboy/ssh-action@v1.2.1
@@ -132,11 +99,35 @@ jobs:
             echo '- regex: .*\.zip$' >> .ghs.yml
             echo '  allow: false' >> .ghs.yml
 
+      # We create a copy of the gmod folder in which we then insert the content into for the compile. We symlink files we don't expect to override to save time and disk space.
+      - name: Setup Gmod instance
+        uses: appleboy/ssh-action@v1.2.1
+        with:
+          host: ${{secrets.HOST_IP}}
+          username: ${{secrets.HOST_USERNAME}} 
+          password: ${{secrets.HOST_PASSWORD}}
+          port: ${{secrets.HOST_PORT}}
+          script: |
+            mkdir ${{env.GMOD_PATH}}
+            rsync -av --exclude='platform/' --exclude='sourceengine/' --exclude='bin/' --exclude='fallbacks_*.vpk' --exclude='garrysmod_*.vpk' ./gmod/ ./${{env.GMOD_PATH}}/
+            ln -sf ../gmod/platform ${{env.GMOD_PATH}}/platform
+            ln -sf ../gmod/sourceengine ${{env.GMOD_PATH}}/sourceengine
+            ln -sf ../gmod/bin ${{env.GMOD_PATH}}/bin
+
+            ln -sf ../../gmod/garrysmod/fallbacks_000.vpk ${{env.GMOD_PATH}}/garrysmod/fallbacks_000.vpk
+            ln -sf ../../gmod/garrysmod/fallbacks_dir.vpk ${{env.GMOD_PATH}}/garrysmod/fallbacks_dir.vpk
+
+            ln -sf ../../gmod/garrysmod/garrysmod_000.vpk ${{env.GMOD_PATH}}/garrysmod/garrysmod_000.vpk
+            ln -sf ../../gmod/garrysmod/garrysmod_001.vpk ${{env.GMOD_PATH}}/garrysmod/garrysmod_001.vpk
+            ln -sf ../../gmod/garrysmod/garrysmod_002.vpk ${{env.GMOD_PATH}}/garrysmod/garrysmod_002.vpk
+            ln -sf ../../gmod/garrysmod/garrysmod_dir.vpk ${{env.GMOD_PATH}}/garrysmod/garrysmod_dir.vpk
+
+
       # We upload the repo onto the server, why don't we use SFTP? because... welll... I tried & it failed as the docker container the compiler is running in doesn't seem to allow SFTP.
       - name: Upload repo
         run: |
           cd maps
-          curl -F "repo=@repo.zip" http://${{secrets.HOST_IP}}:${{secrets.HOST_HTTPPORT}}/upload.php
+          curl -F "repo=@repo.zip" -H "X-Runner-ID: ${{ github.run_id }}" http://${{secrets.HOST_IP}}:${{secrets.HOST_HTTPPORT}}/upload.php
 
       # Move the repo into the proper folder & unzip it.
       - name: Unpack repo
@@ -148,9 +139,9 @@ jobs:
           port: ${{secrets.HOST_PORT}}
           script: |
             cd ${{env.PROJECT_PATH}}
-            mv /var/www/uploads/repo.zip ./
-            unzip ${{env.DEBUG_ARGS}} repo.zip
-            rm -f repo.zip
+            mv /var/www/uploads/repo.zip${{ github.run_id }} ./
+            unzip ${{env.DEBUG_ARGS}} repo.zip${{ github.run_id }}
+            rm -f repo.zip${{ github.run_id }}
 
       # VBSP fun
       - name: VBSP
@@ -161,7 +152,7 @@ jobs:
           password: ${{secrets.HOST_PASSWORD}}
           port: ${{secrets.HOST_PORT}}
           script: |
-            wine gmod/bin/vbsp.exe -threads ${{env.THREADS}} -notjunc -game "gmod/garrysmod" "${{env.COMPILE_PATH}}"
+            wine ${{env.GMOD_PATH}}/bin/vbsp.exe -threads ${{env.THREADS}} -notjunc -game "${{env.GMOD_PATH}}/garrysmod" "${{env.COMPILE_PATH}}"
 
             if [ -f "${{env.COMPILE_PATH}}.lin" ]; then
               echo "::error::Map has a leak! Fix it."
@@ -183,7 +174,7 @@ jobs:
           password: ${{secrets.HOST_PASSWORD}}
           port: ${{secrets.HOST_PORT}}
           script: |
-            wine gmod/bin/vvis.exe -threads ${{env.THREADS}} -game "gmod/garrysmod" "${{env.COMPILE_PATH}}.bsp"
+            wine ${{env.GMOD_PATH}}/bin/vvis.exe -threads ${{env.THREADS}} -game "${{env.GMOD_PATH}}/garrysmod" "${{env.COMPILE_PATH}}.bsp"
   
       # VRAD fun
       - name: VRAD
@@ -195,7 +186,7 @@ jobs:
           password: ${{secrets.HOST_PASSWORD}}
           port: ${{secrets.HOST_PORT}}
           script: |
-            wine gmod/bin/vrad.exe ${{inputs.vrad_mode}} ${{inputs.fastcompile && '-fast' || '-final'}} -threads ${{env.THREADS}} ${{inputs.VRAD}} -game "gmod/garrysmod" "${{env.COMPILE_PATH}}.bsp"
+            wine ${{env.GMOD_PATH}}/bin/vrad.exe ${{inputs.vrad_mode}} ${{inputs.fastcompile && '-fast' || '-final'}} -threads ${{env.THREADS}} ${{inputs.VRAD}} -game "${{env.GMOD_PATH}}/garrysmod" "${{env.COMPILE_PATH}}.bsp"
       
       # Nukes the old .bsp_export, in reality this doesn't really do anything as the bsp_export should NEVER exist at this point.
       - name: Removing old compile
@@ -233,7 +224,7 @@ jobs:
             cd ${{env.CONTENT_PATH}}
             ./bspzip-list.out __content_map
             cd ~
-            wine gmod/bin/bspzip.exe -game "gmod/garrysmod" -addlist "${{env.COMPILE_PATH}}.bsp_export" "${{env.CONTENT_PATH}}/__content_map.txt" "${{env.COMPILE_PATH}}.bsp"
+            wine ${{env.GMOD_PATH}}/bin/bspzip.exe -game "${{env.GMOD_PATH}}/garrysmod" -addlist "${{env.COMPILE_PATH}}.bsp_export" "${{env.CONTENT_PATH}}/__content_map.txt" "${{env.COMPILE_PATH}}.bsp"
 
       # We don't want the unpacked bsp? then Nuke it.
       - name: Removing unpacked BSP
@@ -263,7 +254,7 @@ jobs:
             cp "${{inputs.map}}/${{inputs.map}}.bsp" "workshop/maps"
             cp "${{inputs.map}}/addon.json" "workshop"
             cd ~
-            wine gmod/bin/gmad.exe create -folder "${{env.PROJECT_PATH}}workshop" -out "${{env.PROJECT_PATH}}${{inputs.map}}"
+            wine ${{env.GMOD_PATH}}/bin/gmad.exe create -folder "${{env.PROJECT_PATH}}workshop" -out "${{env.PROJECT_PATH}}${{inputs.map}}"
 
       # Moves the final BSP into the finished compiles folder, ONLY then it is accessable through the gohttpserver.
       - name: Moving BSP
@@ -303,6 +294,7 @@ jobs:
       # Deletes the project files after a successful compile, Why don't we ALWAYS delete them even if it fails? because then debugging issues would be a lot more pain.
       - name: Cleanup
         uses: appleboy/ssh-action@v1.2.1
+        if: always() && (inputs.debug != 'true')
         with:
           host: ${{secrets.HOST_IP}}
           username: ${{secrets.HOST_USERNAME}} 
@@ -310,22 +302,9 @@ jobs:
           port: ${{secrets.HOST_PORT}}
           script: |
             rm -rf ${{env.PROJECT_PATH}}
-          
-      # This never worked.
-      - name: Workshop Upload
-        if: false
-        shell: cmd
-        run: |
-          mkdir "workshop/maps"
-          Xcopy /y /e "${{inputs.map}}\${{inputs.map}}.bsp" "workshop/maps"
-          Xcopy /y /e "${{inputs.map}}\addon.json" "workshop"
-          "${{inputs.gamepath}}\bin\gmad.exe" create -folder "workshop" -out "workshop"
-          "${{inputs.gamepath}}\bin\gmpublish.exe" update -addon "workshop.gma" -id ${{env.WORKSHOP}} -changes "Map Update"
-          del /f workshop.gma
-          del /f "workshop/addon.json"
-          del /f "workshop/maps/${{inputs.map}}.bsp"
+            rm -rf ${{env.GMOD_PATH}}
 
-      # Removes the lock file & kills any wine processes stopping any broken compiles that might secretly continue to run indefinetly
+      # kills any wine processes stopping any broken compiles that might secretly continue to run indefinetly
       - name: Post-Compile cleanup
         if: always()
         uses: appleboy/ssh-action@v1.2.1
@@ -335,5 +314,4 @@ jobs:
           password: ${{secrets.HOST_PASSWORD}}
           port: ${{secrets.HOST_PORT}}
           script: |
-            rm -rf compile_lock.txt
-            screen -dmS killwine bash -c "sleep 5 && killall -q wine"
+            screen -dmS killwine bash -c "sleep 5 && ps aux | grep '${{ github.run_id }}' | grep -v grep | awk '{print \$2}' | xargs -r kill"
