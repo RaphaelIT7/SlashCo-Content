@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'maps/sc_farm/**'
+      - '.github/workflows/sc_farm.yml'
 
 jobs:
   compile:

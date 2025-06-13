@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'maps/sc_void_forest/**'
+      - '.github/workflows/sc_void_forest.yml'
 
 jobs:
   compile:

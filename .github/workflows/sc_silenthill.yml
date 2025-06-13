@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'maps/sc_silenthill/**'
+      - '.github/workflows/sc_silenthill.yml'
 
 jobs:
   compile:

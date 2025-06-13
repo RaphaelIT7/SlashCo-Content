@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'maps/sc_lobby_v2/**'
+      - '.github/workflows/sc_lobby_v2.yml'
 
 jobs:
   compile:

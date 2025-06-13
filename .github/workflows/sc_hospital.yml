@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'maps/sc_hospital/**'
+      - '.github/workflows/sc_hospital.yml'
 
 jobs:
   compile:
