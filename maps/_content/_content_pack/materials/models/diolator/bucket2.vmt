@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/diolator/bucket2"
+	"$bumpmap" "models/diolator/bucket2_normal"
+	"$normalmapalphaenvmapmask" 1
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "0.6"
+}

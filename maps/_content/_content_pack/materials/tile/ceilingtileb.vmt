@@ -1,0 +1,6 @@
+LightmappedGeneric
+{
+	$baseTexture "tile/ceilingtileb"
+	$bumpmap "tile/ceilingtileb_normal"
+	$surfaceprop "ceiling_tile"
+}

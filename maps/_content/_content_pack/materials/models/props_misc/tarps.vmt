@@ -1,0 +1,15 @@
+vertexlitGeneric
+{
+$basetexture "Models/props_misc/tarps"
+
+$envmap env_cubemap
+$envmaptint "[.5 .5 .5]"
+$envmapmask "Models/props_misc/tarps_ref"
+$envmapfresnel 1
+$blendtintbybasealpha 1
+$envmapFresnelMinMaxExp "[.1 2 3]"
+
+		"$detail" "detail/default/surface_02"
+		"$detailblendfactor" "0.5"
+		"$detailscale" "8.60"
+}

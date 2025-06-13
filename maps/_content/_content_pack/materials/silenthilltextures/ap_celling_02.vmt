@@ -1,0 +1,12 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "silenthilltextures/ap_celling_02"
+	"$surfaceprop" "wood"
+	$envmapmask "silenthilltextures/ap_celling_02_ref"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "0.3"
+
+		"$detail" "detail/wood/wood02v"
+		"$detailblendfactor" "0.6"
+		"$detailscale" "2.15"
+}

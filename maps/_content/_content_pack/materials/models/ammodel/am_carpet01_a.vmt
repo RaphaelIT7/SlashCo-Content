@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/ammodel/am_carpet01_a"
+	$bumpmap "models/ammodel/am_carpet01_a_n"
+}

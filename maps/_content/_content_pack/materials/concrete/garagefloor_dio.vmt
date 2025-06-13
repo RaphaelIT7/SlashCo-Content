@@ -1,0 +1,11 @@
+LightmappedGeneric
+{
+$basetexture "concrete/garagefloor_dio"
+$bumpmap "concrete/garagefloor_n"
+$surfaceprop concrete
+
+
+		"$detail" "detail/concrete/concrete_02"
+		"$detailblendfactor" "0.5"
+		"$detailscale" "8.60"
+}

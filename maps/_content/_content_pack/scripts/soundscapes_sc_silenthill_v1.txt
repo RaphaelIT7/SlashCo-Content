@@ -1,0 +1,327 @@
+"SilentHill.Streets"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"slender_silenthill/ambient/ambience/crucial_town.wav"
+	}
+	
+	"playrandom"
+	{
+		"time"		"20,40"
+		"volume"	".3,.4"
+		"pitch"		"90,110"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"		"slender_silenthill/ambient/dog_growl.mp3"
+		}
+	}
+	
+	"playrandom"
+	{
+		"time"		"30,40"
+		"volume"	".6,.8"
+		"pitch"		"95,105"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"		"slender_silenthill/ambient/churchbell_far.mp3"
+		}
+	}
+	
+	"playrandom"
+	{
+		"time"		"11,19"
+		"volume"	".5,.7"
+		"pitch"		"90,110"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"		"slender_silenthill/ambient/pole_rattle.mp3"
+			"wave"		"slender_silenthill/ambient/pole_rattle2.mp3"
+			"wave"		"slender_silenthill/ambient/windgust.mp3"
+			"wave"		"slender_silenthill/ambient/windgust2.mp3"
+		}
+	}
+}
+
+"SilentHill.Basement"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"slender_silenthill/ambient/ambience/basement.wav"
+	}
+	
+	"playrandom"
+	{
+		"time"		"10,22"
+		"volume"	".6,.8"
+		"pitch"		"90,110"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"		"slender_silenthill/ambient/murmur.mp3"
+			"wave"		"slender_silenthill/ambient/murmur2.mp3"
+			"wave"		"slender_silenthill/ambient/murmur3.mp3"
+		}
+	}
+	
+	"playrandom"
+	{
+		"time"		"15,20"
+		"volume"	".5,.7"
+		"pitch"		"90,110"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"		"slender_silenthill/ambient/deepimpact.mp3"
+			"wave"		"slender_silenthill/ambient/deepimpact2.mp3"
+		}
+	}
+}
+
+"SilentHill.Indoor"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"slender_silenthill/ambient/ambience/indoor.wav"
+	}
+	
+	"playrandom"
+	{
+		"time"		"10,22"
+		"volume"	".6,.8"
+		"pitch"		"90,110"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"		"slender_silenthill/ambient/interiorrumble.mp3"
+			"wave"		"slender_silenthill/ambient/interiorrumble2.mp3"
+			"wave"		"slender_silenthill/ambient/interiorrumble3.mp3"
+		}
+	}
+	
+	"playrandom"
+	{
+		"time"		"15,20"
+		"volume"	".3,.4"
+		"pitch"		"90,110"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"		"slender_silenthill/ambient/deepimpact.mp3"
+			"wave"		"slender_silenthill/ambient/deepimpact2.mp3"
+		}
+	}
+}
+
+"SilentHill.IndoorRadio"
+{
+	"dsp"	"0"
+	
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"slender_silenthill/ambient/ambience/indoor.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"	"0"
+		"wave"		"slender_silenthill/scripted_fx/ptradio_1.mp3"
+	}
+}
+
+"SilentHill.Otherworld"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"slender_silenthill/ambient/ambience/otherworld.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"slender_silenthill/ambient/ambience/otherworld2.wav"
+	}
+	
+	"playrandom"
+	{
+		"time"		"6,15"
+		"volume"	".5,.8"
+		"pitch"		"90,110"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"		"slender_silenthill/ambient/metal.mp3"
+			"wave"		"slender_silenthill/ambient/metal2.mp3"
+			"wave"		"slender_silenthill/ambient/metal3.mp3"
+			"wave"		"slender_silenthill/ambient/metal4.mp3"
+			"wave"		"slender_silenthill/ambient/metal5.mp3"
+		}
+	}
+}
+
+"SilentHill.Waiting"
+{
+	"dsp"	"0"
+	
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"slender_silenthill/ambient/ambience/crucial_town.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"wave"		"slender_silenthill/ambient/ambience/waiting.wav"
+	}
+	
+	"playrandom"
+	{
+		"time"		"20,40"
+		"volume"	".3,.4"
+		"pitch"		"90,110"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"		"slender_silenthill/ambient/dog_growl.mp3"
+		}
+	}
+	
+	"playrandom"
+	{
+		"time"		"30,40"
+		"volume"	".6,.8"
+		"pitch"		"95,105"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"		"slender_silenthill/ambient/churchbell_far.mp3"
+		}
+	}
+	
+	"playrandom"
+	{
+		"time"		"11,19"
+		"volume"	".5,.7"
+		"pitch"		"90,110"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"		"slender_silenthill/ambient/pole_rattle.mp3"
+			"wave"		"slender_silenthill/ambient/pole_rattle2.mp3"
+			"wave"		"slender_silenthill/ambient/windgust.mp3"
+			"wave"		"slender_silenthill/ambient/windgust2.mp3"
+		}
+	}
+}
+
+"SilentHill.WaitingRadio"
+{
+	"dsp"	"0"
+	
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"slender_silenthill/ambient/ambience/basement.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"	"0"
+		"wave"		"slender_silenthill/scripted_fx/letter_from_the_lost_days.mp3"
+	}
+}
+
+"SilentHill.WaitingRadio2"
+{
+	"dsp"	"0"
+	
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"slender_silenthill/ambient/ambience/basement.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"	"0"
+		"wave"		"slender_silenthill/scripted_fx/letter_from_the_lost_days.mp3"
+	}
+}
+
+"SilentHill.WaitingIndoor"
+{
+	"dsp"	"0"
+	
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"slender_silenthill/ambient/ambience/basement.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"wave"		"slender_silenthill/ambient/ambience/waiting.wav"
+	}
+	
+	"playrandom"
+	{
+		"time"		"10,22"
+		"volume"	".6,.8"
+		"pitch"		"90,110"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"		"slender_silenthill/ambient/murmur.mp3"
+			"wave"		"slender_silenthill/ambient/murmur2.mp3"
+			"wave"		"slender_silenthill/ambient/murmur3.mp3"
+		}
+	}
+	
+	"playrandom"
+	{
+		"time"		"15,20"
+		"volume"	".5,.7"
+		"pitch"		"90,110"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"		"slender_silenthill/ambient/deepimpact.mp3"
+			"wave"		"slender_silenthill/ambient/deepimpact2.mp3"
+		}
+	}
+}

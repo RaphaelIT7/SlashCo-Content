@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/downpour/coffeemat01_obj_uni04_ag_d"
+	"$bumpmap" "models/downpour/coffeemat01_obj_uni04_ag_n"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[ .22 .22 .22 ]"
+	"$normalmapalphaenvmapmask" 1
+}

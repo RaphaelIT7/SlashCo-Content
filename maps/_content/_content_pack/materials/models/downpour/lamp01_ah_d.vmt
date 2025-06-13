@@ -1,7 +1,7 @@
 "VertexLitGeneric"
 {
-	"$baseTexture" "models\downpour/lamp01_ah_d"
-	"$bumpmap" "models\downpour/lamp01_ah_n"
+	"$basetexture" "models/downpour/lamp01_ah_d"
+	"$bumpmap" "models/downpour/lamp01_ah_n"
 	"$normalmapalphaenvmapmask" 1	
 
 	"$phong" "1"	

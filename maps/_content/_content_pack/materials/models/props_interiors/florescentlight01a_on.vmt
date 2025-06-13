@@ -1,5 +1,7 @@
-VertexLitGeneric
+"VertexLitGeneric"
 {
-$basetexture "Models/props_interiors/FlorescentLight01a"
-$selfillum 1
+	"$basetexture" "Models/props_interiors/FlorescentLight01a"
+	"$selfillum" 1		
 }
+
+

@@ -1,8 +1,9 @@
 LightmappedGeneric
 {
 $baseTexture "plaster/plaster_ceiling_01"
-$surfaceprop sheetrock
+$surfaceprop plaster
 
-
-"%keywords" l4d2
+		"$detail" "detail/concrete/concrete_01b"
+		"$detailblendfactor" "0.7"
+		"$detailscale" "1.07"
 }

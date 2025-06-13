@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "silenthilltextures/uw_floor02"
+	"$surfaceprop" "concrete"
+
+		"$detail" "detail/concrete/concrete_06"
+		"$detailblendfactor" "1"
+		"$detailscale" "8.60"
+}

@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/ammodel/am_silent_fense04_a"
+//	"$baseTexture" "silenthilltextures/uw_unique01"
+	"$alphatest" "1"
+
+//	$bumpmap "models/ammodel/am_bag01_n"
+
+//	"$normalmapalphaenvmapmask" "1"
+
+//	"$phong" "1"	
+//	"$phongexponent" "20"
+//	"$phongboost"	"0.5"
+//	"$phongfresnelranges"	"[1.5 1.5 1]"
+
+}

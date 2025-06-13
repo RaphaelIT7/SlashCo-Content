@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "diolator/textile_wall"
+	"$bumpmap" "diolator/textile_wall_normal"
+	"$surfaceprop" "carpet"
+
+	"$detail" "detail/fabric/dt_fabric02"
+	"$detailblendfactor" "1"
+	"$detailscale" "15"
+}

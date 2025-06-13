@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "diolator/authorized"
+	"$alphatest" 1
+	$translucent 0
+	$decal 1
+}

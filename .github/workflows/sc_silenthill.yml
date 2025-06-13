@@ -1,0 +1,17 @@
+name: sc_silenthill
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'maps/sc_silenthill/**'
+
+jobs:
+  compile:
+    uses: RaphaelIT7/SlashCo-Content/.github/workflows/map_compiler.yml@main
+    secrets: inherit
+    with:
+      fastcompile: false
+      createexportbsp: false
+      debug: false
+      map: "sc_silenthill"

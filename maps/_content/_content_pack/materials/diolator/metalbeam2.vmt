@@ -1,0 +1,10 @@
+LightmappedGeneric
+{
+$baseTexture "diolator/metalbeam2"
+$surfaceprop metal
+
+$envmapmask "diolator/metalbeam2_ref"
+$envmap env_cubemap
+$envmaptint "0.3"
+
+}

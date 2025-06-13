@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "silenthilltextures/tc_magazin01"
+	"$surfaceprop" "wood"
+
+	$detail "detail/metal/metal_default"
+	$detailscale "[ 9 4.5 ]"
+	$detailblendfactor "0.7"
+}

@@ -1,0 +1,8 @@
+LightmappedGeneric
+{
+	$basetexture "metal/metal1_dio"
+	$surfaceprop  "metal"
+	$envmap "env_cubemap"
+	$envmapmask "metal/metal1_dio_ref"
+	$envmaptint "0.5"
+}

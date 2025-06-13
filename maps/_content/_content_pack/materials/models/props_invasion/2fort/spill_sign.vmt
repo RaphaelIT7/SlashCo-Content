@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\props_invasion\2fort\spill_sign"
+
+    "$phong" "1"
+    "$phongexponent" "20"
+    "$phongboost" "2"
+    "$phongfresnelranges"    "[1 0.5 1]"
+	"$basemapalphaphongmask" "1"
+}

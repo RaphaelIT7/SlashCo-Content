@@ -1,0 +1,13 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "silenthilltextures/ap_floor_04"
+	"$surfaceprop" "wood"
+	"$bumpmap" "silenthilltextures/ap_floor_04_normal"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "0.4"
+
+		"$detail" "detail/wood/dt_wood02"
+		"$detailblendfactor" "1"
+		"$detailscale" "34.4"
+}

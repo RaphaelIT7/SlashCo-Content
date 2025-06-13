@@ -1,0 +1,13 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/ammodel/am_tca10_fence"
+	"$surfaceprop" "chain"
+        "$alphatest" "1"
+        "$nocull" "1"
+        "$nodecal" "1"
+
+	"$phong" "1"
+	"$phongexponent" "35"
+	"$phongboost"	"0.7"
+	"$phongfresnelranges"	"[1 1 1]"
+}

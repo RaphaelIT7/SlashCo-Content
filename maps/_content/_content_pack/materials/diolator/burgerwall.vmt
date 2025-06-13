@@ -1,0 +1,14 @@
+LightmappedGeneric
+{
+	$baseTexture "diolator/burgerwall"
+	$surfaceprop wood
+
+	// $bumpmap "diolator/tile_china_n"
+	// $normalmapalphaenvmapmask 1
+	// $envmap env_cubemap
+	// $envmaptint "0.7"
+
+	$detail "detail/plaster/plaster_13"
+	$detailscale "9"
+	$detailblendfactor "-1.0"
+}

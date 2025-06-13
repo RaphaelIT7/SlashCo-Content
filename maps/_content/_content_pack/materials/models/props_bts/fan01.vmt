@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props_bts/Fan01"
+//	"$bumpmap" "models\props_bts\Fan01_normal"
+	$envmapmask "models\props_bts/Fan01_ref"
+	$envmap env_cubemap
+	$envmaptint "0.5"
+}

@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\sh5/bodybag/bodybag"
+	"$bumpmap" "models\sh5/bodybag/bodybag_n"
+	"$phong" "1"
+	"$phongexponent" "10"
+	"$phongboost" "3"	
+	"$phongfresnelranges"	"[.1 0.2 1]"
+}

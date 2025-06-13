@@ -1,0 +1,6 @@
+LightmappedGeneric
+{
+$baseTexture "diolator/greyconcrete_a"
+$bumpmap "diolator/greyconcrete_n"
+$surfaceprop concrete
+}

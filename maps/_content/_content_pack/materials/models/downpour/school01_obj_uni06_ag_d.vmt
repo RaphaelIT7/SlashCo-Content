@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/downpour/school01_obj_uni06_ag_d"
+	"$bumpmap" "models/downpour/school01_obj_uni06_ag_n"
+}

@@ -1,0 +1,11 @@
+"Vertexlitgeneric"
+{
+	"$basetexture" "models/ammodel/am_pipe01"
+        "$model" "1"
+	"$bumpmap" "models/ammodel/am_pipe01_n"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "0.5"
+	"$normalmapalphaenvmapmask" "1"
+
+
+}

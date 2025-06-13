@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "silenthilltextures/silent_fence04"
+	"$surfaceprop" "metalgrate"
+      "$bumpmap" "silenthilltextures/silent_fence04_normal"
+      "$alphatest" 1 
+      "$nodecal" 1
+      "%compilepassbullets" 1 
+}

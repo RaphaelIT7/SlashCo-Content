@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+"$basetexture" "diolator/asphalt5"
+
+$bumpmap "diolator/asphalt5_n"
+
+}

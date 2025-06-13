@@ -1,0 +1,15 @@
+lightmappedgeneric
+{
+	$baseTexture "concrete/pouredconcretewall04a"
+	$surfaceprop concrete
+	$normalmapalphaenvmapmask 1
+
+// added by psycho-a
+	"$bumpmap" "concrete\pouredconcretewall04a_normal"
+	"$envmaptint" "0.51"
+
+	"LightmappedGeneric_HDR_DX9"
+	{
+		"$envmaptint" "0.29"
+	}
+}

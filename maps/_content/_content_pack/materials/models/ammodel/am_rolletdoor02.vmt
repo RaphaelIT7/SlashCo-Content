@@ -1,0 +1,10 @@
+"Vertexlitgeneric"
+{
+	$basetexture "models/ammodel/am_rolletdoor02"
+
+//	"$bumpmap" "models/ammodel/am_electricalpanel_n"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "0.5"
+	"$envmapmask" "models/ammodel/am_rolletdoor01_ref"
+	"$normalmapalphaenvmapmask" "0"
+}

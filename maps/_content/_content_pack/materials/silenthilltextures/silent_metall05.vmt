@@ -1,0 +1,7 @@
+"LightMappedGeneric"
+{
+	"$baseTexture" "silenthilltextures/silent_metall05"
+      "$bumpmap" "silenthilltextures/silent_metall05_normal"
+	"$surfaceprop" "metal"
+ $ssbump 1
+}

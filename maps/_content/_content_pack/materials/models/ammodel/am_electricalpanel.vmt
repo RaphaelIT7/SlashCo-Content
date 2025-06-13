@@ -1,0 +1,9 @@
+"Vertexlitgeneric"
+{
+	$basetexture "models/ammodel/am_electricalpanel"
+	$translucent 0
+	"$bumpmap" "models/ammodel/am_electricalpanel_n"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "0.5"
+	"$normalmapalphaenvmapmask" 1
+}

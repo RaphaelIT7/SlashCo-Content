@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/dimidrol/pipe/eca5df1b"
+	$bumpmap "models/dimidrol/pipe/eca5df1b_n"
+	"$normalmapalphaenvmapmask" 1
+
+	"$phong" "1"	
+	"$phongexponent" "10"
+	"$phongboost"	"2"
+	"$phongfresnelranges"	"[1.5 1.5 1]"
+       
+}

@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/ammodel/am_radio01"
+	"$alphatest" "1"
+	"$bumpmap" "models/ammodel/am_radio01_n"
+
+//	$envmap "env_cubemap"
+//	$envmapmask "models/AmModel/am_firebox_ref"
+//	$envmaptint "0.5"
+
+}

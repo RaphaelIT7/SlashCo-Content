@@ -1,0 +1,19 @@
+VertexLitGeneric
+{
+$baseTexture "models\props_mill/PipeSet08d_128_001a"
+
+$envmap env_cubemap
+//$envmapmask "models\props_mill/PipeSet08d_128_001a_REF"
+$envmaptint "0.5"
+
+	"$bumpmap" "models\props_mill/pipeset_n"
+
+
+	"$normalmapalphaenvmapmask" 1
+
+//	"$phong" "1"	
+//	"$phongexponent" "15"
+//	"$phongboost"	"1"
+//	"$phongfresnelranges"	"[1.5 1.5 1]"
+
+}

@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/downpour/branches02_ae_da"
+ 	$translucent   1
+ 	$alpha    0
+	$alphatest 0
+	$nocull 1
+}

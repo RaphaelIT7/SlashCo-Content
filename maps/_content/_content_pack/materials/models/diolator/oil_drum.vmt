@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/diolator/oil_drum"
+	"$bumpmap" "models/diolator/oil_drum_normal"
+	"$normalmapalphaenvmapmask" 1
+	"$phong" "1"
+	"$phongexponent" "28"
+	"$phongboost"	"4"
+
+	$phongfresnelranges	"[1 1 2]"
+}

@@ -1,0 +1,11 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "silenthilltextures/carpetfloor_dio"
+	"$surfaceprop" "carpet"
+	"$bumpmap" "silenthilltextures/carpetfloor_dio_normal"
+	$normalmapalphaenvmapmask 1
+
+		"$detail" "detail/fabric/velvet_h"
+		"$detailblendfactor" "1"
+		"$detailscale" "2.15"
+}

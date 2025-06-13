@@ -1,0 +1,11 @@
+"Vertexlitgeneric"
+{
+	"$basetexture" "models/ammodel/am_window05"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "0.5"
+	"$envmapmask" "models/ammodel/am_window05_ref"
+
+		"$detail" "detail/wood/dt_wood02"
+		"$detailblendfactor" "0.6"
+		"$detailscale" "[34.4 17.2]"
+}

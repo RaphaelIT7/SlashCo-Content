@@ -1,0 +1,8 @@
+"vertexlitgeneric"
+{
+	"$basetexture"	"models/slender_silenthill/foliage/branches02_ae_da"
+
+	"$transparent"	"1"
+	"$nocull"	"1"
+	"$alphatest"	"1"
+}

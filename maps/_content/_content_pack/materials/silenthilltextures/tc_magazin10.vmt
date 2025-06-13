@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "silenthilltextures/tc_magazin10"
+	"$surfaceprop" "Wood_Panel"
+	"$alphatest" 1
+        "$nodecal" 1
+	"$nocull" "1"
+}

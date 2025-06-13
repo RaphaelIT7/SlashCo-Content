@@ -1,0 +1,14 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "models/slender_silenthill/vehicles/bus"
+	"$bumpmap" "models/slender_silenthill/vehicles/bus_norm"
+
+
+$halflambert 0
+$phong 1
+$diffuseexp 1
+
+$phongfresnelranges "[2 .9 1]"
+$phongboost 0.25
+$phongexponent 45
+}

@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/ammodel/am_carpet01"
+
+		"$detail" "detail/fabric/carpet_03"
+		"$detailblendfactor" "1"
+		"$detailscale" "2.15"
+}

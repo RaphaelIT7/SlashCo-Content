@@ -1,0 +1,5 @@
+LightmappedGeneric
+{
+$basetexture "concrete/ceiling1_dio"
+$surfaceprop concrete
+}

@@ -1,0 +1,11 @@
+"lightmappedGeneric"
+{
+	"$baseTexture" "wood/woodfence001"
+	"$surfaceprop" "wood"
+	"$alphatest" 1
+	"%keywords" "ep2"
+
+	$detail "detail/default/surface_02"
+	$detailscale "4.3"
+	$detailblendfactor "1.3"
+}

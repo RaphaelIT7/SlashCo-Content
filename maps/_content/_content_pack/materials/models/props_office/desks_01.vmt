@@ -1,0 +1,15 @@
+VertexLitGeneric
+{
+$basetexture "Models/props_office/desks_01"
+$envmap env_cubemap
+$envmapmask "Models/props_office/desks_01_ref"
+$envmaptint "0.5"
+$envmapcontrast .2
+$envmapsaturation .2
+vertexlitgeneric_HDR_dx9
+{
+$envmaptint "[.2 .2 .2]"
+$envmapcontrast .2
+$envmapsaturation .2
+}
+}

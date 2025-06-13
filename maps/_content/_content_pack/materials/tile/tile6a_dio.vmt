@@ -1,0 +1,19 @@
+LightmappedGeneric
+{
+	$basetexture "tile/tile6a_dio"
+	$bumpmap "tile/tile6a_dio_n"
+	$surfaceprop concrete
+	$normalmapalphaenvmapmask 1
+	$envmap env_cubemap
+//	$envmapmask "tile/tile6a_dio_ref"
+	$envmaptint "[ 0.4 0.4 0.4 ]"
+
+"LightmappedGeneric_HDR_DX9"
+	{
+		$envmaptint "[ 0.4 0.4 0.4 ]"
+	}
+
+		"$detail" "detail/default/surface_02"
+		"$detailblendfactor" "1"
+		"$detailscale" "8.60"
+}

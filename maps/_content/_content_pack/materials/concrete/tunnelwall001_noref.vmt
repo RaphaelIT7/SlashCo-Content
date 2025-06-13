@@ -1,0 +1,13 @@
+LightmappedGeneric
+{
+	$baseTexture "concrete/tunnelwall001"
+	$surfaceprop concrete
+
+	"$bumpmap" "concrete\tunnelwall001_normal"
+
+	"$normalmapalphaenvmapmask" "1"
+
+		"$detail" "detail/concrete/concrete_01"
+		"$detailblendfactor" "1"
+		"$detailscale" "1.07"
+}

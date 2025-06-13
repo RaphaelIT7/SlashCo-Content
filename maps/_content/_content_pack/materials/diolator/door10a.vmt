@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "diolator/door10a"
+	$surfaceprop wood
+
+	$detail "detail/wood/wood03v"
+	$detailscale "[2.1 8.4]"
+	$detailblendfactor "0.9"
+}

@@ -1,0 +1,9 @@
+LightmappedGeneric
+{
+$baseTexture "diolator/asphalt7"
+$surfaceprop concrete
+
+		"$detail" "detail/asphalt/asphalt_03"
+		"$detailblendfactor" "0.8"
+		"$detailscale" "4.30"
+}

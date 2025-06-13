@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/downpour/wheelchair_d"
+
+	$envmap "env_cubemap"
+	$envmapmask "models/downpour/wheelchair_exp"
+	$envmaptint "0.7"
+}

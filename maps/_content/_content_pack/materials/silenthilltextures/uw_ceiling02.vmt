@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "silenthilltextures/uw_ceiling02"
+	"$surfaceprop" "plaster"
+        "$bumpmap" "silenthilltextures/uw_ceiling02_normal"
+}

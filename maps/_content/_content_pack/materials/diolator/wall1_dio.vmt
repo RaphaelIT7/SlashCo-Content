@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+"$basetexture" "diolator/wall1_dio"
+$bumpmap "diolator/wall1_n"
+
+
+		"$detail" "detail/concrete/concrete_01"
+		"$detailblendfactor" "1"
+		"$detailscale" "1.07"
+}

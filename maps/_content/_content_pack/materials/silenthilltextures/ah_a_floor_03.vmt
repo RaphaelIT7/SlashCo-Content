@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "silenthilltextures/ah_a_floor_03"
+	"$surfaceprop" "tile"
+        "$bumpmap" "tile/tilefloor001a_normal"
+}

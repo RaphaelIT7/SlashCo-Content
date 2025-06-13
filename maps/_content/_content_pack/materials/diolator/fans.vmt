@@ -1,0 +1,11 @@
+LightmappedGeneric
+{
+$baseTexture "diolator/fans"
+$surfaceprop metal
+
+//$bumpmap "diolator/plastic_n"
+
+//		"$detail" "detail/fabric/dt_fabric02"
+//		"$detailblendfactor" "1"
+//		"$detailscale" "17.2"
+}

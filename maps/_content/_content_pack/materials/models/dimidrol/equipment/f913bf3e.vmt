@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/dimidrol/equipment/f913bf3e"
+	"$bumpmap" "models/dimidrol/equipment/f913bf3e_n"
+	"$normalmapalphaenvmapmask" 1
+	"$phong" "1"
+	"$phongexponent" "24"
+	"$phongboost"	"2"
+	$phongfresnelranges	"[2 2 2]"
+       
+}

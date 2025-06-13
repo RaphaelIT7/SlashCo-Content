@@ -1,0 +1,12 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "silenthilltextures/uw_unique01"
+	"$surfaceprop" "chain"
+      "$alphatest" 1 
+      "$nodecal" 1
+      "%compilepassbullets" 1 
+
+	$envmapmask "silenthilltextures/uw_unique01_ref"
+	$envmap env_cubemap
+	$envmaptint "0.3"
+}

@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/ammodel/am_silent_fense04"
+
+//	$bumpmap "models/ammodel/am_bag01_n"
+
+//	"$normalmapalphaenvmapmask" "1"
+
+//	"$phong" "1"	
+//	"$phongexponent" "20"
+//	"$phongboost"	"0.5"
+//	"$phongfresnelranges"	"[1.5 1.5 1]"
+
+
+		"$detail" "detail/metal/dt_metal02"
+		"$detailblendfactor" "1"
+		"$detailscale" "[34.4 8.60]"
+}

@@ -1,0 +1,9 @@
+"LightMappedGeneric"
+{
+	"$baseTexture" "silenthilltextures/silent_metall03"
+        "$bumpmap" "silenthilltextures/silent_metall03_normal"
+	"$surfaceprop" "metal"
+	$normalmapalphaenvmapmask 1
+	$envmap "env_cubemap"
+	$envmaptint "0.5"
+}

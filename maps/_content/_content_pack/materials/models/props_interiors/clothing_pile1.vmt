@@ -1,0 +1,8 @@
+VertexLitGeneric
+{
+$baseTexture "models\props_interiors/clothing_pile1"
+
+$bumpmap "models\props_interiors/clothing_pile1_n"
+$normalmapalphaenvmapmask 0
+
+}

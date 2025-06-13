@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/diolator/rollupbox_200_a"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "0.4"
+
+	$bumpmap "models/diolator/rollupbox_n"
+
+	"$normalmapalphaenvmapmask" 1
+	"$phong" "1"
+	"$phongexponent" "38"
+	"$phongboost"	"1"
+	$phongfresnelranges	"[1 1 1]"
+}

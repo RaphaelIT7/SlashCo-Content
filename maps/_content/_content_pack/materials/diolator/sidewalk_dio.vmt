@@ -1,0 +1,14 @@
+LightmappedGeneric
+{
+	$baseTexture "diolator/sidewalk_dio"
+	$surfaceprop concrete
+	$bumpmap "diolator/sidewalk_n"
+
+	$normalmapalphaenvmapmask 1
+	$envmap env_cubemap
+	$envmaptint "0.20"
+
+	"$detail" "detail/concrete/concrete_01"
+	"$detailblendfactor" "0.9"
+	"$detailscale" "1.07"
+}

@@ -1,0 +1,15 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "models/slender_silenthill/furniture/bed"
+	"$bumpmap" "models/slender_silenthill/furniture/bed_norm"
+
+	"$alphatest" "1"
+
+$halflambert 0
+$phong 1
+$diffuseexp 1
+
+$phongfresnelranges "[2 .9 1]"
+$phongboost 0.5
+$phongexponent 35
+}

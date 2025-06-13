@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/dimidrol/equipment/dd06f40d"
+	"$bumpmap" "models/dimidrol/equipment/dd06f40d_n"
+	"$normalmapalphaenvmapmask" 1
+	"$phong" "1"
+	"$phongexponent" "18"
+	"$phongboost"	"2"
+	$phongfresnelranges	"[2 2 2]"
+
+		"$detail" "detail/metal/dt_metal02"
+		"$detailblendfactor" "0.6"
+		"$detailscale" "17.2"       
+}

@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "silenthilltextures/ap_celling_01"
+	"$surfaceprop" "concrete"
+	"$bumpmap" "silenthilltextures/ap_celling_01_normal"
+
+	"$normalmapalphaenvmapmask" "1"
+
+}

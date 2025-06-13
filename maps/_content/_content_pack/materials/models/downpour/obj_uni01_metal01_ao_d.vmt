@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/downpour/obj_uni01_metal01_ao_d"
+	"$bumpmap" "models/downpour/obj_uni01_metal01_ao_n"
+	"$normalmapalphaenvmapmask" 1
+	$FlashlightNoLambert 1
+	$envmap env_cubemap
+	$envmaptint "0.7"
+
+	"$phong" "1"	
+	"$phongexponent" "20"
+	"$phongboost"	"2"
+	"$phongfresnelranges"	"[2 2 2]"
+}

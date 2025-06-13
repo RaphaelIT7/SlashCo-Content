@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/downpour/plastic_01_otw_as_da"
+	"$bumpmap" "models/downpour/plastic_01_otw_as_n"
+}

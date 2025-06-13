@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "SILENTHILLTEXTURES/ap_wall_16"
+	"$surfaceprop" "plaster"
+        "$bumpmap" "SILENTHILLTEXTURES/ap_wall_16_normal"
+
+		"$detail" "detail/default/surface_02"
+		"$detailblendfactor" "1"
+		"$detailscale" "8.60"
+}

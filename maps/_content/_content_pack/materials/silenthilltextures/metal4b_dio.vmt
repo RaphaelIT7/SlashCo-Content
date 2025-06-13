@@ -1,0 +1,13 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "silenthilltextures/metal4b_dio"
+	"$surfaceprop" "metal"
+
+	$envmap	env_cubemap
+	$envmapmask "silenthilltextures/metal4_dio_ref"
+	$envmaptint "0.4"
+
+		"$detail" "detail/metal/metal_01"
+		"$detailblendfactor" "1"
+		"$detailscale" "4.30"
+}

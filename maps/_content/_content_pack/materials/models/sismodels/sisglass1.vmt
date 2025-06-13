@@ -1,0 +1,19 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "models/sismodels/sisglass1"
+	"$bumpmap" "models/sismodels/sisglass1_n"
+	"$translucent" "1"
+
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	"$color2" "{220 220 220}"
+
+	"$phong" "1"
+	"$phongexponent" "10"
+	"$phongboost" "0.3"	
+	"$phongfresnelranges"	"[.25 .5 1]"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "0.1"	
+	"$rimlightboost" "1"
+}
+

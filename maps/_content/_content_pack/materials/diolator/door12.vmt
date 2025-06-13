@@ -1,0 +1,13 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "diolator/door12"
+	$bumpmap "diolator/door12_n"
+	$surfaceprop wood
+	$normalmapalphaenvmapmask 1
+	$envmap env_cubemap
+	$envmaptint "0.33"
+
+	$detail "detail/plaster/plaster_default"
+	$detailscale "9.4"
+	$detailblendfactor "0.9"
+}

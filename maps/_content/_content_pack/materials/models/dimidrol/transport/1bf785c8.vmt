@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+        
+	"$baseTexture" "models/dimidrol/transport/1bf785c8"
+$envmap env_cubemap
+$envmaptint "0.7"
+$envmapmask "models/dimidrol/transport/1bf785c8_ref"
+        
+}

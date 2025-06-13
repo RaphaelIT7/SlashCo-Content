@@ -1,0 +1,14 @@
+LightmappedGeneric
+{
+$surfaceprop plaster
+$basetexture "diolator/tile14_c"
+//$bumpmap "wood/wood2_dio_normal"
+
+//$envmap "env_cubemap"
+//$normalmapalphaenvmapmask  "1"
+//$envmaptint "[ 0.6 0.6 0.6 ]" 
+
+//		"$detail" "detail/wood/wood03v"
+//		"$detailblendfactor" "1"
+//		"$detailscale" "8.60"
+}

@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+"$basetexture" "diolator/graffiti03_dio"
+"$translucent" 1
+$decal 1
+$decalscale 0.12
+
+}

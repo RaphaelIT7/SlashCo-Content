@@ -1,0 +1,12 @@
+LightmappedGeneric
+{
+$baseTexture "diolator/doorrollup03"
+$surfaceprop metal
+
+$bumpmap "diolator/doorrollup03_n"
+$normalmapalphaenvmapmask 1
+$envmap env_cubemap
+$envmaptint "0.5"
+
+
+}

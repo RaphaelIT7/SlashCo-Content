@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/diolator/ceiling_lamp_c"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "models/diolator/ceiling_lamp_ref2"
+	"$envmaptint" "0.5"
+}

@@ -1,6 +1,7 @@
 UnLitGeneric
 {
 $baseTexture "models\props_interiors/TVebstest"
+
 $color2 "[.43 .43 .43]"
 $surfaceprop glass
 $envmap env_cubemap

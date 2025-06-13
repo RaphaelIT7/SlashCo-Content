@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/downpour/cup01_ah_d"
+	"$bumpmap" "models/downpour/cup01_ah_n"
+
+	"$phong" "1"	
+	"$phongexponent" "62"
+	"$phongboost"	"1"
+	"$phongfresnelranges"	"[1 1 1]"
+}

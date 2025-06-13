@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models/ammodel/cage_2_tex"
+	"$envmap"	"env_cubemap"
+	"$envmaptint"	"0.5"
+	"$envmapmask"	"models/ammodel/cage_2_tex_ref"
+	
+}

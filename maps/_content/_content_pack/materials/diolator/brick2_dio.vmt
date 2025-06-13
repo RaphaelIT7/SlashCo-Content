@@ -1,0 +1,16 @@
+LightmappedGeneric
+{
+$baseTexture "diolator/brick2_dio"
+$surfaceprop concrete
+
+$bumpmap "diolator/brick2_n"
+//$normalmapalphaenvmapmask 1
+// $envmap env_cubemap
+// $envmaptint "0.5"
+
+
+		"$detail" "detail/brick/dt_brick03"
+		"$detailblendfactor" "0.8"
+		"$detailscale" "[68.8 34.4]"
+
+}

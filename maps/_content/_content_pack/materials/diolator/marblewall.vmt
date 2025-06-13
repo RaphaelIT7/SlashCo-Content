@@ -1,0 +1,15 @@
+LightmappedGeneric
+{
+	$baseTexture "diolator/marblewall"
+	$surfaceprop tile
+	
+	$bumpmap "diolator/marblewall_n"
+	$normalmapalphaenvmapmask "1"
+	// $envmapmask "diolator/marblewall_ref"
+	$envmap "env_cubemap"
+	$envmaptint "0.2"
+
+	"$detail" "detail/default/surface_02"
+	"$detailblendfactor" "0.7"
+	"$detailscale" "8.60"
+}

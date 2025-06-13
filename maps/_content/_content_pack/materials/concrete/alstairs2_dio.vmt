@@ -1,0 +1,6 @@
+LightmappedGeneric
+{
+$basetexture "concrete/alstairs2_dio"
+// $bumpmap "concrete/garagefloor_dio_n"
+$surfaceprop concrete
+}

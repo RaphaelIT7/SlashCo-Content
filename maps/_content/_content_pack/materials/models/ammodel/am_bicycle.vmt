@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/ammodel/am_bicycle"
+	$bumpmap "models/ammodel/am_bicycle_n"
+	$envmap "env_cubemap"
+	$envmapmask "models/ammodel/am_bicycle_ref"
+	$envmaptint "0.5"
+	$alphatest 1
+	$translucent 0
+
+	"$normalmapalphaenvmapmask" 1
+
+	"$phong" "1"	
+	"$phongexponent" "15"
+	"$phongboost"	"3"
+	"$phongfresnelranges"	"[1.5 1.5 1]"
+
+}

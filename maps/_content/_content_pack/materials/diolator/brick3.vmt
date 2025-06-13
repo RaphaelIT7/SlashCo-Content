@@ -1,0 +1,12 @@
+LightmappedGeneric
+{
+$baseTexture "diolator/brick3"
+$surfaceprop brick
+$ssbump 0
+
+$bumpmap "diolator/brick3_n"
+
+		"$detail" "detail/brick/dt_brick03"
+		"$detailblendfactor" "0.8"
+		"$detailscale" "[16 16]"
+}

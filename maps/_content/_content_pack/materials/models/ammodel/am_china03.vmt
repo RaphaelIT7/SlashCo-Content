@@ -1,0 +1,12 @@
+"Vertexlitgeneric"
+{
+	$basetexture "models/ammodel/am_china03"
+	$translucent 0
+	"$bumpmap" "models/ammodel/am_china03_n"
+	"$normalmapalphaenvmapmask" 1
+
+	"$phong" "1"	
+	"$phongexponent" "12"
+	"$phongboost"	"1.5"
+	"$phongfresnelranges"	"[1.5 1.5 1]"
+}

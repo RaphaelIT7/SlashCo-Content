@@ -1,0 +1,12 @@
+"Vertexlitgeneric"
+{
+	"$basetexture" "models/downpour/plastic_01_otw_as_da_a"
+	"$bumpmap" "models/downpour/plastic_01_otw_as_n"
+
+	$normalmapalphaenvmapmask 0
+
+	"Vertexlitgeneric_HDR_DX9"
+	{
+		$FlashlightNoLambert 0
+	}
+}

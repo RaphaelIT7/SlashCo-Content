@@ -1,0 +1,7 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "models/slender_silenthill/vehicles/bus_windowblack"
+	//$envmap env_cubemap
+	//$envmapcontrast 0.8
+	//$envmapsaturation 0.4
+}

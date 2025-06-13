@@ -1,0 +1,6 @@
+"vertexlitGeneric"
+{
+	// Original shader: BaseTexture
+	"$basetexture" "models/props_c17/hospital_shelf01_a"
+	"$surfaceprop" "metal"
+}

@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "diolator/garage2"
+	$bumpmap "diolator/garage2_n"
+
+	$detail "detail/default/surface_02"
+	$detailscale "[ 8.9 3.9 ]"
+	$detailblendfactor "0.8"
+}

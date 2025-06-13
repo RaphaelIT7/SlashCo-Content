@@ -1,0 +1,17 @@
+LightmappedGeneric
+{
+$baseTexture "diolator/ap_stairs"
+$surfaceprop plaster
+
+ $bumpmap "plaster/plaster8_dio_n"
+ $normalmapalphaenvmapmask 1
+// $envmapmask "plaster/plaster8_dio_ref"
+ $envmap env_cubemap
+ $envmaptint "0.3"
+
+
+"$detail" "detail/default/surface_02"
+"$detailblendfactor" "0.5"
+"$detailscale" "10.0"
+
+}

@@ -1,0 +1,10 @@
+LightmappedGeneric
+{
+	$basetexture "wood/door1_dio"
+	$bumpmap "wood/door1_n"
+	$surfaceprop wood
+
+	$detail "detail/wood/plywood01"
+	$detailscale "4.3"
+	$detailblendfactor "1.0"
+}

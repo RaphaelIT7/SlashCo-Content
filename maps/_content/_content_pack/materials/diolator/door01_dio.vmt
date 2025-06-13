@@ -1,0 +1,12 @@
+LightmappedGeneric
+{
+$baseTexture "diolator/door01_dio"
+$surfaceprop metal
+
+//$bumpmap "diolator/basement2_dio_n"
+$normalmapalphaenvmapmask 0
+// $envmap env_cubemap
+// $envmaptint "0.6"
+
+
+}

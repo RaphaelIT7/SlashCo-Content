@@ -1,0 +1,16 @@
+LightmappedGeneric
+{
+$baseTexture "plaster/plaster7b_dio"
+$surfaceprop tile
+
+$bumpmap "plaster/plaster7b_dio_n"
+$normalmapalphaenvmapmask 1
+$envmap env_cubemap
+$envmaptint "[ 0.5 0.5 0.5 ]"
+
+
+"$detail" "detail/default/surface_02"
+"$detailblendfactor" "0.5"
+"$detailscale" "10.0"
+
+}

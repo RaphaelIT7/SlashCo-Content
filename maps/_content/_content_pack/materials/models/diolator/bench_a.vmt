@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/diolator/bench_a"
+	$bumpmap "models/diolator/bench_n"
+
+
+}

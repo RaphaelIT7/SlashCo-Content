@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+"$basetexture" "diolator/parking24"
+"$translucent" 0
+$alphatest 1
+$decal 1
+}

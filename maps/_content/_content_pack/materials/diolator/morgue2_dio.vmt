@@ -1,0 +1,13 @@
+LightmappedGeneric
+{
+	$baseTexture "diolator/morgue2_dio"
+	$surfaceprop metal
+	
+	$envmapmask "diolator/morgue_dio_ref"
+	$envmap env_cubemap
+	$envmaptint "1"
+
+	$detail "detail/metal/metal_13"
+	$detailscale "[ 9 5 ]"
+	$detailblendfactor "0.8"
+}

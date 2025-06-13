@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/ammodel/am_door02_glass_a"
+	$translucent 1
+
+	"$phong" "0"	
+	"$phongexponent" "20"
+	"$phongboost"	"0.5"
+	"$phongfresnelranges"	"[1.5 1.5 1]"
+
+}

@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/ammodel/am_medecine"
+	"$bumpmap" "models/ammodel/am_medecine_n"
+
+	"$normalmapalphaenvmapmask" "1"	
+
+	"$phong" "1"	
+	"$phongexponent" "6"
+	"$phongboost"	"2"
+	"$phongfresnelranges"	"[1 1 2]"
+}

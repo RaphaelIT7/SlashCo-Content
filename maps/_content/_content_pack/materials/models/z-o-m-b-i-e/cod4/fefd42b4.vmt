@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/z-o-m-b-i-e/cod4/fefd42b4"
+	"$bumpmap" "models/z-o-m-b-i-e/cod4/fefd42b4_n"
+	"$normalmapalphaenvmapmask" 1
+	"$phong" "1"
+	"$phongexponent" "30"
+	"$phongboost"	"2"
+
+	$phongfresnelranges	"[1 2 2]"
+}

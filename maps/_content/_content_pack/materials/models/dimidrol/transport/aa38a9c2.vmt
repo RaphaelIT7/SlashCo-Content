@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+        "$translucent" 1
+	"$baseTexture" "models/dimidrol/transport/aa38a9c2"
+        "$alphatest" "1"
+        "$nocull" 1
+}

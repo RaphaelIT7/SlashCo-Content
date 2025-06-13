@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/downpour/obj_uni_paperbox_ad_d"
+	"$bumpmap" "models/downpour/obj_uni_paperbox_ad_d_n"
+}

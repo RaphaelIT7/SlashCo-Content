@@ -1,0 +1,8 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "models/sismodels/marker"
+	"$alphatest" "1"
+	"$decal" "1"
+     	  $allowalphatocoverage 1
+	       $alphatestreference .5
+}

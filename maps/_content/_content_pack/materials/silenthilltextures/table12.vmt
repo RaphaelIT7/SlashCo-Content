@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "silenthilltextures/table12"
+	"$surfaceprop" "wood"
+ 
+	"$detail" "detail/dirt/dirt_05"
+	"$detailblendfactor" "0.5"
+	"$detailscale" "3.1"
+}

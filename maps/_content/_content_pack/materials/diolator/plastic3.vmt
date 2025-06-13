@@ -1,0 +1,9 @@
+LightmappedGeneric
+{
+	$baseTexture "diolator/plastic3"
+	$surfaceprop plastic
+	
+	$detail "detail/dirt/dirt_04b"
+	$detailscale "19.0"
+	$detailblendfactor "0.5"
+}

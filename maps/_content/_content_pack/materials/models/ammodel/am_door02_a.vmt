@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/ammodel/am_door02_a"
+	$bumpmap "models/ammodel/am_door02_n"
+
+	"$phong" "1"	
+	"$phongexponent" "20"
+	"$phongboost"	"0.8"
+	"$phongfresnelranges"	"[1.5 1.5 1]"
+}

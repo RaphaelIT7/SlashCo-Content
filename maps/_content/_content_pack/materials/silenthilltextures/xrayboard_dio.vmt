@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "silenthilltextures/xrayboard_dio"
+	"$surfaceprop" "metal"
+
+	$envmap	env_cubemap
+	$envmapmask "silenthilltextures/xrayboard_dio_ref"
+	$envmaptint "0.4"
+}

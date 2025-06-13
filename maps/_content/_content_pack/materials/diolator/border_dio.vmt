@@ -1,0 +1,7 @@
+LightmappedGeneric
+{
+$surfaceprop plaster
+$basetexture "diolator/border_dio"
+$bumpmap "diolator/border_n" 
+
+}

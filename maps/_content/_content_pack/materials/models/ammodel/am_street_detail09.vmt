@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/ammodel/am_street_detail09"
+	"$alphatest" "1"
+	"$nocull" "1"
+}

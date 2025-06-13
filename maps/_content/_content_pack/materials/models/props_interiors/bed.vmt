@@ -1,0 +1,7 @@
+VertexLitGeneric
+{
+$baseTexture "models\props_interiors/bed"
+$envmap env_cubemap
+$envmapmask "models\props_interiors\bed_ref"
+$envmaptint "0.3"
+}

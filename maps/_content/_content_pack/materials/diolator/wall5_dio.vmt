@@ -1,0 +1,14 @@
+LightmappedGeneric
+{
+	$surfaceprop plaster
+	$basetexture "diolator/wall5_dio"
+	$bumpmap "diolator/wall5_n"
+
+	//$envmap "env_cubemap"
+	//$normalmapalphaenvmapmask  "1"
+	//$envmaptint "[ 0.6 0.6 0.6 ]" 
+
+	"$detail" "detail/concrete/concrete_09"
+	"$detailblendfactor" "0.5"
+	"$detailscale" "[2.65 1.27]"
+}

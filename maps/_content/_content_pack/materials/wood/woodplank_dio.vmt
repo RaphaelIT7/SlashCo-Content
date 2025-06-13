@@ -1,0 +1,11 @@
+LightmappedGeneric
+{
+$surfaceprop wood
+$basetexture "wood/woodplank_dio"
+//$bumpmap "wood/woodplank_dio_n"
+$envmap "env_cubemap"
+$envmapmask "wood/woodplank_dio_ref"
+$normalmapalphaenvmapmask  "0"
+$envmaptint "0.2"
+"$nodecal" 1
+}

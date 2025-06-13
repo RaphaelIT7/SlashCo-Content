@@ -1,0 +1,13 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/ammodel/am_tc10_a"
+	"$bumpmap" "models/ammodel/am_tc10_n"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "0.3"
+
+	"$phong" "1"
+	"$phongexponent" "35"
+	"$phongboost"	"1"
+	"$phongfresnelranges"	"[1 1 1]"
+}

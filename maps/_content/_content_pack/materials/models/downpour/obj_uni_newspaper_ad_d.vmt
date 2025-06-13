@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/downpour/obj_uni_newspaper_ad_d"
+	$alphatest 1
+}

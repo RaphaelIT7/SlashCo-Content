@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "silenthilltextures/tc_a_unique12"
+	"%compilepassbullets" 1
+	"$surfaceprop" "chain"
+	"$alphatest" 1
+        "$bumpmap" "silenthilltextures/tc_a_unique12_normal"
+}

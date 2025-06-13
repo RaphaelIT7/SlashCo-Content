@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "diolator/plaster16"
+	$bumpmap "diolator/plaster16_n"
+	$surfaceprop plaster
+
+	"$detail" "detail/plaster/plaster_02"
+	"$detailblendfactor" "0.9"
+	"$detailscale" "5.7"
+}

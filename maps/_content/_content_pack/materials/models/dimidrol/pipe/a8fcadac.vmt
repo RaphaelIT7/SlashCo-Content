@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/dimidrol/pipe/a8fcadac"
+	$bumpmap "models/dimidrol/pipe/a8fcadac_n"
+	"$normalmapalphaenvmapmask" 1
+
+	$envmap "env_cubemap"
+	$envmapmask "models/dimidrol/pipe/34d8fbb5_ref"
+	$envmaptint "0.5"
+       
+}

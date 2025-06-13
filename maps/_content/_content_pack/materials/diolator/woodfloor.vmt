@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "diolator/woodfloor"
+	$bumpmap "diolator/woodfloor_n"
+	$surfaceprop "wood"
+	
+	$normalmapalphaenvmapmask "1"
+	$envmap "env_cubemap"
+	$envmaptint "0.4"
+}

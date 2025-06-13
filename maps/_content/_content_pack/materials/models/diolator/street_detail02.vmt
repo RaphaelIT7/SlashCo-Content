@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/diolator/street_detail02"
+	$nocull 1
+	$alphatest 1
+	"$envmap" "env_cubemap"
+	"$envmapmask" "models/diolator/street_detail02_ref"
+	"$envmaptint" "0.5"
+}

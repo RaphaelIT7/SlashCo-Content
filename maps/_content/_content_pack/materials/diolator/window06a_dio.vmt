@@ -1,0 +1,13 @@
+LightmappedGeneric
+{
+$baseTexture "diolator/window06a_dio"
+$surfaceprop glass
+
+ $bumpmap "diolator/window06a_n"
+ $normalmapalphaenvmapmask 1
+ $envmap env_cubemap
+ $envmaptint "0.4"
+// $envmapmask "diolator/window06a_dio_ref"
+
+
+}

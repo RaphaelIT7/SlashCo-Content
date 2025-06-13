@@ -1,0 +1,10 @@
+LightmappedGeneric
+{
+	$baseTexture "diolator/bunker"
+	$surfaceprop concrete
+	$bumpmap "diolator/bunker_n"
+
+	$detail "detail/concrete/concrete_07"
+	$detailscale "[11.0 5.5]"
+	$detailblendfactor "0.4"
+}

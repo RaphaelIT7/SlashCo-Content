@@ -1,0 +1,9 @@
+"Vertexlitgeneric"
+{
+	$basetexture "models/ammodel/am_grate01"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "0.9"
+	$envmapmask "models/ammodel/am_grate01_ref"
+
+}

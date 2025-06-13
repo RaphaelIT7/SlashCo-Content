@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/downpour/din_gas_pack_1_at"
+	"$bumpmap" "models/downpour/din_gas_pack_1_at_n"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[ .18 .18 .18 ]"
+	"$normalmapalphaenvmapmask" 1
+	
+}

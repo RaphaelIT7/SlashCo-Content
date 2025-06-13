@@ -1,0 +1,12 @@
+"LightmappedGeneric"
+{
+"$basetexture" "diolator/grid3"
+
+	$envmap "env_cubemap"
+	$envmapmask "diolator/grid3_ref"
+	$envmaptint "0.3"
+
+"$translucent" 0
+$alphatest 1
+"$nodecal" 1
+}

@@ -1,0 +1,13 @@
+LightmappedGeneric
+{
+$basetexture "wood/wood1_dio"
+$surfaceprop wood
+$envmap "env_cubemap"
+$bumpmap "wood/wood1_dio_normal"
+$normalmapalphaenvmapmask  "1"
+$envmaptint "[ .04 .04 .05 ]" 
+
+		"$detail" "detail/wood/dt_wood01"
+		"$detailblendfactor" "0.5"
+		"$detailscale" "17.2"
+}

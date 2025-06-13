@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "diolator/rollup2"
+
+	$detail "detail/metal/metal_13"
+	$detailscale "3.1"
+	$detailblendfactor "0.7"
+}

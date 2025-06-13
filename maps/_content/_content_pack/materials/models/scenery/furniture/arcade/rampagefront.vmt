@@ -1,0 +1,9 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\scenery\furniture\arcade\rampagefront"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "0.5"
+	$envmapmask "models\scenery\furniture\arcade\rampagefront_ref"
+	
+
+}

@@ -1,0 +1,7 @@
+VertexLitGeneric
+{
+$basetexture "Models/props_office/desks_01_a"
+$envmap env_cubemap
+$envmapmask "Models/props_office/desks_01_a_ref"
+$envmaptint "0.5"
+}

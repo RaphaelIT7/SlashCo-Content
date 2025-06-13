@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/downpour/hospital01_obj_uni17_ag_d"
+	"$bumpmap" "models/downpour/hospital01_obj_uni17_ag_n"
+	$alphatest "0"
+	"$normalmapalphaenvmapmask" 1
+
+	"$phong" "1"
+	"$phongexponent" "35"
+	"$phongboost"	"2"
+
+	$phongfresnelranges	"[1 1 2]"
+
+
+}

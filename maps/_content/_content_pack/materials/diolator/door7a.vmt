@@ -1,0 +1,9 @@
+LightmappedGeneric
+{
+$baseTexture "diolator/door7a"
+$surfaceprop metal
+
+	$envmap "env_cubemap"
+	$envmapmask "diolator/door7a_ref"
+	$envmaptint "0.4"
+}

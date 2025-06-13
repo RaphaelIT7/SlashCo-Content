@@ -1,0 +1,9 @@
+"Vertexlitgeneric"
+{
+	$basetexture "models/ammodel/am_woodplank01"
+
+
+		"$detail" "detail/wood/wood02h"
+		"$detailblendfactor" "0.7"
+		"$detailscale" "16"
+}

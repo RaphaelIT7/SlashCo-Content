@@ -1,0 +1,12 @@
+LightmappedGeneric
+{
+$baseTexture "diolator/roof_china"
+$surfaceprop wood
+
+$bumpmap "diolator/roof_china_n"
+// $normalmapalphaenvmapmask 1
+// $envmap env_cubemap
+// $envmaptint "0.5"
+
+
+}

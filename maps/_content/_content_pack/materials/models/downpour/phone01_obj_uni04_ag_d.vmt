@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/downpour/phone01_obj_uni04_ag_d"
+	"$bumpmap" "models/downpour/phone01_obj_uni04_ag_n"
+	"$normalmapalphaenvmapmask" 1
+
+
+	"$phong" "1"
+	"$phongexponent" "98"
+	"$phongboost"	"12"
+	"$phongfresnelranges"	"[0.8 0.8 2]"
+}
