@@ -37,6 +37,11 @@ on:
         description: 'Additional options for VRAD'
         required: false
         type: string
+      vrad_mode:
+        description: 'Either -ldr -both or -hdr'
+        required: false
+        type: string
+        default: '-ldr'
 
 env:
   PROJECT_PATH: 'gohttpserver/map_compile/'
@@ -190,7 +195,7 @@ jobs:
           password: ${{secrets.HOST_PASSWORD}}
           port: ${{secrets.HOST_PORT}}
           script: |
-            wine gmod/bin/vrad.exe -both ${{inputs.fastcompile && '-fast' || '-final'}} -threads ${{env.THREADS}} ${{inputs.VRAD}} -game "gmod/garrysmod" "${{env.COMPILE_PATH}}.bsp"
+            wine gmod/bin/vrad.exe ${{inputs.vrad_mode}} ${{inputs.fastcompile && '-fast' || '-final'}} -threads ${{env.THREADS}} ${{inputs.VRAD}} -game "gmod/garrysmod" "${{env.COMPILE_PATH}}.bsp"
       
       # Nukes the old .bsp_export, in reality this doesn't really do anything as the bsp_export should NEVER exist at this point.
       - name: Removing old compile
