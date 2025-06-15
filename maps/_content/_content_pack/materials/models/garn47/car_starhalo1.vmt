@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/garn47/car_starhalo1"
+
+	"$phong" "1"
+	"$phongexponent" "25"
+	"$phongboost" "2"
+	"$phongfresnelranges" "[0.2 0.2 0.2]"
+	"$phongalbedotint" "1"
+	
+	"$rimlight" "1"
+	"$rimlightexponent" "25"
+	"$rimlightboost" "1"
+}

@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/garn47/car_bigrainboots1_1"
+	"$bumpmap" "models/garn47/car_bigrainboots1_nrm"
+
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmaptint" "[.02 .02 .02]"
+
+	"$phong" "1"
+	"$phongexponent" "35"
+	"$phongboost" "1"
+	"$phongfresnelranges" "[0.3 0.3 0.3]"
+	"$phongalbedotint" "1"
+	
+	"$rimlight" "1"
+	"$rimlightexponent" "25"
+	"$rimlightboost" "0.5"
+}

@@ -1,0 +1,7 @@
+VertexLitGeneric
+{
+
+$basetexture "Models/renawake/sedan_exterior"
+$blendtintbybasealpha 1
+$color2 "{ 8 8 8 }"
+}

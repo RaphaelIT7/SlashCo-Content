@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+
+$basetexture "Models/renawake/mariner_exterior"
+$blendtintbybasealpha 1
+}

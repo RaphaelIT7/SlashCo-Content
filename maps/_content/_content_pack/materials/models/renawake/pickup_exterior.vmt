@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+
+$basetexture "Models/renawake/pickup_exterior_alt"
+$blendtintbybasealpha 1
+}

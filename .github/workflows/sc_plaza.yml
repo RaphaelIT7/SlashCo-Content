@@ -1,0 +1,19 @@
+name: sc_plaza
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'maps/sc_plaza/**'
+      - '.github/workflows/sc_plaza.yml'
+
+jobs:
+  compile:
+    uses: RaphaelIT7/SlashCo-Content/.github/workflows/map_compiler.yml@main
+    secrets: inherit
+    with:
+      fastcompile: false
+      createexportbsp: false
+      debug: false
+      vrad_mode: "-both"
+      map: "sc_plaza"

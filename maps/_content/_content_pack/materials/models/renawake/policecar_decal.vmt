@@ -1,0 +1,7 @@
+VertexLitGeneric
+{
+
+$basetexture "Models/renawake/policecar"
+
+$translucent 1
+}

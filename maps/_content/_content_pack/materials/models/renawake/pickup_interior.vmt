@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+
+$basetexture "Models/renawake/pickup_interior"
+$blendtintbybasealpha 1
+}

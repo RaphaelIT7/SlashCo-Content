@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$surfaceprop" "default"
+	"$basetexture" "models/garn47/char_oralcavity1_1"
+	"$bumpmap" "models/garn47/char_oralcavity1_nrm"
+}

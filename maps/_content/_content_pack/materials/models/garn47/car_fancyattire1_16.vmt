@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/garn47/car_fancyattire1_16"
+	"$bumpmap" "models/garn47/car_fancyattire1_nrm"
+
+	"$phong" "1"
+	"$phongexponent" "5"
+	"$phongboost" "0.2"
+	"$phongfresnelranges" "[0.2 0.2 0.2]"
+	"$phongalbedotint" "1"
+	
+	"$rimlight" "1"
+	"$rimlightexponent" "25"
+	"$rimlightboost" "1"
+}

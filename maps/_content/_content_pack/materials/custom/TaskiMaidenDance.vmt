@@ -1,0 +1,16 @@
+"LightmappedGeneric"
+{
+    "$basetexture" "custom/TaskiMaidenDance"
+    "$translucent" 1
+    "$vertexcolor" "1"
+    "$vertexalpha" "1"
+        "Proxies"
+        {
+            "Animatedtexture"
+                {
+                "Animatedtexturevar" "$Basetexture"
+                "Animatedtextureframenumvar" "$frame"
+                "Animatedtextureframerate" "8"
+                }
+        }
+}
