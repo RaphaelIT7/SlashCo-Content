@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8869"
-	"mapversion" "274"
+	"mapversion" "277"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -107,7 +107,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "274"
+	"mapversion" "277"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -102119,7 +102119,7 @@ world
 				"v" "-1280 336 704"
 				"v" "-1280 320 704"
 			}
-			"material" "PROPS/TARPAPERROOF002A"
+			"material" "TILE/PRODCEILINGTILEA"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -268461,7 +268461,7 @@ entity
 	"returndelay" "-1"
 	"skin" "0"
 	"spawnflags" "8192"
-	"spawnpos" "2"
+	"spawnpos" "0"
 	"speed" "100"
 	"targetname" "sec_room_door"
 	"origin" "-3938.08 4698 -458"
@@ -333952,7 +333952,7 @@ entity
 	"returndelay" "-1"
 	"skin" "0"
 	"spawnflags" "8192"
-	"spawnpos" "2"
+	"spawnpos" "0"
 	"speed" "100"
 	"targetname" "sec_room_door2"
 	"origin" "-3782 4698 -458"
@@ -336225,7 +336225,7 @@ entity
 	"solid" "6"
 	"spawnflags" "0"
 	"StartDisabled" "0"
-	"origin" "-1454.34 38.0889 768.297"
+	"origin" "-1442.34 46.0888 768.297"
 	editor
 	{
 		"color" "220 30 220"
@@ -336267,7 +336267,7 @@ entity
 	"solid" "6"
 	"spawnflags" "0"
 	"StartDisabled" "0"
-	"origin" "-1454.34 123.089 768.297"
+	"origin" "-1442.34 131.089 768.297"
 	editor
 	{
 		"color" "220 30 220"
@@ -336309,7 +336309,7 @@ entity
 	"solid" "6"
 	"spawnflags" "0"
 	"StartDisabled" "0"
-	"origin" "-1454.34 215.089 768.297"
+	"origin" "-1448 215.089 768.297"
 	editor
 	{
 		"color" "220 30 220"
@@ -336322,7 +336322,7 @@ entity
 {
 	"id" "1672445"
 	"classname" "prop_static"
-	"angles" "0 0 0"
+	"angles" "0 0 180"
 	"disableselfshadowing" "0"
 	"disableshadows" "0"
 	"disablevertexlighting" "0"
@@ -336339,7 +336339,7 @@ entity
 	"screenspacefade" "0"
 	"skin" "0"
 	"solid" "6"
-	"origin" "-1471 98 775"
+	"origin" "-1471 106 896"
 	editor
 	{
 		"color" "255 255 0"
@@ -366293,7 +366293,7 @@ entity
 	"screenspacefade" "0"
 	"skin" "0"
 	"solid" "6"
-	"origin" "-974 456 768.002"
+	"origin" "-974 396 768.002"
 	editor
 	{
 		"color" "255 255 0"
@@ -366309,853 +366309,13 @@ entity
 	"angles" "0 315 0"
 	"targetname" "gen11"
 	"weight" "10"
-	"origin" "-1348.45 -137.886 768.183"
+	"origin" "-1339.97 -146.37 768.183"
 	editor
 	{
 		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 -16268]"
-	}
-}
-entity
-{
-	"id" "1704617"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-1433 84 773.97"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704629"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-1087.23 90.6292 773.97"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704631"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-985 587.043 773.97"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704634"
-	"classname" "info_sc_battery"
-	"angles" "0 90 0"
-	"weight" "10"
-	"origin" "-1052.03 -246.392 517.97"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704637"
-	"classname" "info_sc_battery"
-	"angles" "0 15 0"
-	"weight" "10"
-	"origin" "-878.796 -213.078 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704641"
-	"classname" "info_sc_battery"
-	"angles" "0 90 0"
-	"weight" "10"
-	"origin" "-1708.98 9.99985 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704646"
-	"classname" "info_sc_battery"
-	"angles" "0 90 0"
-	"weight" "10"
-	"origin" "-3242.08 45.3125 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704649"
-	"classname" "info_sc_battery"
-	"angles" "0 90 0"
-	"weight" "10"
-	"origin" "-2482.36 981.11 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704652"
-	"classname" "info_sc_battery"
-	"angles" "0 90 0"
-	"weight" "10"
-	"origin" "-3116.89 455 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704656"
-	"classname" "info_sc_battery"
-	"angles" "0 330 0"
-	"weight" "10"
-	"origin" "-2910.55 434.312 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704659"
-	"classname" "info_sc_battery"
-	"angles" "0 90 0"
-	"weight" "10"
-	"origin" "-3215.65 877.344 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704663"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-3063 1840.2 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704666"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-3177.52 1933 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704669"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-3307 1709 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704673"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-3694 1939.84 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704676"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-3686.06 1728.86 77.5515"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704678"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-3757.58 1934.06 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704680"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-3952.6 1922 24.6473"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704684"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-4436 2350.22 8.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704687"
-	"classname" "info_sc_battery"
-	"angles" "0 330 0"
-	"weight" "10"
-	"origin" "-4489.32 2346.26 79"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704693"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-5514 2130.47 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704696"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-5293.27 2480 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704699"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-4888.76 2764.84 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704701"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-5110.59 3357 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704704"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-4760 3662.95 -122.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704707"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-4628 3418.09 -122.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704709"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-4227.67 4321 -122.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704714"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-3473.44 5520.4 -186.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704717"
-	"classname" "info_sc_battery"
-	"angles" "0 270 0"
-	"weight" "10"
-	"origin" "-3654.5 5713 -122.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704721"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-3626 5266.81 -506.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704723"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-3186 5782.17 -378.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704726"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-3088.89 5436.39 -471.904"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704728"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-3090.96 5502.02 -506.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704730"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-2508 5494.17 -506.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704733"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-2299.15 5500.52 -506.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704735"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-1161.8 5705 -506.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704740"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-971.755 5368.06 -463.279"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704742"
-	"classname" "info_sc_battery"
-	"angles" "0 90 0"
-	"weight" "10"
-	"origin" "-2360.31 4877 -506.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704746"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-2516.49 4343 -460.412"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704749"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-2985.07 4524.08 -122.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704751"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-4476 3949 -122.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704755"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-2629.74 4710.92 -122.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704757"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-2464.64 5050.58 -122.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704759"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-2362.45 5474.92 -122.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704761"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-2771.68 5552 -122.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704765"
-	"classname" "info_sc_battery"
-	"angles" "0 90 0"
-	"weight" "10"
-	"origin" "-2320 4298 -248.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704773"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-1938 3817.36 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704775"
-	"classname" "info_sc_battery"
-	"angles" "0 90 0"
-	"weight" "10"
-	"origin" "-2872.01 2728 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704780"
-	"classname" "info_sc_battery"
-	"angles" "0 330 0"
-	"weight" "10"
-	"origin" "-3149.93 2524.29 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704783"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-3482 3037.07 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704786"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-3187.41 2773.25 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704788"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-4301.74 3135.68 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704790"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-4375.88 3440.56 46.9701"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704792"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-3817.7 3433.91 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704794"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-2288.71 2319.75 42.2513"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1704796"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-2110.66 2128.8 5.97009"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
 	}
 }
 entity
@@ -369246,7 +368406,7 @@ entity
 	"classname" "info_sc_gascan"
 	"angles" "0 270 0"
 	"weight" "10"
-	"origin" "-3281.8 5355.17 -496.886"
+	"origin" "-3276.57 5355.17 -496.886"
 	editor
 	{
 		"color" "220 30 220"
@@ -369261,7 +368421,7 @@ entity
 	"classname" "info_sc_item"
 	"angles" "0 270 0"
 	"weight" "10"
-	"origin" "-3281.3 5372.17 -503.642"
+	"origin" "-3276.07 5372.17 -503.642"
 	editor
 	{
 		"color" "220 30 220"
@@ -370078,111 +369238,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 -15268]"
-	}
-}
-entity
-{
-	"id" "1705434"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-3113.81 4609.24 -471.904"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1705436"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-3460.81 4630.42 -506.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1705438"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-3790 4281.04 -506.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1705441"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-3989 4250.73 -506.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1705444"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-3952 4723 -506.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1705452"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-3796 4727 -506.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1705456"
-	"classname" "info_sc_battery"
-	"angles" "0 0 0"
-	"weight" "10"
-	"origin" "-3535.84 4666.1 -506.03"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
 	}
 }
 entity
@@ -384252,7 +383307,7 @@ entity
 	"model" "models/props_foliage/bush_002_small.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "-214 -1512 2.03376"
+	"origin" "-272 -1512 2.03376"
 	editor
 	{
 		"color" "255 255 0"
@@ -384560,6 +383615,7 @@ entity
 	"id" "1716021"
 	"classname" "info_sc_generator"
 	"angles" "0 210 0"
+	"targetname" "gen12"
 	"weight" "10"
 	"origin" "-504.128 233.175 0.052056"
 	editor
@@ -384748,36 +383804,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 3000]"
-	}
-}
-entity
-{
-	"id" "1716138"
-	"classname" "info_sc_battery"
-	"angles" "0 90 0"
-	"weight" "10"
-	"origin" "-477.749 392 5.83943"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
-	}
-}
-entity
-{
-	"id" "1716141"
-	"classname" "info_sc_battery"
-	"angles" "0 90 0"
-	"weight" "10"
-	"origin" "-666.274 -330 8.42748"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -15768]"
 	}
 }
 entity
@@ -393715,13 +392741,1159 @@ entity
 		"logicalpos" "[0 500]"
 	}
 }
+entity
+{
+	"id" "1726362"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen1"
+	"weight" "10"
+	"origin" "-1943 3821 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726369"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen1"
+	"weight" "10"
+	"origin" "-2213.81 3814 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726376"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen1"
+	"weight" "10"
+	"origin" "-2112.89 2135.38 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726379"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen1"
+	"weight" "10"
+	"origin" "-2303.82 2319.92 44"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726382"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen1"
+	"weight" "10"
+	"origin" "-2296 2132.56 10"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726386"
+	"classname" "info_sc_battery"
+	"angles" "0 90 0"
+	"generator" "gen1"
+	"weight" "10"
+	"origin" "-1909.41 3538 104"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726393"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen2"
+	"weight" "10"
+	"origin" "-3573.86 2926 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726406"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen2"
+	"weight" "10"
+	"origin" "-3308 2776.21 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726410"
+	"classname" "info_sc_battery"
+	"angles" "0 270 0"
+	"generator" "gen2"
+	"weight" "10"
+	"origin" "-3304 2998.89 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726416"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen2"
+	"weight" "10"
+	"origin" "-2886 2676.32 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726421"
+	"classname" "info_sc_battery"
+	"angles" "0 90 0"
+	"generator" "gen2"
+	"weight" "10"
+	"origin" "-3186 2272 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726428"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen2"
+	"weight" "10"
+	"origin" "-3179.1 1930.75 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726431"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen3"
+	"weight" "10"
+	"origin" "-4328.11 2409.09 10"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726446"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen3"
+	"weight" "10"
+	"origin" "-4491.12 2405.4 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726449"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen3"
+	"weight" "10"
+	"origin" "-3979.66 1747.06 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726452"
+	"classname" "info_sc_battery"
+	"angles" "0 270 0"
+	"generator" "gen3"
+	"weight" "10"
+	"origin" "-3988 2103.33 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726457"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen4"
+	"weight" "10"
+	"origin" "-4301.25 3145.27 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726460"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen4"
+	"weight" "10"
+	"origin" "-4302.29 3445.67 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726463"
+	"classname" "info_sc_battery"
+	"angles" "0 90 0"
+	"generator" "gen4"
+	"weight" "10"
+	"origin" "-3828 3438.17 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726470"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen3"
+	"weight" "10"
+	"origin" "-5516 2130 10"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726483"
+	"classname" "info_sc_battery"
+	"angles" "0 180 0"
+	"generator" "gen4"
+	"weight" "10"
+	"origin" "-3881.37 3650.85 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726488"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen4"
+	"weight" "10"
+	"origin" "-3874 3600 96"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726494"
+	"classname" "info_sc_battery"
+	"angles" "0 180 0"
+	"generator" "gen4"
+	"weight" "10"
+	"origin" "-3880 3505.85 160"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726510"
+	"classname" "info_sc_battery"
+	"angles" "0 90 0"
+	"generator" "gen5"
+	"weight" "10"
+	"origin" "-4478 3948.32 -118"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726522"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen5"
+	"weight" "10"
+	"origin" "-4822.61 3714.41 -120"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726526"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen5"
+	"weight" "10"
+	"origin" "-4628.65 3404.66 -118"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726530"
+	"classname" "info_sc_battery"
+	"angles" "0 90 0"
+	"generator" "gen5"
+	"weight" "10"
+	"origin" "-4912 3332.4 10"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726534"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen5"
+	"weight" "10"
+	"origin" "-4890.27 2767.38 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726538"
+	"classname" "info_sc_battery"
+	"angles" "0 180 0"
+	"generator" "gen5"
+	"weight" "10"
+	"origin" "-4168.34 4432 -118"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726544"
+	"classname" "info_sc_battery"
+	"angles" "0 90 0"
+	"generator" "gen5"
+	"weight" "10"
+	"origin" "-4408.51 4310.99 -116"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726548"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen6"
+	"weight" "10"
+	"origin" "-3473.49 5514 -184"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726557"
+	"classname" "info_sc_battery"
+	"angles" "0 90 0"
+	"generator" "gen6"
+	"weight" "10"
+	"origin" "-3664.78 5743.12 -120"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726561"
+	"classname" "info_sc_battery"
+	"angles" "0 90 0"
+	"generator" "gen6"
+	"weight" "10"
+	"origin" "-3612.94 5901.66 -118"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726565"
+	"classname" "info_sc_battery"
+	"angles" "0 90 0"
+	"generator" "gen6"
+	"weight" "10"
+	"origin" "-4076 5100.75 -184"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726573"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen7"
+	"weight" "10"
+	"origin" "-3182 5778 -376"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726584"
+	"classname" "info_sc_battery"
+	"angles" "0 90 0"
+	"generator" "gen7"
+	"weight" "10"
+	"origin" "-3540 6139.66 -408"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726589"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen7"
+	"weight" "10"
+	"origin" "-3293.2 5360 -504"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726599"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen7"
+	"weight" "10"
+	"origin" "-3626.59 5272 -504"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726611"
+	"classname" "info_sc_battery"
+	"angles" "0 45 0"
+	"generator" "gen7"
+	"weight" "10"
+	"origin" "-3348.2 6056.32 -396"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726620"
+	"classname" "info_sc_battery"
+	"angles" "0 90 0"
+	"generator" "gen8"
+	"weight" "10"
+	"origin" "-3952 4729.68 -502"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726635"
+	"classname" "info_sc_battery"
+	"angles" "0 90 0"
+	"generator" "gen8"
+	"weight" "10"
+	"origin" "-3796.79 4632 -502"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726642"
+	"classname" "info_sc_battery"
+	"angles" "0 180 0"
+	"generator" "gen8"
+	"weight" "10"
+	"origin" "-3975.17 4253.83 -504"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726647"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen8"
+	"weight" "10"
+	"origin" "-4110 4371.95 -500"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726658"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen8"
+	"weight" "10"
+	"origin" "-3478 4596.35 -504"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726662"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen8"
+	"weight" "10"
+	"origin" "-3100 4706.03 -504"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726667"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen9"
+	"weight" "10"
+	"origin" "-3100 5386 -504"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726678"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen9"
+	"weight" "10"
+	"origin" "-2512 5496 -504"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726683"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen9"
+	"weight" "10"
+	"origin" "-2352.78 5494 -504"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726692"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen9"
+	"weight" "10"
+	"origin" "-2154 5388 -506.03"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726698"
+	"classname" "info_sc_battery"
+	"angles" "0 270 0"
+	"generator" "gen10"
+	"weight" "10"
+	"origin" "-1699.52 5878 -504"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726703"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen10"
+	"weight" "10"
+	"origin" "-1670.39 5367.47 -470"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726706"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen10"
+	"weight" "10"
+	"origin" "-1160.63 5699.01 -504"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726709"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen10"
+	"weight" "10"
+	"origin" "-1076.35 5686 -504"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726713"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen10"
+	"weight" "10"
+	"origin" "-982.066 5369.2 -462"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726716"
+	"classname" "info_sc_battery"
+	"angles" "0 90 0"
+	"generator" "gen9"
+	"weight" "10"
+	"origin" "-2362 4876 -504"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726735"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen9"
+	"weight" "10"
+	"origin" "-3292 5014 -504"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726758"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen11"
+	"weight" "10"
+	"origin" "-1410 -244 776"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726765"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen11"
+	"weight" "10"
+	"origin" "-984 612 773.97"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726787"
+	"classname" "info_sc_battery"
+	"angles" "0 90 0"
+	"generator" "gen11"
+	"weight" "10"
+	"origin" "-1025.4 694 880"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726792"
+	"classname" "info_sc_battery"
+	"angles" "0 0 0"
+	"generator" "gen11"
+	"weight" "10"
+	"origin" "-1526 683.943 776"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726796"
+	"classname" "info_sc_battery"
+	"angles" "0 90 0"
+	"generator" "gen11"
+	"weight" "10"
+	"origin" "-1035.22 -246 520"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726820"
+	"classname" "info_sc_battery"
+	"angles" "0 270 0"
+	"generator" "gen12"
+	"weight" "10"
+	"origin" "-541.558 408 10"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726836"
+	"classname" "info_sc_battery"
+	"angles" "0 270 0"
+	"generator" "gen12"
+	"weight" "10"
+	"origin" "-103.685 407.908 10"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726845"
+	"classname" "info_sc_battery"
+	"angles" "0 225 0"
+	"generator" "gen12"
+	"weight" "10"
+	"origin" "-681.656 -325.264 12"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726852"
+	"classname" "info_sc_battery"
+	"angles" "0 180 0"
+	"generator" "gen12"
+	"weight" "10"
+	"origin" "-296 -1608 10"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726860"
+	"classname" "info_sc_battery"
+	"angles" "0 180 0"
+	"generator" "gen12"
+	"weight" "10"
+	"origin" "-1714.85 13.9998 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726864"
+	"classname" "info_sc_battery"
+	"angles" "0 180 0"
+	"generator" "gen12"
+	"weight" "10"
+	"origin" "-879.222 -211.855 10"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726867"
+	"classname" "info_sc_battery"
+	"angles" "0 180 0"
+	"generator" "gen12"
+	"weight" "10"
+	"origin" "-922.336 47.9999 10"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726871"
+	"classname" "info_sc_battery"
+	"angles" "0 90 0"
+	"generator" "gen12"
+	"weight" "10"
+	"origin" "-1379.37 106 10"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1726889"
+	"classname" "prop_static"
+	"angles" "0 0 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_foliage/bush_002_small.mdl"
+	"skin" "0"
+	"solid" "0"
+	"origin" "-376 -1590 2.03376"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[-2768 -3268]"
+	}
+}
+entity
+{
+	"id" "1726895"
+	"classname" "prop_static"
+	"angles" "0 0 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"model" "models/props_foliage/bush_002_small.mdl"
+	"skin" "0"
+	"solid" "0"
+	"origin" "-166 -1188 2.03376"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[-2768 -3268]"
+	}
+}
 cameras
 {
 	"activecamera" "0"
 	camera
 	{
-		"position" "[-7005.53 -1823.01 4742.04]"
-		"look" "[-6831.28 -1813.27 4542.68]"
+		"position" "[-2790.23 4355.81 -35.0968]"
+		"look" "[-3035.47 4422.44 -109.894]"
 	}
 	camera
 	{
