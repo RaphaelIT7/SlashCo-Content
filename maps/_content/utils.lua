@@ -2,7 +2,7 @@
 	This file exposes these functions:
 	bool IsFile(file)
 	String SafePath(path) 
-		Replaces \ with /
+		Replaces \ with / and Trims any spaces
 	String GetPath(path) 
 		Example: somefolder/anotherfolder/file.txt -> somefolder/anotherfolder/
 	String GetPathWithoutFirst(path) 
@@ -31,72 +31,104 @@
 
 	table getVMTRessources(table)
 		Returns a table containing all files a VMT needs
+
+	nil LoadAdditionalContentFile(string luaFile)
+		Searches for any "model", "[modelPath]" occurances in the Lua file and adds thoes models to be included in the content.
 ]]
 
 struct = require("struct")
 
 local BinaryFormat = package.cpath:match("%p[\\|/]?%p(%a+)")
 if BinaryFormat == "dll" then
-    function os.name()
-        return "Windows"
-    end
+	function os.name()
+		return "Windows"
+	end
 elseif BinaryFormat == "so" then
-    function os.name()
-        return "Linux"
-    end
+	function os.name()
+		return "Linux"
+	end
 elseif BinaryFormat == "dylib" then
-    function os.name()
-        return "MacOS"
-    end
+	function os.name()
+		return "MacOS"
+	end
 end
 BinaryFormat = nil
+
+local pattern_escape_replacements = { -- Gmod my <3
+	["("] = "%(",
+	[")"] = "%)",
+	["."] = "%.",
+	["%"] = "%%",
+	["+"] = "%+",
+	["-"] = "%-",
+	["*"] = "%*",
+	["?"] = "%?",
+	["["] = "%[",
+	["]"] = "%]",
+	["^"] = "%^",
+	["$"] = "%$",
+	["\0"] = "%z"
+}
+function string.PatternSafe(str)
+	return string.gsub(str, ".", pattern_escape_replacements)
+end
+
+function string.Trim(s, char)
+	if char then
+		char = string.PatternSafe(char)
+	else
+		char = "%s"
+	end
+
+	return string.match(s, "^" .. char .. "*(.-)" .. char .. "*$") or s
+end
 
 function IsFile(dir)
 	return string.find(dir, ".", 1, true)
 end
 
 function SafePath(path)
-	return string.Replace(path, [[\]], [[/]])
+	return string.Trim(string.Replace(string.Replace(path, [[\]], [[/]]), [[//]], [[/]]))
 end
 
 function GetPath(file)
-    local last = 0
-    for k=1, 20 do
-        local current = string.find(file, "/", last + 1)
-        if current == nil then
-            break
-        end
+	local last = 0
+	for k=1, 20 do
+		local current = string.find(file, "/", last + 1)
+		if current == nil then
+			break
+		end
 
-        last = current
-    end
+		last = current
+	end
 
-    return string.sub(file, 1, last)
+	return string.sub(file, 1, last)
 end
 
 function GetPathWithoutFirst(file)
-    return string.sub(file, string.find(file, "/") + 1)
+	return string.sub(file, string.find(file, "/") + 1)
 end
 
 function ScanDir(directory, recursive) -- NOTE: Recursive is super slow!
-    local i, t, popen = 0, {}, io.popen
-    local pfile
-    if os.name() == "Windows" then
-        pfile = popen('dir "'..directory..'" /b /a') -- Windows
-    else
-        pfile = popen('ls "'..directory..'"') -- Linux
-    end
+	local i, t, popen = 0, {}, io.popen
+	local pfile
+	if os.name() == "Windows" then
+		pfile = popen('dir "'..directory..'" /b /a') -- Windows
+	else
+		pfile = popen('ls "'..directory..'"') -- Linux
+	end
 
-    for filename in pfile:lines() do
-        i = i + 1
-        local isfile = IsFile(filename)
-        if not isfile and recursive then
-            t[filename] = ScanDir(directory .. "/" .. filename, recursive)
-        else
-            t[i] = filename
-        end
-    end
-    pfile:close()
-    return t
+	for filename in pfile:lines() do
+		i = i + 1
+		local isfile = IsFile(filename)
+		if not isfile and recursive then
+			t[filename] = ScanDir(directory .. "/" .. filename, recursive)
+		else
+			t[i] = filename
+		end
+	end
+	pfile:close()
+	return t
 end
 
 
@@ -113,16 +145,18 @@ function CreateDir(name)
 end
 
 function ReadFile(path)
-    local file = io.open(path, "rb")
-    local content = file:read("*a")
-    file:close()
-    return content
+	local file = io.open(path, "rb")
+	local content = file:read("*a")
+	file:close()
+	return content
 end
 
 function WriteFile(path, content)
-    local file = io.open(path, "wb")
-    local content = file:write(content)
-    file:close()
+	local file = io.open(path, "wb")
+	if file then
+		local content = file:write(content)
+		file:close()
+	end
 end
 
 function CopyFile(from, to)
@@ -131,37 +165,38 @@ function CopyFile(from, to)
 end
 
 function RemoveSpaces(inputString)
-    return inputString:gsub("[%s\t]", "")
+	return inputString:gsub("[%s\t]", "")
 end
 
 function string.Replace(str, rep, new)
-    local new_str = str
-    local last = 0
-    for k=1, 10 do
-        local found, finish = string.find(new_str, rep, last, true)
-        if found then
-            new_str = string.sub(new_str, 1, found - 1) .. new .. string.sub(new_str, found + 1)
-            last = found + 1
-        end
-    end
+	local new_str = str
+	local rep_length = rep:len()
+	local last = 0
+	for k=1, 10 do
+		local found, finish = string.find(new_str, rep, last, true)
+		if found then
+			new_str = string.sub(new_str, 1, found - 1) .. new .. string.sub(new_str, found + rep_length)
+			last = found + 1
+		end
+	end
 
-    return new_str
+	return new_str
 end
 
 function FileExists(filePath)
-    local file = io.open(filePath, "r")
+	local file = io.open(filePath, "r")
 
-    if file then
-        io.close(file)
-        return true
-    else
-        return false
-    end
+	if file then
+		io.close(file)
+		return true
+	else
+		return false
+	end
 end
 
 local content_searchpaths
 function BuildPaths()
-    return {}
+	return {}
 end
 
 function FindFile(name)
@@ -169,11 +204,11 @@ function FindFile(name)
 		content_searchpaths = BuildPaths() -- Creates all search paths once
 	end
 
-    for _, folder in ipairs(content_searchpaths) do
-    	if FileExists(folder .. "/" .. name) then
-    		return folder .. "/" .. name
-    	end
-    end
+	for _, folder in ipairs(content_searchpaths) do
+		if FileExists(folder .. "/" .. name) then
+			return folder .. "/" .. name
+		end
+	end
 end
 
 local function istable(val)
@@ -184,17 +219,18 @@ function EndsWith(str, find)
 	return str:sub(#str - #find - 1) == find
 end
 
-function BuildFilePath(tbl, list, path)
-    for k, v in pairs(tbl) do
-    	if istable(v) then
-    		BuildFilePath(v, list, path == "" and (path .. k) or (path .. "/" .. k))
-    	else
-    		local p = path == "" and (path .. v) or (path .. "/" .. v)
-    		list[p] = p
-    		list[SafePath(p)] = p
-    		list[SafePath(p):lower()] = p
-    	end
-    end
+function BuildFilePath(fileList, list, path)
+	for folderName, fileName in pairs(fileList) do -- folderName is only valid if fileName is a table.
+		if istable(fileName) then
+			BuildFilePath(fileName, list, path == "" and (path .. folderName) or (path .. "/" .. folderName))
+		else
+			local p = path == "" and (path .. fileName) or (path .. "/" .. fileName)
+			list[p] = p
+			list[p:lower()] = p
+			list[SafePath(p)] = p
+			list[SafePath(p):lower()] = p
+		end
+	end
 end
 
 local content_filelist = {}
@@ -204,28 +240,42 @@ function BuildFileList()
 	end
 
 	for _, folder in ipairs(content_searchpaths) do
-    	BuildFilePath(ScanDir(folder, true), content_filelist, folder)
-    end
+		BuildFilePath(ScanDir(folder, true), content_filelist, folder)
+	end
 
-    --for k, v in pairs(content_filelist) do
-    --	print(k, v)
-    --end
+	--for k, v in pairs(content_filelist) do
+	--	print(k, v)
+	--end
 end
 
 local missing = {}
 function FindFileInList(name)
-	if missing[name] then return end
+	local lowername = name:lower()
+	if missing[lowername] then return end
 
-	for str, real in pairs(content_filelist) do
-		local found, finish = string.find(str, name)
-        if found then
-        	return real
-        end
+	local ret = nil
+	local fk, err = pcall(function()
+		for str, real in pairs(content_filelist) do -- I really don't like to touch the stuff below. One issue and it could break all VMTs
+			--[[local found, finish = string.find(str, name)
+			if found then
+				ret = real
+				break
+			end]]
 
-        local found, finish = string.find(str, name:lower())
-        if found then
-        	return real
-        end
+			local found, finish = string.find(str, lowername)
+			if found then
+				ret = real
+				break
+			end
+		end
+	end)
+
+	if not fk then
+		print("ERROR |" .. name .. "|" .. err)
+	else
+		if ret then
+			return ret
+		end
 	end
 
 	local ret = FindFile(name)
@@ -233,14 +283,18 @@ function FindFileInList(name)
 		return ret
 	end
 
-	missing[name] = true
+	missing[lowername] = true
 end
 
 --[[
 	Model reader
 ]]
+local readerror = false
 local function ReadFloat(file)
-	return struct.unpack("f", file:read(4))
+	local val = file:read(4)
+	if not val then readerror = true return end
+
+	return struct.unpack("f", val)
 end
 
 local function ReadVector(file)
@@ -254,15 +308,24 @@ local function ReadVector(file)
 end
 
 local function ReadInt(file)
-	return struct.unpack("i", file:read(4))
+	local val = file:read(4)
+	if not val then readerror = true return end
+
+	return struct.unpack("i", val)
 end
 
 local function ReadByte(file)
-	return struct.unpack("b", file:read(1))
+	local val = file:read(1)
+	if not val then readerror = true return end
+
+	return struct.unpack("b", val)
 end
 
 local function Read64String(file)
-	return struct.unpack("s", file:read(64))
+	local val = file:read(64)
+	if not val then readerror = true return end
+
+	return struct.unpack("s", val)
 end
 
 local function ReadString(file)
@@ -270,8 +333,8 @@ local function ReadString(file)
 	local char = file:read(1)
 
 	while char and char ~= "\0" do
-	    str = str .. char
-	    char = file:read(1)
+		str = str .. char
+		char = file:read(1)
 	end
 
 	return str
@@ -281,240 +344,256 @@ end
 	Map reader
 ]]
 function readVMF(filePath)
-    local file = io.open(filePath, "r")
+	local file = io.open(filePath, "r")
 
-    if not file then
-        print("Error: Could not open .vmf file.")
-        return
-    end
+	if not file then
+		print("::error:: Could not open .vmf file. \"" .. filePath .. "\"")
+		return
+	end
 
-    local invmaterials = {}
+	local invmaterials = {}
 	local invmodels = {}
 
-    local materials = {}
-    local models = {}
+	local materials = {}
+	local models = {}
 
-    local inMaterialBlock = false
-    local inModelBlock = false
+	local inMaterialBlock = false
+	local inModelBlock = false
 
-    for line in file:lines() do
-        local mat = line:match('"material"%s+"([^"]+)"')
-        if mat and not invmaterials[mat] then
-        	table.insert(materials, mat)
-        	invmaterials[mat] = true
-        end
+	for line in file:lines() do
+		local mat = line:match('"material"%s+"([^"]+)"')
+		if mat and not invmaterials[mat] then
+			table.insert(materials, mat)
+			invmaterials[mat] = true
+		end
 
-        local mod = line:match('"model"%s+"([^"]+)"')
-        if mod and not invmodels[mod] then
-        	table.insert(models, mod)
-        	invmodels[mod] = true
-        end
-    end
+		local mod = line:match('"model"%s+"([^"]+)"')
+		if mod and not invmodels[mod] then
+			table.insert(models, mod)
+			invmodels[mod] = true
+		end
+	end
 
-    file:close()
+	file:close()
 
-    return materials, models
+	return materials, models
 end
 
 function parseMDL(filePath)
-    local file = io.open(filePath, "rb")
+	if not filePath or filePath:sub(-4) ~= ".mdl" then
+		print("::warning:: Not a model you retarded code :< - \"" .. (filePath or "") .. "\"")
+		return
+	end
 
-    if not file then
-        print("Error: Could not open .mdl file.")
-        return
-    end
+	local file = io.open(filePath, "rb")
+	if not file then
+		print("::warning:: Could not open .mdl file. \"" .. filePath .. "\"")
+		return
+	end
 
-    local mdl = {
-    	header = { -- studiohdr_t struct
-	        id = file:read(4),
-	        version = ReadInt(file),
-	        checksum = ReadInt(file),
-	        name = Read64String(file),
+	readerror = false
+	local mdl = {
+		header = { -- studiohdr_t struct
+			id = file:read(4),
+			version = ReadInt(file),
+			checksum = ReadInt(file),
+			name = Read64String(file),
 
-	        dataLength = ReadInt(file),
+			dataLength = ReadInt(file),
 
-	        eyeposition = ReadVector(file),
-	        illumposition = ReadVector(file),
-	        hull_min = ReadVector(file),
-	        hull_max = ReadVector(file),
-	        view_bbmin = ReadVector(file),
-	        view_bbmax = ReadVector(file),
+			eyeposition = ReadVector(file),
+			illumposition = ReadVector(file),
+			hull_min = ReadVector(file),
+			hull_max = ReadVector(file),
+			view_bbmin = ReadVector(file),
+			view_bbmax = ReadVector(file),
 
-	        flags = ReadInt(file),
-	        
-	        bone_count = ReadInt(file),
-	        bone_offset = ReadInt(file),
+			flags = ReadInt(file),
+			
+			bone_count = ReadInt(file),
+			bone_offset = ReadInt(file),
 
-	        bonecontroller_count = ReadInt(file),
-	        bonecontroller_offset = ReadInt(file),
+			bonecontroller_count = ReadInt(file),
+			bonecontroller_offset = ReadInt(file),
 
-	        hitbox_count = ReadInt(file),
-	        hitbox_offset = ReadInt(file),
+			hitbox_count = ReadInt(file),
+			hitbox_offset = ReadInt(file),
 
-	        localanim_count = ReadInt(file),
-	        localanim_offset = ReadInt(file),
+			localanim_count = ReadInt(file),
+			localanim_offset = ReadInt(file),
 
-	        localseq_count = ReadInt(file),
-	        localseq_offset = ReadInt(file),
+			localseq_count = ReadInt(file),
+			localseq_offset = ReadInt(file),
 
-	        activitylistversion = ReadInt(file),
-	        eventsindexed = ReadInt(file),
+			activitylistversion = ReadInt(file),
+			eventsindexed = ReadInt(file),
 
-	        texture_count = ReadInt(file), -- Important. VMT filenames (mstudiotexture_t)
-	        texture_offset = ReadInt(file),
+			texture_count = ReadInt(file), -- Important. VMT filenames (mstudiotexture_t)
+			texture_offset = ReadInt(file),
 
-	        texturedir_count = ReadInt(file),
-	        texturedir_offset = ReadInt(file),
+			texturedir_count = ReadInt(file),
+			texturedir_offset = ReadInt(file),
 
-	        skinreference_count = ReadInt(file),
-	        skinrfamily_count = ReadInt(file),
-	        skinreference_index = ReadInt(file),
+			skinreference_count = ReadInt(file),
+			skinrfamily_count = ReadInt(file),
+			skinreference_index = ReadInt(file),
 
-	        bodypart_count = ReadInt(file),
-	        bodypart_offset = ReadInt(file),
+			bodypart_count = ReadInt(file),
+			bodypart_offset = ReadInt(file),
 
-	        attachment_count = ReadInt(file),
-	        attachment_offset = ReadInt(file),
+			attachment_count = ReadInt(file),
+			attachment_offset = ReadInt(file),
 
-	        localnode_count = ReadInt(file),
-	        localnode_index = ReadInt(file),
-	        localnode_name_index = ReadInt(file),
+			localnode_count = ReadInt(file),
+			localnode_index = ReadInt(file),
+			localnode_name_index = ReadInt(file),
 
-	        flexdesc_count = ReadInt(file),
-	        flexdesc_index = ReadInt(file),
+			flexdesc_count = ReadInt(file),
+			flexdesc_index = ReadInt(file),
 
-	        flexcontroller_count = ReadInt(file),
-	        flexcontroller_index = ReadInt(file),
+			flexcontroller_count = ReadInt(file),
+			flexcontroller_index = ReadInt(file),
 
-	        flexrules_count = ReadInt(file),
-	        flexrules_index = ReadInt(file),
+			flexrules_count = ReadInt(file),
+			flexrules_index = ReadInt(file),
 
-	        ikchain_count = ReadInt(file),
-	        ikchain_index = ReadInt(file),
+			ikchain_count = ReadInt(file),
+			ikchain_index = ReadInt(file),
 
-	        mouths_count = ReadInt(file),
-	        mouths_index = ReadInt(file),
+			mouths_count = ReadInt(file),
+			mouths_index = ReadInt(file),
 
-	        localposeparam_count = ReadInt(file),
-	        localposeparam_index = ReadInt(file),
+			localposeparam_count = ReadInt(file),
+			localposeparam_index = ReadInt(file),
 
-	        surfaceprop_index = ReadInt(file),
+			surfaceprop_index = ReadInt(file),
 
-	        keyvalue_index = ReadInt(file),
-	        keyvalue_count = ReadInt(file),
+			keyvalue_index = ReadInt(file),
+			keyvalue_count = ReadInt(file),
 
-	        iklock_count = ReadInt(file),
-	        iklock_index = ReadInt(file),
+			iklock_count = ReadInt(file),
+			iklock_index = ReadInt(file),
 
-	        mass = ReadFloat(file),
+			mass = ReadFloat(file),
 
-	        contents = ReadInt(file),
+			contents = ReadInt(file),
 
-	        includemodel_count = ReadInt(file),
-	        includemodel_index = ReadInt(file),
+			includemodel_count = ReadInt(file),
+			includemodel_index = ReadInt(file),
 
-	        virtualModel = ReadInt(file),
+			virtualModel = ReadInt(file),
 
-	        animblocks_name_index = ReadInt(file),
-	        animblocks_count = ReadInt(file),
-	        animblocks_index = ReadInt(file),
+			animblocks_name_index = ReadInt(file),
+			animblocks_count = ReadInt(file),
+			animblocks_index = ReadInt(file),
 
-	        animblockModel = ReadInt(file),
+			animblockModel = ReadInt(file),
 
-	        bonetablename_index = ReadInt(file),
+			bonetablename_index = ReadInt(file),
 
-	        vertex_base = ReadInt(file),
-	        offset_base = ReadInt(file),
+			vertex_base = ReadInt(file),
+			offset_base = ReadInt(file),
 
-	        directionaldotproduct = ReadByte(file),
+			directionaldotproduct = ReadByte(file),
 
-	        rootLod = ReadByte(file),
+			rootLod = ReadByte(file),
 
-	        numAllowedRootLods = ReadByte(file),
+			numAllowedRootLods = ReadByte(file),
 
-	        unused0 = ReadByte(file),
-	        unused1 = ReadInt(file),
+			unused0 = ReadByte(file),
+			unused1 = ReadInt(file),
 
-	        flexcontrollerui_count = ReadInt(file),
-	        flexcontrollerui_index = ReadInt(file),
+			flexcontrollerui_count = ReadInt(file),
+			flexcontrollerui_index = ReadInt(file),
 
-	        vertAnimFixedPointScale = ReadFloat(file),
+			vertAnimFixedPointScale = ReadFloat(file),
 
-	        unused2 = ReadInt(file),
+			unused2 = ReadInt(file),
 
-	        studiohdr2index = ReadInt(file),
+			studiohdr2index = ReadInt(file),
 
-	        unused3 = ReadInt(file),
-	    }
+			unused3 = ReadInt(file),
+		}
 	}
 
-    if mdl.header.studiohdr2index > 0 then
-    	file:seek("set", mdl.header.studiohdr2index)
-    	mdl.secondaryheader = { -- studiohdr2_t struct
-    		srcbonetransform_count = ReadInt(file),
-    		srcbonetransform_index = ReadInt(file),
+	if mdl.header.studiohdr2index > 0 then
+		file:seek("set", mdl.header.studiohdr2index)
+		mdl.secondaryheader = { -- studiohdr2_t struct
+			srcbonetransform_count = ReadInt(file),
+			srcbonetransform_index = ReadInt(file),
 
-    		illumpositionattachmentindex = ReadInt(file),
+			illumpositionattachmentindex = ReadInt(file),
 
-    		flMaxEyeDeflection = ReadFloat(file),
+			flMaxEyeDeflection = ReadFloat(file),
 
-    		linearbone_index = ReadInt(file),
-    		unknown = {},
-    	}
+			linearbone_index = ReadInt(file),
+			unknown = {},
+		}
 
-    	for i = 1, 64 do
-		    mdl.secondaryheader.unknown[i] = ReadInt(file)
+		if readerror then return nil end
+
+		for i = 1, 64 do
+			mdl.secondaryheader.unknown[i] = ReadInt(file)
 		end
-    end
+	end
 
-    if mdl.header.texturedir_count > 0 then
-    	file:seek("set", mdl.header.texturedir_offset)
-    	mdl.texturedirs = {}
+	if readerror then return nil end
 
-    	local dirs = {}
-    	for k=1, mdl.header.texturedir_count do
-    		dirs[k] = ReadInt(file)
-    	end
+	if (mdl.header.texturedir_count or -1) > 0 then
+		file:seek("set", mdl.header.texturedir_offset)
+		mdl.texturedirs = {}
 
-    	for k, offset in pairs(dirs) do
-    		file:seek("set", offset)
+		if readerror then return nil end
 
-    		mdl.texturedirs[k] = ReadString(file)
-    	end
-    end
+		local dirs = {}
+		for k=1, mdl.header.texturedir_count do
+			dirs[k] = ReadInt(file)
+		end
 
-    if mdl.header.texture_count > 0 then
-    	file:seek("set", mdl.header.texture_offset)
-    	mdl.textures = {}
+		if readerror then return nil end
+		for k, offset in pairs(dirs) do
+			file:seek("set", offset)
 
-    	for k=1, mdl.header.texture_count do
-    		local mstudiotexture_t = {}
-		    mstudiotexture_t.name_offset = ReadInt(file)
-		    mstudiotexture_t.flags = ReadInt(file)
-		    mstudiotexture_t.used = ReadInt(file)
-		    mstudiotexture_t.unused = ReadInt(file)
-		    mstudiotexture_t.material = ReadInt(file)
-		    mstudiotexture_t.client_material = ReadInt(file)
+			mdl.texturedirs[k] = ReadString(file)
+		end
+	end
 
-		    mstudiotexture_t.unused2 = {}
-		    for i = 1, 10 do
-		        mstudiotexture_t.unused2[i] = ReadInt(file)
-		    end
+	if readerror then return nil end
+	if (mdl.header.texture_count or -1) > 0 then
+		file:seek("set", mdl.header.texture_offset)
+		mdl.textures = {}
 
-		    if mstudiotexture_t.name_offset > 0 then
-		    	local offset = file:seek()
-		        file:seek("set", offset - 64 + mstudiotexture_t.name_offset)
-		        mstudiotexture_t.name = ReadString(file)
-		        file:seek("set", offset)
-		    end
+		for k=1, mdl.header.texture_count do
+			local mstudiotexture_t = {}
+			mstudiotexture_t.name_offset = ReadInt(file)
+			mstudiotexture_t.flags = ReadInt(file)
+			mstudiotexture_t.used = ReadInt(file)
+			mstudiotexture_t.unused = ReadInt(file)
+			mstudiotexture_t.material = ReadInt(file)
+			mstudiotexture_t.client_material = ReadInt(file)
+			if readerror then return nil end
 
-		    table.insert(mdl.textures, mstudiotexture_t)
-    	end
-    end
+			mstudiotexture_t.unused2 = {}
+			for i = 1, 10 do
+				mstudiotexture_t.unused2[i] = ReadInt(file)
+			end
 
-    file:close()
+			if readerror then return nil end
+			if mstudiotexture_t.name_offset > 0 then
+				local offset = file:seek()
+				file:seek("set", offset - 64 + mstudiotexture_t.name_offset)
+				mstudiotexture_t.name = ReadString(file)
+				file:seek("set", offset)
+			end
 
-    return mdl
+			if readerror then return nil end
+			table.insert(mdl.textures, mstudiotexture_t)
+		end
+	end
+
+	file:close()
+
+	return mdl
 end
 
 --[[
@@ -542,28 +621,34 @@ function parseVMT(vmtContent)
 				current_tbl[RemoveSpaces(lines[#lines])] = new_tbl
 				current_tbl = new_tbl
 			end
-		end
-
-		if line:match("}") then
+		elseif line:match("}") then
 			current_tbl = scope[#scope]
 			scope[#scope] = nil
-		end
+		else
+			local key, value = line:match([["([^"]+)"%s*"([^"]+)"]]) -- "([^"]+)"\s*"\s*([^"]+)"
+			if not key then
+				key, value = line:match([[([^%s]+)%s([^%*]+)]]) -- ([^%s]+)\s([^*]+) (Match things like $bumpmap without "")
+			end
 
-		local key, value = line:match([["([^"]+)"%s+([^%*]+)]]) -- "([^"]+)"\s([^*]+)
-		if not key then
-			key, value = line:match([[([^%s]+)%s([^%*]+)]]) -- ([^%s]+)\s([^*]+) (Match things like $bumpmap without "")
-		end
+			if key then
+				if value then
+					local val_match = value:match([["([^"]+)"]])
+					if val_match then -- Read strings properly
+						value = val_match:lower()
+					end
 
-		if key then
-			if value then
-				local val_match = value:match([["([^"]+)"]])
-				if val_match then -- Read strings properly
-					value = val_match:lower()
+					if not current_tbl then
+						print("::warning:: Invalid Stack? Look into it")
+					else
+						current_tbl[RemoveSpaces(key)] = value
+					end
+				else
+					error("::error:: WHAT TF. HOW TF. WHY TF.")
 				end
-
-				current_tbl[RemoveSpaces(key)] = value
 			else
-				error("WHAT TF. HOW TF. WHY TF.")
+				if #lines > 1 and line:match("^%s*$") == nil then -- Skip the first line and empty ones.
+					print("::warning:: Failed to find a VMT match!", "'", line, "'")
+				end
 			end
 		end
 
@@ -589,22 +674,44 @@ function getVMTRessources(vmt_tbl)
 					v = v:sub(0, v:len() - 4)
 				end
 
+				local filePath = SafePath(v:lower())
 				if not (v == "env_cubemap") then
 					local found = false
-					local path = FindFile("materials/" .. SafePath(v:lower()) .. ".vmt")
+					local path = FindFile("materials/" .. filePath .. ".vmt")
 					if path then
-						tbl[v] = path
+						tbl["materials/" .. filePath .. ".vmt"] = path
 						found = true
 					end
 
-					local path = FindFile("materials/" .. SafePath(v:lower()) .. ".vtf") -- Smack both vtf and vmt in there :D
+					local path = FindFile("materials/" .. filePath .. ".vtf") -- Smack both vtf and vmt in there :D
 					if path then
-						tbl[v] = path
+						tbl["materials/" .. filePath .. ".vtf"] = path
 						found = true
+					end
+
+
+					if not found then -- Fallback. Why are we even doing this. Idk, but I don't wanna just remove it as maybe some ugly ass file depends on this?
+						if filePath:sub(0, 10) == "materials/" then
+							filePath = filePath:sub(11)
+
+							local path = FindFile("materials/" .. filePath .. ".vmt")
+							if path then
+								tbl["materials/" .. filePath .. ".vmt"] = path
+								found = true
+							else -- Do we really need this print?
+								print("::notice:: Failed to find: materials/" .. filePath .. ".vmt" .. " (" .. filePath .. ")")
+							end
+
+							local path = FindFile("materials/" .. filePath .. ".vtf")
+							if path then
+								tbl["materials/" .. filePath .. ".vtf"] = path
+								found = true
+							end
+						end
 					end
 
 					if not found then
-						print("Failed to find: " .. v .. " (" .. SafePath(v:lower()) .. ")")
+						print("::warning:: Failed to find: " .. v .. " (" .. filePath .. ")")
 					end
 				end
 			end
