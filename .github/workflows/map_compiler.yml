@@ -61,7 +61,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - uses: leafo/gh-actions-lua@v11
+      - uses: leafo/gh-actions-lua@01aab24c4de9555717b685f9b142a2abbe12ef14
         with:
           luaVersion: "5.1.5"
 
@@ -142,6 +142,8 @@ jobs:
             mv /var/www/uploads/repo.zip${{ github.run_id }} ./
             unzip ${{env.DEBUG_ARGS}} repo.zip${{ github.run_id }}
             rm -f repo.zip${{ github.run_id }}
+            cd ~
+            rsync -av ./${{env.CONTENT_PATH}}/__content_map/ ./${{env.GMOD_PATH}}/garrysmod/
 
       # VBSP fun
       - name: VBSP
@@ -156,6 +158,11 @@ jobs:
 
             if [ -f "${{env.COMPILE_PATH}}.lin" ]; then
               echo "::error::Map has a leak! Fix it."
+              exit 1
+            fi
+
+            if grep -q "outside the map" ${{env.COMPILE_PATH}}.log; then
+              echo "::error::Map has a static prop leak! Fix it."
               exit 1
             fi
 
@@ -224,7 +231,7 @@ jobs:
             cd ${{env.CONTENT_PATH}}
             ./bspzip-list.out __content_map
             cd ~
-            wine ${{env.GMOD_PATH}}/bin/bspzip.exe -game "${{env.GMOD_PATH}}/garrysmod" -addlist "${{env.COMPILE_PATH}}.bsp_export" "${{env.CONTENT_PATH}}/__content_map.txt" "${{env.COMPILE_PATH}}.bsp"
+            wine ${{env.GMOD_PATH}}/bin/bspzip.exe -addlist "${{env.COMPILE_PATH}}.bsp_export" "${{env.CONTENT_PATH}}/__content_map.txt" "${{env.COMPILE_PATH}}.bsp" -game "${{env.GMOD_PATH}}/garrysmod"
 
       # We don't want the unpacked bsp? then Nuke it.
       - name: Removing unpacked BSP
