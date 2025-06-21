@@ -13,7 +13,7 @@ jobs:
     secrets: inherit
     with:
       fastcompile: false
-      createexportbsp: false
+      createexportbsp: true
       debug: false
       vrad_mode: "-both"
       map: "sc_plaza"
