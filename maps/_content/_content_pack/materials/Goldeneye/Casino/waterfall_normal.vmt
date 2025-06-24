@@ -1,0 +1,18 @@
+"Refract"
+{
+	"$refractamount" ".035"
+	"$bluramount" "2"
+	"$scale" "[1.5 1.5]"
+	"$normalmap" "Goldeneye/Casino/waterfall_normal"
+	"$translucent" "1"
+	Proxies
+	{
+		TextureScroll
+		{
+			texturescrollvar $bumpTransform
+			texturescrollrate .5
+			texturescrollangle 270
+		}
+	}
+	
+}

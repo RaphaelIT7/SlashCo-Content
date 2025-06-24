@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+
+	"$baseTexture" "models\props\facility_backzone\towel_dispenser01b_towel"
+	"$alphatest" "1"
+	"$nocull" "1"
+	"$AllowAlphaToCoverage" "1"
+}

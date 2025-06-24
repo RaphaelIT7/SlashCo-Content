@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "GoldeneyeDecals/Graffiti/goodtime"
+	"$decal" "1"
+	"$translucent" "1"
+	"$decalscale" "0.1"
+	
+	"$nolod" "1"
+}

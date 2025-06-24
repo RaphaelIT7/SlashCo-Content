@@ -1,0 +1,17 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\casino\trashbin"
+	"$bumpmap" "models\props\casino\trashbin_normal"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.05 .05 .05]"
+	"$normalmapalphaenvmapmask" "1"
+
+	"$phong" "1"
+	"$phongfresnelranges"	"[0.05 0.5 1]"
+	"$phongboost" "8"
+	"$phongexponent" "20"
+
+	$model 1
+
+}

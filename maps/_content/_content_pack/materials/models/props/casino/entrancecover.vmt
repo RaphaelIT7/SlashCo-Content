@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	$baseTexture "models\props\casino\entrancecover"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.4 .4 .4]"
+	"$envmapmask" "models\props\casino\entrancecover_spec"
+
+	"$selfillum" "1"
+	"$selfillummask" "models\props\casino\entrancecover_selfillum"
+	$model 1
+}

@@ -1,0 +1,13 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Goldeneye/Control/concretewall01"	
+	"$bumpmap" "Goldeneye/Control/concretewall01_normal"
+	
+	"$surfaceprop" "concrete"
+	
+	"LightmappedGeneric_dx8" 
+	{
+		"$fallbackmaterial" "Goldeneye/Control/concretewall01_cheap"
+	}
+	
+}

@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\SGG\Starwars\weapons\Luke_saber\blade"
+	"$selfillum" 1
+}

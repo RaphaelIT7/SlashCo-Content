@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\casino\privatesign"
+
+	$model 1
+}

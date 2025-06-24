@@ -1,0 +1,12 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Goldeneye/Casino/metaldoor"
+	"$bumpmap" "Goldeneye/Casino/metalwall_normal"
+
+	"$surfaceprop" "metal"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.1 .1 .1]"
+
+	"$normalmapalphaenvmapmask" "1"
+}

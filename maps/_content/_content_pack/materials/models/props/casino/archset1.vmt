@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\casino\archset1"
+
+	$model 1
+}

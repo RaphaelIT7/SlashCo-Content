@@ -1,0 +1,13 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Goldeneye/Casino/whitecolumn"
+	"$bumpmap" "Goldeneye/Casino/whitecolumn_normal"
+
+	"$surfaceprop" "plaster"
+	
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.1 .1 .1]"
+
+	"$normalmapalphaenvmapmask" "1"
+	
+}

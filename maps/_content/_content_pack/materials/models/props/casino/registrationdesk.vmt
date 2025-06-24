@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\casino\registrationdesk"
+	"$envmapmask" "models\props\casino\registrationdesk_spec"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.2 .2 .2]"
+	$model 1
+}

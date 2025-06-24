@@ -1,0 +1,17 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\casino\suitcase"
+	"$bumpmap" "models\props\casino\suitcase_normal"
+
+	"$model" "1"
+
+	"$phong" "1"
+	"$phongboost"	"4"
+	"$phongfresnelranges"	"[0.05 0.5 1]"
+	"$phongexponent"  "20"
+
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[0.05 0.05 0.05]"
+	
+}

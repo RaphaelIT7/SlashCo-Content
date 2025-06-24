@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\facility_backzone\tv01a_screen_broke"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.3 .3 .3]"
+	"$envmapmask" "models\props\facility_backzone\tv01a_screen_broke"
+	
+}

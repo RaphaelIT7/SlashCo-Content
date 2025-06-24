@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Goldeneye/Facility/concretewall20b"
+
+	"$surfaceprop" "concrete"
+}

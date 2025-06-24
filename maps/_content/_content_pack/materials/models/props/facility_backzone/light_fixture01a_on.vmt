@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props/facility_backzone/light_fixture01a_on"
+	"$selfillum" "1"
+}

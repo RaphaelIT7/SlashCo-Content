@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\facility_backzone\tv01a_screen"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.4 .4 .4]"
+	"$envmapsaturation" ".5"
+	
+}

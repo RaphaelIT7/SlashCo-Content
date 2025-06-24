@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\casino\ceilingdome"
+	"$selfillum" "1"
+	"$selfillummask" "models\props\casino\ceilingdome_selfillum"
+	$model 1
+}

@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\casino\smokealarm"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.3 .3 .3]"
+	$model 1
+}

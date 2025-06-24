@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\casino\redropebarrier"
+	"$envmapmask" "models\props\casino\redropebarrier_spec"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.4 .4 .4]"
+	$model 1
+}

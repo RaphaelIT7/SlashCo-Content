@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "colors/red"
+ 	"$selfillum" "1"
+	"$surfaceprop" "wood"
+
+}

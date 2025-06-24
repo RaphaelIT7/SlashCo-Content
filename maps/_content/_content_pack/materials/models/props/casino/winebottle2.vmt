@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\casino\winebottle2"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.4 .4 .4]"
+
+	"$model" "1"
+}

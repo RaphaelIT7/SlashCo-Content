@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Goldeneye/Casino/mirror01"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.99 .99 .99]"
+
+	"$surfaceprop" "glass"
+}

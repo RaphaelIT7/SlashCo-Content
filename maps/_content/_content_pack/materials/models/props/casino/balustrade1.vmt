@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\casino\balustrade1"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.3 .3 .3]"
+	"$envmapmask" "models\props\casino\balustrade1_spec"
+
+	$model 1
+}

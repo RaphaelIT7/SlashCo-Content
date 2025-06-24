@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props/facility_backzone/light_fixture08a"
+
+	"$phong" "1"
+	"$phongexponent" "5"
+	"$phongboost" "3"	
+	"$lightwarptexture" "models\lightwarps\sharp01"
+	"$phongfresnelranges"	"[.45 .75 1]"
+	"$basemapalphaphongmask" "1"
+
+}

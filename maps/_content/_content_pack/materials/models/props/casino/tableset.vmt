@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\casino\tableset"
+	"$bumpmap" "models\props\casino\tableset_normal"
+
+	"$phong" "1"
+	"$phongboost"	"4"
+	"$phongfresnelranges"	"[0.05 0.5 1]"
+	"$phongexponent"  "20"
+
+	$model 1
+}

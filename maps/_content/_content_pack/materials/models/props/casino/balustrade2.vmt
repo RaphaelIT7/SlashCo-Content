@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\casino\balustrade2"
+	$model 1
+}

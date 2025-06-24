@@ -1,0 +1,19 @@
+name: sc_casino
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'maps/sc_casino/**'
+      - '.github/workflows/sc_casino.yml'
+
+jobs:
+  compile:
+    uses: RaphaelIT7/SlashCo-Content/.github/workflows/map_compiler.yml@main
+    secrets: inherit
+    with:
+      fastcompile: false
+      createexportbsp: false
+      debug: false
+      vrad_mode: "-both"
+      map: "sc_casino"

@@ -1,0 +1,6 @@
+"LightMappedGeneric"
+{
+	"$baseTexture"			"models/gibs/metalgibs/metal_gibs"
+	"$envmap" "env_cubemap"
+	"$basealphaenvmapmask" 1
+}

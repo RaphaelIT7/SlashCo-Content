@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\casino\pedestallamp"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.4 .4 .4]"
+
+	"$selfillum" "1"
+	"$selfillummask" "models\props\casino\pedestallamp_selfillum"
+
+	$model 1
+}

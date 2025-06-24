@@ -1,0 +1,6 @@
+ "VertexLitGeneric"
+ {
+
+  "$baseTexture" "models/props/security_camera_broke"
+   $model 1
+ }

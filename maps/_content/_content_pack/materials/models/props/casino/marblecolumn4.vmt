@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	$baseTexture "models\props\casino\marblecolumn4"
+	$model 1
+	"$bumpmap" "models\props\casino\marblecolumn4_normal"
+
+	"$phong" "1"
+	"$phongboost"	"17"
+ 	"$phongfresnelranges"	"[0.05 0.5 1]"
+	"$phongexponent"  "10"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.01 .01 .01]"
+}

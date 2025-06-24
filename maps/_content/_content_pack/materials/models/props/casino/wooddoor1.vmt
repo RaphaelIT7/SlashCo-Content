@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+	"$basetexture" "models/props/casino/wooddoor1"
+
+	"$model" 1
+}

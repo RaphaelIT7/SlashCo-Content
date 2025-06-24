@@ -1,0 +1,9 @@
+"lightmappedGeneric"
+{
+	"$baseTexture" "goldeneye/casino/cobble04"
+	"$surfaceprop" "brick"
+	"$bumpmap" "goldeneye/casino/cobble04_normal"
+ 	"$envmap" "env_cubemap"
+	"$envmapcontrast" "1"
+	"$normalmapalphaenvmapmask" 1
+}

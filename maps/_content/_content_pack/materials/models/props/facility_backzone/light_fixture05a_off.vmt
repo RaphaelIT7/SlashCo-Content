@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props/facility_backzone/light_fixture05a_off"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.35 .35 .35]"
+}

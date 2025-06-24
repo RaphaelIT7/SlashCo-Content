@@ -1,0 +1,14 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/facility/lockers"
+
+	"$envmap" "env_cubemap"
+	"$envmapsaturation" ".3"
+	"$envmapmask" "models/props/facility/lockers"
+	"$envmaptint" "[.3 .3 .3]"
+
+	"$detail" "detail\metal_detail_01"
+	"$detailscale" "6.283"
+	"$detailblendfactor" ".3"
+	"$detailblendmode" "0"		
+}

@@ -1,0 +1,12 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Goldeneye/Control/marblefloor"
+
+	"$surfaceprop" "tile"
+
+	"$envmap" "env_cubemap"
+	"$envmapmask" "Goldeneye/Control/marblefloor_mask"
+	"$envmapcontrast" ".5"
+	"$envmaptint" "[.25 .25 .25]"
+}
+

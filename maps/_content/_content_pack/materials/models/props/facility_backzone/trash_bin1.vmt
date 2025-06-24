@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\facility_backzone\trash_bin1"
+	"$bumpmap" "models\props\facility_backzone\trash_bin1_normal"
+
+	"$phong" "1"
+	"$phongexponent" "2"
+	"$phongboost"	"2"
+	"$phongfresnelranges" "[.1 .5 1]"
+
+	//"$envmap" "env_cubemap"
+	//"$envmaptint" "[.5 .5 .5]"
+	//"$envmapcontrast" ".5"
+	//"$envmapsaturation" ".6"
+	//"$normalmapalphaenvmapmask" 1
+
+	
+}

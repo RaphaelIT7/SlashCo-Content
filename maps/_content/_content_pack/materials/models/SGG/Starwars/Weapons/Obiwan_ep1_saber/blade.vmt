@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\SGG\Starwars\weapons\Obiwan_ep1_saber\blade"
+	"$selfillum" 1
+}

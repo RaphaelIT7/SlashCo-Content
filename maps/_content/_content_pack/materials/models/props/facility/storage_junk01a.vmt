@@ -1,0 +1,15 @@
+VertexLitGeneric
+{
+	"$basetexture" "models/props/facility/storage_junk01a"
+	"$bumpmap" "models/props/facility/storage_junk01a_normal"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.04 .04 .04]"
+	"$normalmapalphaenvmapmask" 1
+
+	"$phong" "1"
+	"$phongexponent" "3"
+	"$phongboost"	"1"
+	"$phongfresnelranges" "[.95 .97 1]"
+	"$lightwarptexture" "models\lightwarps\sharp01"
+}

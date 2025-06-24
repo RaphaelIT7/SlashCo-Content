@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\casino\pottedplant"
+	"$alphatest" "1"
+	"$nocull" "1"
+
+	$model 1
+}

@@ -1,0 +1,14 @@
+"UnlitGeneric"
+{	
+	"$baseTexture" "dice/dice_4"
+	"$selfillum" "1"
+	"Proxies" 
+	{
+		"ToggleTexture" 
+		{
+			"toggleTextureVar" "$baseTexture" 
+            			"toggleTextureFrameNumVar" "$frame" 
+            			"toggleTextureShouldWrap" "0" 
+		} 
+	} 
+}

@@ -1,0 +1,13 @@
+VertexLitGeneric
+{
+	"$basetexture" "models/props/casino/plaque"
+	"$bumpmap" "models/props/casino/plaque_normal"
+	"$phong" "1"
+	"$phongexponent" "30"
+	"$phongboost" "3"
+	"$phongfresnelranges" "[0.1 .5 1]"
+        "$envmap" "env_cubemap"
+	"$envmaptint" "[.3 .3 .3]"
+	"$model" "1"
+	
+}

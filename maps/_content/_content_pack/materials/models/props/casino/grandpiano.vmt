@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\casino\grandpiano"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.15 .15 .15]"
+
+	$model 1
+}

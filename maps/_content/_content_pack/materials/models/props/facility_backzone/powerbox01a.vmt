@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\facility_backzone\powerbox01a"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.35 .35 .35]"
+	"$envmapcontrast" ".2"
+	"$envmapsaturation" ".6"
+	"$envmapmask" "models\props\facility_backzone\powerbox01a_mask"
+
+	
+}

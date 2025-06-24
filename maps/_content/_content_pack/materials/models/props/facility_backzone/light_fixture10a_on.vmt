@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models/props/facility_backzone/light_fixture10a_on"
+	"$bumpmap"	"models/props/facility_backzone/light_fixture10a_normal"
+
+	"$selfillum" "1"
+
+	"$phong" "1"
+	"$phongexponent" "5"
+	"$phongboost"	"1"
+	"$phongfresnelranges" "[.4 .8 7]"
+	"$lightwarptexture" "models\lightwarps\sharp01"
+
+}

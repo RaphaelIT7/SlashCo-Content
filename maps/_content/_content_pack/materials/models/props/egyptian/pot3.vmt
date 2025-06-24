@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\egyptian\pot3"
+	"$bumpmap" "models\props\egyptian\pot3_normal"
+
+	"$phong" "1"
+	"$phongexponent" "6"
+	"$phongboost"	"2"
+	"$phongfresnelranges" "[.3 .6 1]"
+	"$lightwarptexture" "models\lightwarps\sharp01"
+}

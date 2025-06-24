@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\casino\pokerroomarch1"
+
+	$model 1
+}

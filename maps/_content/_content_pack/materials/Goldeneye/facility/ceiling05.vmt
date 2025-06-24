@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Goldeneye/Facility/ceiling05"
+	"$bumpmap" "Goldeneye/Facility/ceiling05_normal"
+
+	"$surfaceprop" "concrete"
+}

@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\casino\dishlid"
+	"$bumpmap" "models\props\casino\dishlid_normal"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.5 .5 .5]"
+	"$normalmapalphaenvmapmask" "1"
+	$model 1
+}

@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Goldeneye/Casino/stairs1"
+
+	"$surfaceprop" "concrete"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.3 .3 .3]"
+	"$envmapmask" "Goldeneye/Casino/stairs1_spec"
+
+}

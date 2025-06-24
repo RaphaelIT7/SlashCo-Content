@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Goldeneye/Casino/paint5"
+	"$bumpmap" "Goldeneye/Casino/paint5_normal"
+
+	"$surfaceprop" "plaster"
+
+}

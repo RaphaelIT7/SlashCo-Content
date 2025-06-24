@@ -1,0 +1,8 @@
+"lightmappedGeneric"
+{
+	"$baseTexture" "Goldeneye/Control/dirtfloor01"
+        "$bumpmap" "Goldeneye/Control/dirtfloor01_normal"
+	"$surfaceprop" "dirt"
+
+	//$seamless_scale 0.0055
+}

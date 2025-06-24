@@ -1,0 +1,5 @@
+"LightmappedGeneric"
+{
+	"$baseTexture"	"Goldeneye/Control/metal_blackframe_inner"
+	"$surfaceprop"	"metal"
+}

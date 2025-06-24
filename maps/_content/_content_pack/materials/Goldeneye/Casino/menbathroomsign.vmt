@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Goldeneye/Casino/menbathroomsign"
+
+	"$translucent" "1"
+	"$decal" "1"
+}

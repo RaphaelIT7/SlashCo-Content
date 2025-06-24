@@ -1,0 +1,8 @@
+"lightmappedGeneric"
+{
+	"$baseTexture" "goldeneye/casino/elevatordoor"
+	"$surfaceprop" "metal"
+ 	"$envmap" "env_cubemap"
+	"$envmaptint" "[.2 .2 .2]"
+	"$envmapmask" "goldeneye/casino/elevatordoor_spec"
+}

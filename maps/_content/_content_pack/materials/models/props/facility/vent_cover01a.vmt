@@ -1,0 +1,11 @@
+VertexLitGeneric
+{
+	"$basetexture" "models/props/facility/vent_cover01a"
+
+//	"$phong" "1"
+//	"$phongexponent" "12"
+//	"$phongboost"	"2"
+//	"$phongfresnelranges" "[.7 .85 1]"
+//	"$basemapalphaphongmask" "1"
+//	"$lightwarptexture" "models\lightwarps\sharp01"
+}

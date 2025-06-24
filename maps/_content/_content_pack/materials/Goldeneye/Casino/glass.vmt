@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Goldeneye/Casino/glass"
+	"$selfillum" "1"
+
+	"$surfaceprop" "glass"
+}

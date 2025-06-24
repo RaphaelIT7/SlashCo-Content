@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	$baseTexture "models\props\casino\roofspire"
+	$model 1
+	"$bumpmap" "models\props\casino\roofspire_normal"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.05 .05 .05]"
+	"$phong" "1"
+	"$phongboost"	"8"
+	"$phongfresnelranges"	"[0.05 0.5 1]"
+	"$phongexponent"  "30"
+}

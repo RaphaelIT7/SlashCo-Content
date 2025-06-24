@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\casino\plantstand"
+	"$bumpmap" "models\props\casino\plantstand_normal"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.01 .01 .01]"
+
+	"$phong" "1"
+	"$phongboost"	"1"
+	"$phongfresnelranges"	"[0.05 0.5 1]"
+	"$phongexponent"  "30"
+
+	$model 1
+}

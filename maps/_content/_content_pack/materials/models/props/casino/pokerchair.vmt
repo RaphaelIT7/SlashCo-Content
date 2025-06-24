@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\casino\pokerchair"
+	
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.3 .3 .3]"
+	"$envmapmask" "models\props\casino\pokerchair_spec"
+
+	"$model" "1"
+}

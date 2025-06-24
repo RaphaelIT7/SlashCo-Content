@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\wet_floor01"
+	"$bumpmap" "models\props\wet_floor01_normal"
+
+	"$phong" "1"
+	"$phongexponent" "25"
+	"$phongboost"	"5"
+	"$phongfresnelranges" "[.1 .7 1]"
+	"$lightwarptexture" "models\lightwarps\sharp01"
+}

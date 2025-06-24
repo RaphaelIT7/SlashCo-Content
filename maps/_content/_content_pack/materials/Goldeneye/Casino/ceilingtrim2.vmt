@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Goldeneye/Casino/ceilingtrim2"
+	"$bumpmap" "Goldeneye/Casino/ceilingtrim2_normal"
+	"$surfaceprop" "wood"
+}

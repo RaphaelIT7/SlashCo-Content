@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	$baseTexture "models\props\casino\shower"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.3 .3 .3]"
+	"$envmapmask" "models\props\casino\shower_spec"
+
+	$model 1
+}

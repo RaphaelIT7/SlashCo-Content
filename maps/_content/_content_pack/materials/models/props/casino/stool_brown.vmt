@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props\casino\stool_brown"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.35 .35 .35]"
+	"$envmapcontrast" .55
+}

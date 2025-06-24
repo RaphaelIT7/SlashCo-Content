@@ -1,0 +1,20 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "Goldeneye/glass01"
+	"$bumpmap" "Goldeneye/multipurpose/glassdistort512_normal"
+	"$nodiffusebumplighting" "1"
+
+	"$surfaceprop" "glass"
+	"$translucent" 1
+
+	"$envmap" "env_cubemap"
+	"$envmapcontrast" .8
+	
+	//glass apears too translucent for dx6 and 7 users
+	//so we will tell them to use a different basetexture
+	"LightMappedGeneric_dx6"
+	{
+		"$basetexture" "Glass/glasswindowbreak070a"
+	}
+	
+}

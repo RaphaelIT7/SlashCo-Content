@@ -1,0 +1,10 @@
+VertexLitGeneric
+{
+	"$basetexture" "models/props/casino/windowframe2"
+
+	"$envmap" "env_cubemap"
+	"$envmapmask" "models/props/casino/windowframe2_spec"
+	"$envmaptint" "[.2 .2 .2]"
+
+	"$model" 1
+}

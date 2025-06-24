@@ -1,0 +1,21 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Goldeneye/Facility/duct2"
+	"$bumpmap" "Goldeneye/Facility/duct2_normal"
+
+	//for some reason when HDR is enabled LightMappedGeneric_dx9 is ignored
+	//Though an anoyance at first I can use it to define seperate envmaptints
+	//for LDR and HDR since HDR has brighter cubemaps for LightMappedGeneric
+	"LightmappedGeneric_dx9" 
+	{
+		"$envmaptint" "[.3 .3 .3]"
+	}
+	
+	"$surfaceprop" "metalvent"
+
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	
+	//HDR will use these values - LDR will use LightMappedGeneric_dx9 settings
+	"$envmaptint" "[.1 .1 .1]"
+}

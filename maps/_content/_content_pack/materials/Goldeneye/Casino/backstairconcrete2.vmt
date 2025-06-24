@@ -1,0 +1,16 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Goldeneye/Casino/backstairconcrete2"
+
+	"$bumpmap"     "Goldeneye/Casino/backstairconcrete1_normal"
+	"$surfaceprop" "concrete"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.02 .02 .02]"
+	"$normalmapalphaenvmapmask" "1"
+
+	$detail detail\noise_detail_01
+	$detailscale 7.74
+	$detailblendfactor 0.4
+	$detailblendmode 0
+}

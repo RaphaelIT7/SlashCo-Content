@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	$baseTexture "models\props\casino\hanginglight"
+	"$selfillum" "1"
+	$model 1
+}

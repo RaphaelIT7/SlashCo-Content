@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+
+	"$baseTexture" "models\props\casino\poker_table_long"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.35 .35 .35]"
+	"$envmapcontrast" .55
+}

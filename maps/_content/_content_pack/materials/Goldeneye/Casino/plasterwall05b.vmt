@@ -1,0 +1,11 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Goldeneye/Casino/plasterwall05b"
+	"$surfaceprop" "plaster"
+
+
+	$detail detail\noise_detail_01
+	$detailscale 7
+	$detailblendfactor 0.1
+	$detailblendmode 0
+}

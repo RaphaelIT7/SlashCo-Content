@@ -1,0 +1,8 @@
+VertexLitGeneric
+{
+	"$basetexture" "models/props/light_fixture02a_skin0"
+		
+	"$envmap" "env_cubemap"
+	"$envmapmask" "models/props/light_fixture02a_mask"
+	"$envmaptint" "[.3 .3 .3]"
+}

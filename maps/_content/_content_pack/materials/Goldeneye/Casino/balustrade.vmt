@@ -1,0 +1,6 @@
+"lightmappedGeneric"
+{
+	"$baseTexture" "goldeneye/casino/balustrade"
+	"$translucent" 1
+	"$surfaceprop" "concrete"
+}

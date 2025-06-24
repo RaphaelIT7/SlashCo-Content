@@ -1,0 +1,5 @@
+VertexLitGeneric
+{
+	"$basetexture" "models/props/casino/windowframe1"
+	"$model" 1
+}

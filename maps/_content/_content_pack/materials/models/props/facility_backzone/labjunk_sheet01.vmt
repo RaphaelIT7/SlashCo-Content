@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props/facility_backzone/labjunk_sheet01"
+
+	//"$phong" "1"
+	//"$phongexponent" "3"
+	//"$phongboost" "2.5"	
+	//"$lightwarptexture" "models\lightwarps\sharp01"
+	//"$phongfresnelranges"	"[.3 .7 1]"
+	//"$basemapalphaphongmask" "1"
+
+}

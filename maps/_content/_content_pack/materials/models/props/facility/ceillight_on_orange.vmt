@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props/facility/ceillight_on_orange"
+	"$selfillum" 1
+	$model 1
+}
+

@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	$baseTexture "models\props\casino\crapstable_padding"
+	$model 1
+
+	$bumpmap "models\props\casino\crapstable_padding_normal"
+}
