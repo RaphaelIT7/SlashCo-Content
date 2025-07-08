@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "blackforest/fadeofmap"
+	"$surfaceprop" "concrete"
+                "$translucent" 1
+	
+}

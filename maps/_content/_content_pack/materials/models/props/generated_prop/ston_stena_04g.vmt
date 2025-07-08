@@ -1,0 +1,10 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "z-o-m-b-i-e/stalker/ston/ston_stena_04g"
+	"$bumpmap" "z-o-m-b-i-e/stalker/ston/ston_stena_04g_norm"
+	"$surfaceprop" "concrete"
+	"$detail" "z-o-m-b-i-e/stalker/detail/detail_beton_det4"
+	"$detailscale" "6.00"
+	"$detailblendfactor" "1.0"
+	"$detailblendmode" "0"
+}

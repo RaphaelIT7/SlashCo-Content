@@ -1,0 +1,12 @@
+"VertexLitGeneric" 
+//Created in MjolnirSDK 0.89
+{
+	"$baseTexture" "z-o-m-b-i-e/STALKER/mtl/mtl_bochka_01"
+	//"$uvmap" "z-o-m-b-i-e/STALKER/mtl/mtl_bochka_01_uv.pypv"
+	"$surfaceprop" "metal"
+	"$detail" "z-o-m-b-i-e/STALKER/detail/detail_metall_det1"
+	"$detailscale" "6.00"
+	"$detailblendfactor" "1.0"
+	"$detailblendmode" "0"
+}
+	

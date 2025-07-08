@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "z-o-m-b-i-e/STALKER/trees/trees_dub_bark"
+	//"$bumpmap" "z-o-m-b-i-e/STALKER/trees/trees_dub_bark_norm"
+	"$surfaceprop" "wood"
+}
+	

@@ -1,0 +1,9 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "z-o-m-b-i-e/stalker/wood/wood_old"
+	"$surfaceprop" "wood"
+	"$detail" "z-o-m-b-i-e/stalker/detail/detail_wood_det2"
+	"$detailscale" "6.00"
+	"$detailblendfactor" "0.4"
+	"$detailblendmode" "0"
+}

@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "z-o-m-b-i-e/stalker/decal/decal_star"
+	"$decal" "1" 
+	"$nocull" 1
+	"$nodecal" "1"
+	"$translucent" "1"
+}

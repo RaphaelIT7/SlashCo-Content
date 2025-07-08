@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "z-o-m-b-i-e/metro_2033/props/props_wc"
+	"$bumpmap" "z-o-m-b-i-e/metro_2033/props/props_wc_norm"
+	"$surfaceprop" "tile"
+	"$detail" "z-o-m-b-i-e/STALKER/detail/detail_tile_det2"
+	"$detailscale" "6.00"
+	"$detailblendfactor" "1.0"
+	"$detailblendmode" "0"
+}
+
+	

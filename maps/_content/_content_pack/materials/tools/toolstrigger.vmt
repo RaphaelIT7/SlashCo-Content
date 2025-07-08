@@ -1,0 +1,11 @@
+"LightmappedGeneric"
+{
+	// Original shader: BaseTimesLightmapAlphaBlend
+	"$translucent" 1
+	"$basetexture" "Tools/toolstrigger"
+	"srgb?$basetexture" "Tools/toolstrigger-dx10"
+	"%compiletrigger" 1
+	"%keywords" "tools"
+	//"srgb?$alpha" "0.75"
+	//"srgb?$overbrightfactor" "0.75"
+}

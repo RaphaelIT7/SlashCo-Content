@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "z-o-m-b-i-e/STALKER/trees/trees_sosna_sux"
+	//"$bumpmap" "z-o-m-b-i-e/STALKER/trees/trees_sosna_NORM"
+	"$nodecal" "1"
+	"$alphatest" "1"
+}
+	

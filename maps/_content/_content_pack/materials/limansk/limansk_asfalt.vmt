@@ -1,0 +1,19 @@
+"WorldVertexTransition"
+{
+	"$baseTexture2" "z-o-m-b-i-e/STALKER/detail/detail_grnd_asphalt"
+	"$basetexturetransform"		"center 0 0	scale 64 64 rotate 0 translate 0 0"
+	"$baseTexture" "z-o-m-b-i-e/STALKER/detail/detail_grnd_asphalt"
+	"$surfaceprop2" "concrete"
+		"$detail"		"limansk/ground02"
+	"$detailscale"		"0.0078125"
+	"$detailblendmode"		"0"
+	"$surfaceprop" "concrete"
+}
+
+
+
+
+
+
+
+	

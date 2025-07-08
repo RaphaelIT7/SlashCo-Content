@@ -1,0 +1,19 @@
+"WorldVertexTransition"
+{
+	"$baseTexture" "z-o-m-b-i-e/STALKER/grnd/grnd_grass_military_2"
+	"$basetexturetransform"		"center 0 0	scale 64 64 rotate 0 translate 0 0"
+	"$baseTexture2" "z-o-m-b-i-e/STALKER/grnd/grnd_grass_military_2"
+	"$surfaceprop" "dirt"
+		"$detail"		"limansk/ground01"
+	"$detailscale"		"0.0078125"
+	"$detailblendmode"		"0"
+	"$surfaceprop2" "dirt"
+}
+
+
+
+
+
+
+
+	

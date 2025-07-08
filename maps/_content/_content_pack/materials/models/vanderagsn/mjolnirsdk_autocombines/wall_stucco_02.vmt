@@ -1,0 +1,10 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "z-o-m-b-i-e/stalker/wall/wall_stucco_02"
+	"$surfaceprop" "concrete"
+	"$detail" "z-o-m-b-i-e/stalker/detail/detail_beton_det4_u"
+	"$detailscale" "6.00"
+	"$detailblendfactor" "1.0"
+	"$detailblendmode" "0"
+	
+}

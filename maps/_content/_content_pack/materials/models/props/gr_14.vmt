@@ -1,0 +1,6 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "z-o-m-b-i-e/stalker/gr/gr_14"
+	//"$bumpmap" "z-o-m-b-i-e/stalker/gr/gr_14_norm"
+	"$surfaceprop" "wood"
+}

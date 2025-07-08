@@ -1,0 +1,7 @@
+LightmappedGeneric
+{
+	"$basetexture" "overlays/Mikita"
+
+	"$translucent" "1"
+	"$decal" "1"
+}

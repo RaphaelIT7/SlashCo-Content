@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "z-o-m-b-i-e/STALKER/crete/crete_schiffer2"
+	//"$bumpmap" "z-o-m-b-i-e/STALKER/crete/crete_schiffer2_norm"
+	"$detail" "Z-O-M-B-I-E\detail\detail_beton_det1"
+	"$detailscale" "5.00"
+	"$detailblendfactor" "0.8"
+	"$detailblendmode" "0"
+	"$surfaceprop" "concrete"
+}

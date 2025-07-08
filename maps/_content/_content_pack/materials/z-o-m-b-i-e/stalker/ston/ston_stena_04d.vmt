@@ -1,0 +1,10 @@
+"LightMappedGeneric"
+{
+	"$baseTexture" "z-o-m-b-i-e/STALKER/ston/ston_stena_04d"
+	//"$bumpmap" "z-o-m-b-i-e/STALKER/ston/ston_stena_04d_norm"
+	"$surfaceprop" "concrete"
+	"$detail" "z-o-m-b-i-e/STALKER/detail/detail_beton_det4_u"
+	"$detailscale" "6.00"
+	"$detailblendfactor" "1.0"
+	"$detailblendmode" "0"
+}

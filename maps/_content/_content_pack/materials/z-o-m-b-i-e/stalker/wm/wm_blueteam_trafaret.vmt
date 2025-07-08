@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "z-o-m-b-i-e/stalker/wm/wm_blueteam_trafaret"
+	"$decal" "1" 
+	"$nocull" 1
+	"$nodecal" "1"
+	"$translucent" "1"
+}
+	

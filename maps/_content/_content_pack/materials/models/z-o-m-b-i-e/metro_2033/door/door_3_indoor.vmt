@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "Z-O-M-B-I-E/metro_2033/door/door_3_indoor"
+	//"$bumpmap" "Z-O-M-B-I-E/metro_2033/door/door_3_indoor_norm"
+	"$surfaceprop" "wood"
+}

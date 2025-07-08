@@ -1,0 +1,15 @@
+"VertexLitGeneric" 
+//Created in MjolnirSDK 0.89
+{
+	"$baseTexture" "z-o-m-b-i-e/STALKER/crete/crete_dirt_2"
+	//"$uvmap" "z-o-m-b-i-e/STALKER/crete/crete_dirt_2_uvmap.pypv"
+	"$surfaceprop" "concrete"
+	"$detail" "z-o-m-b-i-e/STALKER/detail/detail_beton_det4"
+	"$detailscale" "6.00"
+	"$detailblendfactor" "1.0"
+	"$detailblendmode" "0"
+}
+
+	
+	
+	

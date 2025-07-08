@@ -1,0 +1,11 @@
+"VertexLitGeneric" 
+//Created in MjolnirSDK 0.89
+{
+	"$baseTexture" "z-o-m-b-i-e/STALKER/briks/briks_br2"
+	//"$uvmap" "z-o-m-b-i-e/STALKER/briks/briks_br2_uvmap.pypv"
+	"$surfaceprop" "brick"
+	"$detail" "z-o-m-b-i-e/STALKER/detail/detail_brick_det1"
+	"$detailscale" "6.00"
+	"$detailblendfactor" "1.0"
+	"$detailblendmode" "0"
+}

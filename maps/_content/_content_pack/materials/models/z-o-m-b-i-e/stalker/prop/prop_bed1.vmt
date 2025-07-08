@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "z-o-m-b-i-e/STALKER/prop/prop_bed1"
+	//"$bumpmap" "z-o-m-b-i-e/STALKER/prop/prop_bed1_norm"
+	"$alphatest" "1"
+	"$nocull" "1"
+	"$nodecal" "1"
+	"$surfaceprop" "metalgrate"
+}

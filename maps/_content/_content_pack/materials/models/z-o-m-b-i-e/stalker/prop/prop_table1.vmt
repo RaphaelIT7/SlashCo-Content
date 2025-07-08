@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "z-o-m-b-i-e/STALKER/prop/prop_table1"
+	"//$bumpmap" "z-o-m-b-i-e/STALKER/prop/prop_table1_norm"
+	"$surfaceprop" "wood"
+	"$detail" "z-o-m-b-i-e/STALKER/detail/detail_wood_det2_v"
+	"$detailscale" "6.00"
+	"$detailblendfactor" "0.4"
+	"$detailblendmode" "0"
+}

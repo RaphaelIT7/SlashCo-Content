@@ -1,0 +1,10 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "z-o-m-b-i-e/stalker/door/door_j01"
+	//"$bumpmap" "z-o-m-b-i-e/stalker/door/door_j01_norm"
+	"$surfaceprop" "wood"
+	"$detail" "z-o-m-b-i-e/stalker/detail/detail_wood_det2"
+	"$detailscale" "6.00"
+	"$detailblendfactor" "0.4"
+	"$detailblendmode" "0"
+}

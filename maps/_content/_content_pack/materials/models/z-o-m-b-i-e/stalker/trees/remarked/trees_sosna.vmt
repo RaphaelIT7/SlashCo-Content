@@ -1,0 +1,26 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "z-o-m-b-i-e/STALKER/trees/trees_sosna"
+	//"$bumpmap" "z-o-m-b-i-e/STALKER/trees/trees_vetkasux3_norm"
+	"$alphatest" "1"
+                $treeSway 0
+
+	$treeSwayHeight 0.5 
+	$treeSwayStartHeight 0 
+	$treeSwayRadius 2 
+	$treeSwayStartRadius 2 
+	$treeSwaySpeed 1 
+	$treeSwayStrength 0.1 
+	$treeSwayScrumbleSpeed 0.8 
+
+	$treeSwayScrumbleStrength 0.3 
+	$treeSwayScrumbleFrequency 0.3 
+	$treeSwayFalloffExp 0.5 
+	$treeSwayScrumbleFalloffExp 0.5 
+
+	$treeSwaySpeedHighWindMultiplier 0.5 
+	$treeSwaySpeedLerpStart 0 
+	$treeSwaySpeedLerpEnd 0 
+	$treeSwayStatic 0 
+}
+	

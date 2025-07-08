@@ -1,0 +1,6 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "z-o-m-b-i-e/stalker/mtl/mtl_resh_reil_b"
+	"$bumpmap" "z-o-m-b-i-e/stalker/mtl/mtl_resh_reil_b_norm"
+	"$surfaceprop" "metal"
+}

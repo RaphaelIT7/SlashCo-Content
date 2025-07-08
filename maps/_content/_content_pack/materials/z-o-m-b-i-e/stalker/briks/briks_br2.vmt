@@ -1,0 +1,10 @@
+"LightMappedGeneric"
+{
+	"$baseTexture" "z-o-m-b-i-e/STALKER/briks/briks_br2"
+	//"$bumpmap" "z-o-m-b-i-e/STALKER/briks/briks_br2_norm"
+	"$surfaceprop" "brick"
+	"$detail" "z-o-m-b-i-e/STALKER/detail/detail_brick_det1"
+	"$detailscale" "6.00"
+	"$detailblendfactor" "1.0"
+	"$detailblendmode" "0"
+}

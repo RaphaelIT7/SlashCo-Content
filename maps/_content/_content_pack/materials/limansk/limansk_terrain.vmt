@@ -1,0 +1,20 @@
+"WorldVertexTransition"
+{
+	"$baseTexture2" "z-o-m-b-i-e/STALKER/grnd/grnd_sand_iov"
+	"$basetexturetransform"		"center 0 0	scale 64 64 rotate 0 translate 0 0"
+	"$baseTexture" "z-o-m-b-i-e/STALKER/grnd/grnd_grass_military_2"
+	"$surfaceprop2" "mud"
+		"$detail"		"limansk/ground01"
+	"$detailscale"		"0.0078125"
+	"$detailblendmode"		"0"
+	"$surfaceprop" "dirt"
+                 "%detailtype" "forest_floor_01"
+}
+
+
+
+
+
+
+
+	

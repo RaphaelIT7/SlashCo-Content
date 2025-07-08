@@ -1,0 +1,9 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "z-o-m-b-i-e/stalker/prop/prop_barbwire2"
+	//"$bumpmap" "z-o-m-b-i-e/stalker/prop/prop_barbwire2_norm"
+	"$nocull" 1
+	"$nodecal" "1"
+	"$translucent" "1"
+	"$surfaceprop" "metalgrate"
+}

@@ -1,0 +1,10 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "z-o-m-b-i-e/stalker/mtl/mtl_walls11_tail"
+	//"$bumpmap" "z-o-m-b-i-e/stalker/mtl/mtl_walls11_tail_norm"
+	"$surfaceprop" "metal"
+	"$detail" "z-o-m-b-i-e/stalker/detail/detail_metall_det2_u"
+	"$detailscale" "6.00"
+	"$detailblendfactor" "1.0"
+	"$detailblendmode" "0"
+}	

@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "z-o-m-b-i-e/STALKER/roof/roof_smola"
+	//"$bumpmap" "z-o-m-b-i-e/STALKER/roof/roof_smola_norm"
+	"$surfaceprop" "default"
+	"$detail" "z-o-m-b-i-e/STALKER/detail/detail_beton_det4"
+	"$detailscale" "6.00"
+	"$detailblendfactor" "1.0"
+	"$detailblendmode" "0"
+}
+
+	

@@ -1,0 +1,7 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "z-o-m-b-i-e/stalker/wood/wood_plank1"
+	"$bumpmap" "z-o-m-b-i-e/stalker/wood/wood_plank1_norm"
+	"$surfaceprop" "wood"
+	"hdr" {  "[0,05 0,05 0,05]" }
+}

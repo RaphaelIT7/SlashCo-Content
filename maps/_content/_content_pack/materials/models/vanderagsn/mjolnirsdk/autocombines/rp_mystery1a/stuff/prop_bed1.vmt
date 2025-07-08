@@ -1,0 +1,9 @@
+"VertexLitGeneric" 
+//Created in MjolnirSDK 0.89
+{
+	"$baseTexture" "z-o-m-b-i-e/STALKER/prop/prop_bed1"
+	"$alphatest" "1"
+	"$nocull" "1"
+	"$nodecal" "1"
+	"$surfaceprop" "metalgrate"
+}

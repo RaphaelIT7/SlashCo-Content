@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "z-o-m-b-i-e/STALKER/trees/trees_bark_sosna_02"
+	//"$bumpmap" "z-o-m-b-i-e/STALKER/trees/trees_bark_sosna_02_norm"
+	"$surfaceprop" "wood"
+	"$detail" "z-o-m-b-i-e/STALKER/trees/trees_det2"
+	"$detailscale" "3.00"
+	"$detailblendfactor" "0.8"
+	"$detailblendmode" "0"
+}

@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "Z-O-M-B-I-E/metro_2033/wood34/wood34_kraska_white"
+	//"$bumpmap" "Z-O-M-B-I-E/metro_2033/wood34/wood34_kraska_white_norm"
+	"$surfaceprop" "wood"
+}

@@ -1,0 +1,13 @@
+"LightMappedGeneric"
+{
+	"$baseTexture" "z-o-m-b-i-e/STALKER/glas/glas_gr02"
+	"//$bumpmap" "z-o-m-b-i-e/STALKER/glas/glas_gr01_norm"
+	"$surfaceprop" "glass"
+	"//$envmap" "env_cubemap"
+	"//$normalmapalphaenvmapmask" 1
+	"//$envmapsaturation" 1
+	"//$envmapcontrast" 1
+	"//$envmaptint" "[ 0.2 0.2 0.2 ]" //"[ .25 .25 .25 ]"
+	"//hdr" { "//$envmaptint" "0.13 0.13 0.13" }
+}
+	
