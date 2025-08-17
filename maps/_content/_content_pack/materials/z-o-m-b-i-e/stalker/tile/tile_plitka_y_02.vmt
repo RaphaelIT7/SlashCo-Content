@@ -1,0 +1,16 @@
+"LightMappedGeneric"
+{
+	"$baseTexture" "z-o-m-b-i-e/STALKER/tile/tile_plitka_y_02"
+	"$bumpmap" "z-o-m-b-i-e/STALKER/tile/tile_plitka_y_02_norm"
+	"$surfaceprop" "tile"
+	"$detail" "z-o-m-b-i-e/STALKER/detail/detail_tile_det2"
+	"$detailscale" "6.00"
+	"$detailblendfactor" "1.0"
+	"$detailblendmode" "0"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmapsaturation" 1
+	"$envmapcontrast" 1
+	"$envmaptint" "[ 0.2 0.2 0.2 ]" //"[ .25 .25 .25 ]"
+	"HDR" { "$envmaptint" "[0,05 0,05 0,05]" }
+}

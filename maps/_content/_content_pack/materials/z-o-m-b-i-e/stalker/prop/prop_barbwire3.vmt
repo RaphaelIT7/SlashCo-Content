@@ -1,0 +1,9 @@
+"LightMappedGeneric"
+{
+	"$baseTexture" "z-o-m-b-i-e/STALKER/prop/prop_barbwire3"
+	"$bumpmap" "z-o-m-b-i-e/STALKER/prop/prop_barbwire3_norm"
+	"$nocull" 1
+	"$nodecal" "1"
+	"$translucent" "1"
+	"$surfaceprop" "metalgrate"
+}

@@ -1,0 +1,17 @@
+"LightMappedGeneric"
+{
+	"$baseTexture" "z-o-m-b-i-e/STALKER/wood/wood_stolb"
+	"$bumpmap" "z-o-m-b-i-e/STALKER/wood/wood_stolb_norm"
+	"$surfaceprop" "wood"
+	"$detail" "z-o-m-b-i-e/STALKER/detail/detail_wood_det2"
+	"$detailscale" "6.00"
+	"$detailblendfactor" "0.4"
+	"$detailblendmode" "0"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmapsaturation" 1
+	"$envmapcontrast" 1
+	"$envmaptint" "[ 0.2 0.2 0.2 ]" //"[ .25 .25 .25 ]"
+	"HDR" { "$envmaptint" "[0,05 0,05 0,05]" }
+}
+	

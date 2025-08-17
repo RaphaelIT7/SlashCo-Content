@@ -1,0 +1,6 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "hostel/wood/04"
+	"$bumpmap" "hostel/wood/04_b"
+	"$surfaceprop" "wood"
+}

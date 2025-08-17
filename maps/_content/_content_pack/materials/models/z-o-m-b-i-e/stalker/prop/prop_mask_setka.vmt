@@ -1,7 +1,9 @@
 "VertexLitGeneric"
 {
 	"$baseTexture" "z-o-m-b-i-e/STALKER/prop/prop_mask_setka"
-	"$nocull" "1"
-                "$translucent" 1
+	"$bumpmap" "z-o-m-b-i-e/STALKER/prop/prop_mask_setka_norm"
+	"$nocull" 1
+	"$nodecal" "1"
+	"$translucent" "1"
 }
 	

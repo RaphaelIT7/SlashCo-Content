@@ -1,11 +1,14 @@
 "VertexLitGeneric"
 {
 	"$baseTexture" "z-o-m-b-i-e/STALKER/veh/veh_zil_130_2"
-	//"$bumpmap" "z-o-m-b-i-e/STALKER/veh/veh_zil_130_2_norm"
+	"$bumpmap" "z-o-m-b-i-e/STALKER/veh/veh_zil_130_2_norm"
 	"$surfaceprop" "metal"
 	"$detail" "z-o-m-b-i-e/STALKER/detail/detail_metall_det1"
 	"$detailscale" "6.00"
 	"$detailblendfactor" "1.0"
 	"$detailblendmode" "0"
-	
+	//"$phong" "1"
+	//"$phongexponenttexture" "z-o-m-b-i-e/STALKER/veh/veh_zil_130_spec" 
+	//"$phongboost" "3"
+	//"$phongfresnelranges" "[0.25 0.5 1]"
 }

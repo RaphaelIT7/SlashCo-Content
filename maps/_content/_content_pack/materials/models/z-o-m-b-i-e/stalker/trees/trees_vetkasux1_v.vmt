@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "z-o-m-b-i-e/STALKER/trees/trees_vetkasux1_v"
+	//"$bumpmap" "z-o-m-b-i-e/STALKER/trees/trees_vetkasux3_norm"
+	"$alphatest" "1"
+}
+	

@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "z-o-m-b-i-e/STALKER/wall/wall_wallpaper_02"
+	"$bumpmap" "z-o-m-b-i-e/STALKER/wall/wall_wallpaper_02_norm"
+	"$surfaceprop" "sheetrock"
+	"$detail" "z-o-m-b-i-e/STALKER/detail/detail_beton_det4"
+	"$detailscale" "6.00"
+	"$detailblendfactor" "1.0"
+	"$detailblendmode" "0"
+}

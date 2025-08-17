@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "z-o-m-b-i-e/STALKER/mtl/mtl_walls9a"
+	"$bumpmap" "z-o-m-b-i-e/STALKER/mtl/mtl_walls9a_norm"
+	"$surfaceprop" "metal"
+}

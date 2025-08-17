@@ -1,0 +1,69 @@
+"marsh_main"
+{
+    "dsp" "1"
+    "playlooping"
+    {
+        "volume" "1"
+        "pitch" "110"
+        "wave"  "marsh/marsh_background.wav"
+    }
+
+    "playrandom"
+	{
+		"time"		"10,30"
+		"volume"	"0.2,0.8"
+		"pitch"		"100"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"	"marsh/crow1.wav"
+			"wave"	"marsh/dogs_1.wav"
+			"wave"	"marsh/house_wind1.wav"
+			"wave"	"marsh/org_moan_3.wav"
+			"wave"	"marsh/org_moan_5.wav"
+			"wave"	"marsh/rnd_pdog3.wav"
+            "wave"	"marsh/rnd_swamp.wav"
+            "wave"	"marsh/moan_1.wav"
+            "wave"	"marsh/rnd_boar3.wav"
+            "wave"	"marsh/rnd_dark.wav"
+            "wave"	"marsh/rnd_m-249.wav"
+            "wave"	"marsh/rnd_wind_tree.wav"
+            "wave"	"marsh/wings_1.wav"
+		}
+	}
+}
+
+"marsh_indoor"
+{
+    "dsp" "1"
+    "playlooping"
+    {
+        "volume" "1"
+        "pitch" "110"
+        "wave"  "marsh/indoor_background.wav"
+    }
+}
+
+"Rain.Outside"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"		"100"
+		"wave"		"ambient\rain_ext.wav"
+	}
+}
+
+"Rain.Inside"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"ambient\rain_ins.wav"
+	}
+}

@@ -1,0 +1,8 @@
+LightmappedGeneric
+{
+	"$basetexture"	"site7\sign_ofsite7"
+	"$translucent" 1
+                "$decal" 1
+                "$decalscale" 1
+
+}

@@ -1,0 +1,8 @@
+"WorldVertexTransition"
+{
+	"$baseTexture" "cs_havana/dirtfloor009c"
+                "%detailtype" "marsh"
+	"$baseTexture2" "z-o-m-b-i-e/stalker/grnd/grnd_grass13"
+	"$surfaceprop" "dirt"
+	"%keywords" "dirt" 
+}

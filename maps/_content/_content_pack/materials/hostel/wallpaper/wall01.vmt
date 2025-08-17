@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "hostel/wallpaper/wall01"
+	"$bumpmap" "hostel/wallpaper/wall01_b"
+	"$surfaceprop" "default"
+}

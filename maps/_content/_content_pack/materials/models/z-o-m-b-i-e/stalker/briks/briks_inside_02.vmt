@@ -1,7 +1,7 @@
 "VertexLitGeneric"
 {
 	"$baseTexture" "z-o-m-b-i-e/STALKER/briks/briks_inside_02"
-	//"$bumpmap" "z-o-m-b-i-e/STALKER/briks/briks_inside_02_norm"
+	"$bumpmap" "z-o-m-b-i-e/STALKER/briks/briks_inside_02_norm"
 	"$surfaceprop" "brick"
 	"$detail" "z-o-m-b-i-e/STALKER/detail/detail_brick_det1"
 	"$detailscale" "6.00"

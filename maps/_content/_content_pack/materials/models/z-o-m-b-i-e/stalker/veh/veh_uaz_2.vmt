@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "z-o-m-b-i-e/STALKER/veh/veh_uaz_2"
+	"$bumpmap" "z-o-m-b-i-e/STALKER/veh/veh_uaz_2_norm"
+	"$surfaceprop" "metal"
+	"$detail" "z-o-m-b-i-e/STALKER/detail/detail_metall_det1"
+	"$detailscale" "6.00"
+	"$detailblendfactor" "1.0"
+	"$detailblendmode" "0"
+	"$phong" "1" 
+	"$phongboost" "10" 
+	"$phongexponent"  "15" //15
+	"$phongfresnelranges" "[0.3 0.5 1]" 
+}

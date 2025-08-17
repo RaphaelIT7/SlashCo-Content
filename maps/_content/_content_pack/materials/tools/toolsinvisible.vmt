@@ -2,7 +2,6 @@
 {
 	// Original shader: BaseTimesLightmap
 	"$basetexture" "Tools/toolsinvisible"
-	"srgb?$basetexture" "Tools/toolsinvisible-dx10"
 	"$translucent" "1"
 	"%compilenodraw" 1
 	"%compilepassbullets" 1

@@ -1,8 +1,13 @@
 "VertexLitGeneric"
 {
 	"$baseTexture" "z-o-m-b-i-e/STALKER/mtl/mtl_fence_01"
-	//"$bumpmap" "z-o-m-b-i-e/STALKER/mtl/mtl_fence_01_norm"
+	"$bumpmap" "z-o-m-b-i-e/STALKER/mtl/mtl_fence_01_norm"
 	"$surfaceprop" "metalgrate"
+	"$detail" "z-o-m-b-i-e/STALKER/detail/detail_metall_det1"
+	"$detailscale" "6.00"
+	"$detailblendfactor" "1.0"
+	"$detailblendmode" "0"
+	"$nocull" 1
 	"$nodecal" "1"
 	"$alphatest" "1"
 }

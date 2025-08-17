@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+        "$translucent" 1
+	"$baseTexture" "models/dimidrol/flora/dfd0edc8"
+        "$alphatest" "1"
+        "$nocull" 1
+}

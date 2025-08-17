@@ -1,0 +1,4 @@
+soundscapes_manifest
+{
+	"file"		"scripts/soundscapes_sc_marsh_night.txt"
+}

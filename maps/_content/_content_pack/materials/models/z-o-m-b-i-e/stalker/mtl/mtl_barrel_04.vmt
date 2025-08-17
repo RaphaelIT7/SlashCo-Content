@@ -1,7 +1,7 @@
 "VertexLitGeneric"
 {
 	"$baseTexture" "z-o-m-b-i-e/STALKER/mtl/mtl_barrel_04"
-	//"$bumpmap" "z-o-m-b-i-e/STALKER/mtl/mtl_barrel_04_norm"
+	"$bumpmap" "z-o-m-b-i-e/STALKER/mtl/mtl_barrel_04_norm"
 	"$surfaceprop" "metal"
 	"$detail" "z-o-m-b-i-e/STALKER/detail/detail_metall_det2_v"
 	"$detailscale" "6.00"

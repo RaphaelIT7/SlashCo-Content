@@ -1,0 +1,11 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "hostel/concrete/07"
+	"$surfaceprop" "concrete"
+	"$bumpmap" "hostel/concrete/07_b"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmaptint" "[ .1 .1 .1 ]"
+	"$envmapcontrast" ".8"
+	"$envmapsaturation" ".5"
+}

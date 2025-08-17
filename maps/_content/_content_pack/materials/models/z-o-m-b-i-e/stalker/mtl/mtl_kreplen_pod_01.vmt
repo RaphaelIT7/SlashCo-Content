@@ -1,7 +1,7 @@
 "VertexLitGeneric"
 {
 	"$baseTexture" "z-o-m-b-i-e/STALKER/mtl/mtl_kreplen_pod_01"
-	"//$bumpmap" "z-o-m-b-i-e/STALKER/mtl/mtl_kreplen_pod_01_norm"
+	"$bumpmap" "z-o-m-b-i-e/STALKER/mtl/mtl_kreplen_pod_01_norm"
 	"$surfaceprop" "metal"
 }
 
