@@ -1,0 +1,7 @@
+"WorldVertexTransition"
+{
+	"$basetexture" "autumn/autumngrass02"
+	"$basetexture2" "autumn/autumndirt01"
+	"$blendmodulatetexture" "mountain/blendmodgrass"
+	"$surfaceprop" "grass"
+}

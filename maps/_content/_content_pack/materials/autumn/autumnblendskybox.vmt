@@ -1,0 +1,6 @@
+"WorldVertexTransition"
+{
+	"$basetexture" "autumn/skyboxland02"
+	"$basetexture2" "autumn/skyboxland01"
+	"$blendmodulatetexture" "mountain/blendmodgrass"
+}

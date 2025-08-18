@@ -1,0 +1,17 @@
+"unlitgeneric"
+{
+	"$basetexture" "skybox/hd_grimmnight_bk"
+	"$nofog" 1
+	"$ignorez" 1
+}
+
+//Credit Hipshot
+//gtamike_TSGK For Converting to Source at lossless quality 
+//vtf Version 7.3
+//http://www.mapcore.org/topic/2829-second-release-5-skies
+//rt = left
+//ft = forward
+//lf = right
+//bk = back
+//dn = down
+//up = up

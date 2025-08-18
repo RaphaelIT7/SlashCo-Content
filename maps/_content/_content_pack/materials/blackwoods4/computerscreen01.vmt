@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "blackwoods4/computerscreen01"
+	"$surfaceprop" "glass"
+	"$selfillum" "1"
+}
