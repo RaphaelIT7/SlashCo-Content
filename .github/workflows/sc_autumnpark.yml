@@ -15,5 +15,5 @@ jobs:
       fastcompile: false
       createexportbsp: true
       debug: false
-      vrad_mode: "-ldr"
+      vrad_mode: "-both"
       map: "sc_autumnpark"

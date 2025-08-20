@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8870"
-	"mapversion" "30"
+	"mapversion" "32"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -107,7 +107,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "30"
+	"mapversion" "32"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -349870,7 +349870,7 @@ entity
 	"id" "39930"
 	"classname" "env_fog_controller"
 	"angles" "0 0 0"
-	"farz" "3400"
+	"farz" "5000"
 	"fogblend" "1"
 	"fogcolor" "17 18 25"
 	"fogcolor2" "17 18 25"
@@ -646649,8 +646649,8 @@ cameras
 	"activecamera" "0"
 	camera
 	{
-		"position" "[-2195.55 1070.77 818.823]"
-		"look" "[-2407.86 1134.87 671.469]"
+		"position" "[-1223.35 -2699.44 189.011]"
+		"look" "[-1056.41 -2901.23 140.939]"
 	}
 	camera
 	{
