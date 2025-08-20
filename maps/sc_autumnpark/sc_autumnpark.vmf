@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8870"
-	"mapversion" "22"
+	"mapversion" "30"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -107,7 +107,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "22"
+	"mapversion" "30"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -349870,7 +349870,7 @@ entity
 	"id" "39930"
 	"classname" "env_fog_controller"
 	"angles" "0 0 0"
-	"farz" "-1"
+	"farz" "3400"
 	"fogblend" "1"
 	"fogcolor" "17 18 25"
 	"fogcolor2" "17 18 25"
@@ -349881,7 +349881,7 @@ entity
 	"fogend" "1700"
 	"foglerptime" "2"
 	"fogmaxdensity" "1"
-	"fogstart" "400"
+	"fogstart" "200"
 	"spawnflags" "0"
 	"origin" "-832 -2864 77.0691"
 	editor
@@ -349896,10 +349896,10 @@ entity
 {
 	"id" "39926"
 	"classname" "light_environment"
-	"_ambient" "41 41 41 100"
+	"_ambient" "83 104 130 25"
 	"_ambientHDR" "-1 -1 -1 1"
 	"_AmbientScaleHDR" "1"
-	"_light" "75 75 75 100"
+	"_light" "175 230 239 45"
 	"_lightHDR" "-1 -1 -1 1"
 	"_lightscaleHDR" "1"
 	"angles" "0 75 0"
@@ -349919,7 +349919,7 @@ entity
 	"id" "39924"
 	"classname" "shadow_control"
 	"angles" "30 75 0"
-	"color" "21 21 21"
+	"color" "43 54 68"
 	"distance" "1024"
 	"origin" "-848 -2864 77.5675"
 	editor
@@ -359326,7 +359326,7 @@ entity
 	"fogenable" "1"
 	"fogend" "1700"
 	"fogmaxdensity" "1"
-	"fogstart" "400"
+	"fogstart" "200"
 	"scale" "16"
 	"origin" "0 0 -7184"
 	editor
@@ -637513,7 +637513,7 @@ entity
 	"id" "497441"
 	"classname" "info_sc_helicopter_start"
 	"angles" "0 120 0"
-	"origin" "-13126.1 11906 5392"
+	"origin" "-12884 11696 5392"
 	editor
 	{
 		"color" "220 30 220"
@@ -638066,21 +638066,6 @@ entity
 }
 entity
 {
-	"id" "497531"
-	"classname" "info_sc_helicopter"
-	"angles" "0 330 0"
-	"weight" "10"
-	"origin" "535.542 4519.58 408"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 4000]"
-	}
-}
-entity
-{
 	"id" "497536"
 	"classname" "info_sc_helicopter"
 	"angles" "0 345 0"
@@ -638436,7 +638421,7 @@ entity
 	"angles" "0 0 0"
 	"generator" "gen4"
 	"weight" "10"
-	"origin" "-3937.64 -2476.14 72"
+	"origin" "-3908 -2456 72"
 	editor
 	{
 		"color" "220 30 220"
@@ -646645,13 +646630,27 @@ entity
 		"logicalpos" "[0 10500]"
 	}
 }
+entity
+{
+	"id" "508022"
+	"classname" "info_player_start"
+	"angles" "0 0 0"
+	"origin" "3742 1602 28"
+	editor
+	{
+		"color" "0 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
 cameras
 {
 	"activecamera" "0"
 	camera
 	{
-		"position" "[-856.98 -2508.75 307.254]"
-		"look" "[-984.658 -2713.08 193.875]"
+		"position" "[-2195.55 1070.77 818.823]"
+		"look" "[-2407.86 1134.87 671.469]"
 	}
 	camera
 	{
