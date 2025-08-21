@@ -15,5 +15,6 @@ jobs:
       fastcompile: false
       createexportbsp: true
       debug: false
+      vrad: "-StaticPropLighting -StaticPropPolys -TextureShadows"
       vrad_mode: "-both"
       map: "sc_autumnpark"
