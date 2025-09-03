@@ -1,0 +1,1 @@
+For the `BeerKegTEX.png` I used the `Alpha Mask Import Plugin (2.0)` (https://forums.getpaint.net/topic/1854-alpha-mask-import-plugin-20/) plugin for `paint.NET` to apply it to the file before importing it into VTFEdit.
