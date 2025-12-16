@@ -1,0 +1,13 @@
+patch
+{
+	include "materials/models/props_foliage/tree_sway.vmt"
+
+	insert
+	{
+			"$basetexture" "models/props_foliage/spruce_001_trunk_skin4"
+$detail "detail/detail_wood_001"
+$detailscale "8"
+$FlashlightNoLambert 1
+
+	}
+}

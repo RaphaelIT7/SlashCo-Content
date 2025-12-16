@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "christruct/tinsel"
+	"$translucent" 1
+	"$nofog"
+	"$receiveflashlight" "true"
+}

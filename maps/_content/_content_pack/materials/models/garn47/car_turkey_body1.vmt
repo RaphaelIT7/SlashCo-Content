@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/garn47/car_turkey_body1"
+	"$normalmap" "models/garn47/car_basetex1_1_nrm"
+}

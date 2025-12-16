@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/garn47/car_earring1_3"
+	"$selfillum" "1"
+
+	"Proxies"
+	{
+
+
+
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$basetexture"
+			"animatedtextureframenumvar" "$frame"
+			"animatedtextureframerate" 1
+		}
+
+}
+}

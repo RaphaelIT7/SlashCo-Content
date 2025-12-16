@@ -1,0 +1,18 @@
+name: sc_lobby_jolly
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'maps/sc_lobby_jolly/**'
+      - '.github/workflows/sc_lobby_jolly.yml'
+
+jobs:
+  compile:
+    uses: RaphaelIT7/SlashCo-Content/.github/workflows/map_compiler.yml@main
+    secrets: inherit
+    with:
+      fastcompile: false
+      createexportbsp: false
+      debug: false
+      map: "sc_lobby_jolly"

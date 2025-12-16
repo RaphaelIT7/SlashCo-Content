@@ -1,0 +1,7 @@
+"UnlitGeneric"
+{
+	$basetexture "skybox\poly\nightskydn"
+	$hdrcompressedtexture "skybox\poly\nightskydn"
+	$nofog 1
+	$ignorez 1
+}

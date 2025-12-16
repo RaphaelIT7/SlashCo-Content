@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/MLD/xmasstocking_white"
+	"$bumpmap" "models/MLD/xmasstockingwhite_normal"
+	"$surfaceprop" "carpet"
+}

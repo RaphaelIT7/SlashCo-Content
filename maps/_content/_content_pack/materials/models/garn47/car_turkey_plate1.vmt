@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/garn47/car_turkey_plate1"
+	"$bumpmap" "models/garn47/car_turkey_plate1_nrm"
+
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmaptint" "[1 1 1]"
+
+	"$phong" "1"
+	"$phongexponent" "35"
+	"$phongboost" "1"
+	"$phongfresnelranges" "[0.5 0.5 0.5]"
+	"$phongalbedotint" "1"
+	
+	"$rimlight" "1"
+	"$rimlightexponent" "25"
+	"$rimlightboost" "0.5"
+}

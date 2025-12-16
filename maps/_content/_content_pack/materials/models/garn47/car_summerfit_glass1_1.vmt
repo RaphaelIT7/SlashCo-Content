@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/garn47/car_summerfit_glass1_1"
+	"$translucent" 1
+	"$nocull" 1
+	"$halflambert" 1
+}

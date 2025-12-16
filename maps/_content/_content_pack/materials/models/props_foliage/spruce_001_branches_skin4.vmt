@@ -1,0 +1,15 @@
+patch
+{
+	include "materials/models/props_foliage/tree_sway.vmt"
+
+	insert
+	{
+			"$basetexture" "models/props_foliage/spruce_001_branches_skin4"
+	"$alphatest" 1
+	$allowalphatocoverage	1
+	"$nocull" 1
+$model 1
+$FlashlightNoLambert 1
+
+	}
+}
