@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "10415"
-	"mapversion" "2"
+	"editorbuild" "10543"
+	"mapversion" "19"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -32,13 +32,13 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "64"
+	"nGridSpacing" "1"
 	"bShow3DGrid" "0"
 }
 world
 {
 	"id" "1"
-	"mapversion" "2"
+	"mapversion" "19"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -42010,6 +42010,7 @@ entity
 	"model" "models/props_c17/door03_left.mdl"
 	"modelscale" "1.0"
 	"opendir" "0"
+	"rendercolor" "255 255 255"
 	"returndelay" "-1"
 	"skin" "0"
 	"spawnflags" "8192"
@@ -45584,6 +45585,7 @@ entity
 	"model" "models/props_c17/door01_left.mdl"
 	"modelscale" "1.0"
 	"opendir" "0"
+	"rendercolor" "255 255 255"
 	"returndelay" "-1"
 	"skin" "7"
 	"slavename" "DoorGarage"
@@ -45643,6 +45645,7 @@ entity
 	"model" "models/props_c17/door01_left.mdl"
 	"modelscale" "1.0"
 	"opendir" "0"
+	"rendercolor" "255 255 255"
 	"returndelay" "-1"
 	"skin" "4"
 	"slavename" "DoorLockers"
@@ -45677,6 +45680,7 @@ entity
 	"model" "models/props_c17/door01_left.mdl"
 	"modelscale" "1.0"
 	"opendir" "0"
+	"rendercolor" "255 255 255"
 	"returndelay" "-1"
 	"skin" "4"
 	"slavename" "DoorLockers"
@@ -48031,6 +48035,7 @@ entity
 	"model" "models/props_c17/door01_left.mdl"
 	"modelscale" "1.0"
 	"opendir" "0"
+	"rendercolor" "255 255 255"
 	"returndelay" "-1"
 	"skin" "7"
 	"slavename" "DoorGarage"
@@ -48065,6 +48070,7 @@ entity
 	"model" "models/props_c17/door01_left.mdl"
 	"modelscale" "1.0"
 	"opendir" "0"
+	"rendercolor" "255 255 255"
 	"returndelay" "-1"
 	"skin" "4"
 	"spawnflags" "8192"
@@ -49711,6 +49717,7 @@ entity
 	"model" "models/props_c17/door01_left.mdl"
 	"modelscale" "1.0"
 	"opendir" "0"
+	"rendercolor" "255 255 255"
 	"returndelay" "-1"
 	"skin" "4"
 	"spawnflags" "8192"
@@ -52303,6 +52310,7 @@ entity
 	"model" "models/props_c17/door01_left.mdl"
 	"modelscale" "1.0"
 	"opendir" "0"
+	"rendercolor" "255 255 255"
 	"returndelay" "-1"
 	"skin" "4"
 	"spawnflags" "8192"
@@ -52336,6 +52344,7 @@ entity
 	"model" "models/props_c17/door03_left.mdl"
 	"modelscale" "1.0"
 	"opendir" "0"
+	"rendercolor" "255 255 255"
 	"returndelay" "-1"
 	"skin" "0"
 	"spawnflags" "8192"
@@ -52368,6 +52377,7 @@ entity
 	"model" "models/props_c17/door01_left.mdl"
 	"modelscale" "1.0"
 	"opendir" "0"
+	"rendercolor" "255 255 255"
 	"returndelay" "-1"
 	"skin" "5"
 	"slavename" "Front_Door"
@@ -52402,6 +52412,7 @@ entity
 	"model" "models/props_c17/door01_left.mdl"
 	"modelscale" "1.0"
 	"opendir" "0"
+	"rendercolor" "255 255 255"
 	"returndelay" "-1"
 	"skin" "5"
 	"slavename" "Front_Door"
@@ -53163,6 +53174,7 @@ entity
 	"model" "models/props_c17/door01_left.mdl"
 	"modelscale" "1.0"
 	"opendir" "0"
+	"rendercolor" "255 255 255"
 	"returndelay" "-1"
 	"skin" "5"
 	"spawnflags" "8192"
@@ -101379,93 +101391,99 @@ entity
 		"logicalpos" "[6500 14500]"
 	}
 }
-entity
+hidden
 {
-	"id" "7908"
-	"classname" "func_viscluster"
-	solid
+	entity
 	{
-		"id" "7909"
-		side
+		"id" "7908"
+		"classname" "func_viscluster"
+		hidden
 		{
-			"id" "7910"
-			"plane" "(8491 9289 -219) (9515 9289 -219) (9515 10441 -219)"
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[-1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "7911"
-			"plane" "(8491 9289 247) (9515 10441 247) (9515 9289 247)"
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "7912"
-			"plane" "(8491 9289 -219) (8491 9289 247) (9515 9289 -219)"
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[-1 0 0 0] 0.25"
-			"vaxis" "[0 0 1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "7913"
-			"plane" "(9515 9289 -219) (9515 9289 247) (9515 10441 -219)"
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[0 -1 0 0] 0.25"
-			"vaxis" "[0 0 1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "7914"
-			"plane" "(9515 10441 -219) (9515 10441 247) (8491 10441 -219)"
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "7915"
-			"plane" "(8491 10441 -219) (8491 10441 247) (8491 9289 -219)"
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
+			solid
+			{
+				"id" "7909"
+				side
+				{
+					"id" "7910"
+					"plane" "(8491 9289 -219) (9515 9289 -219) (9515 10441 -219)"
+					"material" "TOOLS/TOOLSTRIGGER"
+					"uaxis" "[-1 0 0 0] 0.25"
+					"vaxis" "[0 -1 0 0] 0.25"
+					"rotation" "0"
+					"lightmapscale" "16"
+					"smoothing_groups" "0"
+				}
+				side
+				{
+					"id" "7911"
+					"plane" "(8491 9289 247) (9515 10441 247) (9515 9289 247)"
+					"material" "TOOLS/TOOLSTRIGGER"
+					"uaxis" "[1 0 0 0] 0.25"
+					"vaxis" "[0 -1 0 0] 0.25"
+					"rotation" "0"
+					"lightmapscale" "16"
+					"smoothing_groups" "0"
+				}
+				side
+				{
+					"id" "7912"
+					"plane" "(8491 9289 -219) (8491 9289 247) (9515 9289 -219)"
+					"material" "TOOLS/TOOLSTRIGGER"
+					"uaxis" "[-1 0 0 0] 0.25"
+					"vaxis" "[0 0 1 0] 0.25"
+					"rotation" "0"
+					"lightmapscale" "16"
+					"smoothing_groups" "0"
+				}
+				side
+				{
+					"id" "7913"
+					"plane" "(9515 9289 -219) (9515 9289 247) (9515 10441 -219)"
+					"material" "TOOLS/TOOLSTRIGGER"
+					"uaxis" "[0 -1 0 0] 0.25"
+					"vaxis" "[0 0 1 0] 0.25"
+					"rotation" "0"
+					"lightmapscale" "16"
+					"smoothing_groups" "0"
+				}
+				side
+				{
+					"id" "7914"
+					"plane" "(9515 10441 -219) (9515 10441 247) (8491 10441 -219)"
+					"material" "TOOLS/TOOLSTRIGGER"
+					"uaxis" "[1 0 0 0] 0.25"
+					"vaxis" "[0 0 1 0] 0.25"
+					"rotation" "0"
+					"lightmapscale" "16"
+					"smoothing_groups" "0"
+				}
+				side
+				{
+					"id" "7915"
+					"plane" "(8491 10441 -219) (8491 10441 247) (8491 9289 -219)"
+					"material" "TOOLS/TOOLSTRIGGER"
+					"uaxis" "[0 1 0 0] 0.25"
+					"vaxis" "[0 0 1 0] 0.25"
+					"rotation" "0"
+					"lightmapscale" "16"
+					"smoothing_groups" "0"
+				}
+				editor
+				{
+					"color" "180 180 0"
+					"visgroupshown" "1"
+					"visgroupautoshown" "1"
+				}
+			}
 		}
 		editor
 		{
 			"color" "180 180 0"
-			"visgroupshown" "1"
+			"visgroupid" "8"
+			"visgroupshown" "0"
 			"visgroupautoshown" "1"
+			"logicalpos" "[6500 15000]"
 		}
-	}
-	editor
-	{
-		"color" "180 180 0"
-		"visgroupid" "8"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[6500 15000]"
 	}
 }
 entity
@@ -122572,13 +122590,193 @@ entity
 		"logicalpos" "[0 0]"
 	}
 }
+entity
+{
+	"id" "454421"
+	"classname" "info_sc_lobby_documentscreen"
+	"angles" "0.000 180.000 90.000"
+	"origin" "790 127 -125"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "454426"
+	"classname" "info_sc_lobby_briefingscreen"
+	"angles" "0.000 -90.000 90.000"
+	"origin" "-133 400 80"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "457572"
+	"classname" "info_sc_settings"
+	"gascans_needed" "-1"
+	"gascans_spawned" "-1"
+	"generators_needed" "-1"
+	"generators_spawned" "-1"
+	"islobby" "1"
+	"origin" "524.267 884 -55.664"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "460703"
+	"classname" "sc_offertable"
+	"angles" "0 -90 0"
+	"origin" "940.838 890.909 -191.853"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "463835"
+	"classname" "sc_itemstash"
+	"angles" "90 180 180"
+	"origin" "-483.5 -260 88"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "466968"
+	"classname" "info_sc_helicopter"
+	"angles" "0 45 0"
+	"delete" "0"
+	"disabled" "0"
+	"weight" "10"
+	"origin" "644.594 -423.175 40.004"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "470108"
+	"classname" "func_sc_lobby_elevator_ready_zone"
+	"targetname" "Elevator"
+	solid
+	{
+		"id" "470109"
+		side
+		{
+			"id" "7939"
+			"plane" "(-52 640 -64) (-52 640 -192) (-52 784 -192)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "7938"
+			"plane" "(92 784 -64) (92 784 -192) (92 640 -192)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "7937"
+			"plane" "(92 640 -64) (92 640 -192) (-52 640 -192)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "7936"
+			"plane" "(-52 784 -64) (-52 784 -192) (92 784 -192)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "7935"
+			"plane" "(-52 784 -192) (-52 640 -192) (92 640 -192)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "7934"
+			"plane" "(-52 640 -64) (-52 784 -64) (92 784 -64)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "220 30 220"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[1000 1500]"
+	}
+}
 cameras
 {
 	"activecamera" "0"
 	camera
 	{
-		"position" "[453.787 -434.672 166.608]"
-		"look" "[238.359 -278.158 174.046]"
+		"position" "[50.3236 700.121 30.2994]"
+		"look" "[-135.001 617.608 -142.351]"
 	}
 	camera
 	{
