@@ -340,6 +340,76 @@ local function ReadString(file)
 	return str
 end
 
+function PrintTable(tbl, indent)
+	indent = indent or 0
+	local str = ""
+	for k=1, indent do
+		str = str .. "	"
+	end
+
+	for k, v in pairs(tbl) do
+		if type(v) == "table" then
+			print(str .. k .. " = {")
+			PrintTable(v, indent + 1)
+			print(str .. "}")
+		else
+			if type(v) == "string" then
+				print(str .. k .. ' = "' .. v .. '"')
+			else
+				print(str .. k .. " = " .. tostring(v))
+			end
+		end
+	end
+end
+
+NewLine = [[
+
+]]
+
+function FindFiles(glob)
+	if not content_searchpaths then
+		content_searchpaths = BuildPaths()
+	end
+
+	if next(content_filelist) == nil then
+		BuildFileList()
+	end
+
+	glob = SafePath(glob):lower()
+
+	local pattern = {}
+	for position = 1, #glob do
+		local character = glob:sub(position, position)
+
+		if character == "*" then
+			pattern[#pattern + 1] = ".*"
+		elseif character == "?" then
+			pattern[#pattern + 1] = "."
+		else
+			pattern[#pattern + 1] = string.PatternSafe(character)
+		end
+	end
+
+	pattern = "^" .. table.concat(pattern) .. "$"
+
+	local matches = {}
+	local found = {}
+	for relativePath, realPath in pairs(content_filelist) do
+		for _, folder in ipairs(content_searchpaths) do
+			local find = relativePath:find(folder, 1, true)
+			if find then
+				localPath = relativePath:sub(find + #folder + 1)
+				if not found[realPath] and localPath:lower():match(pattern) then
+					found[realPath] = true
+					matches[#matches + 1] = realPath
+				end
+			end
+		end
+	end
+
+	return matches
+end
+
 --[[
 	Map reader
 ]]
@@ -377,6 +447,212 @@ function readVMF(filePath)
 	file:close()
 
 	return materials, models
+end
+
+function parseVMF(input)
+	local position = 1
+	local length = #input
+	local line = 1
+	local function skipWhitespace()
+		while position <= length do
+			local character = input:sub(position, position)
+
+			if character == " " or character == "\t" or
+			   character == "\r" or character == "\n" then
+				if character == "\n" then
+					line = line + 1
+				end
+				position = position + 1
+
+			elseif character == "/" and input:sub(position + 1, position + 1) == "/" then
+				position = position + 2
+
+				while position <= length and input:sub(position, position) ~= "\n" do
+					position = position + 1
+				end
+			else
+				break
+			end
+		end
+	end
+
+	local function readToken()
+		skipWhitespace()
+
+		if position > length then
+			return nil
+		end
+
+		local character = input:sub(position, position)
+		if character == "{" or character == "}" then
+			position = position + 1
+			return character
+		end
+
+		if character == '"' then
+			position = position + 1
+
+			local value = {}
+			while position <= length do
+				character = input:sub(position, position)
+				if character == '"' then
+					position = position + 1
+					return table.concat(value)
+				end
+
+				if character == "\\" then
+					position = position + 1
+
+					if position > length then
+						return nil, "unterminated escape sequence"
+					end
+
+					character = input:sub(position, position)
+
+					if character == "n" then
+						value[#value + 1] = "\n"
+					elseif character == "r" then
+						value[#value + 1] = "\r"
+					elseif character == "t" then
+						value[#value + 1] = "\t"
+					elseif character == "\\" then
+						value[#value + 1] = "\\"
+					elseif character == '"' then
+						value[#value + 1] = '"'
+					else
+						value[#value + 1] = "\\"
+						value[#value + 1] = character
+					end
+
+					position = position + 1
+				else
+					value[#value + 1] = character
+
+					if character == "\n" then
+						line = line + 1
+					end
+
+					position = position + 1
+				end
+			end
+
+			return nil, "unterminated quoted string"
+		end
+
+		local tokenStart = position
+		while position <= length do
+			character = input:sub(position, position)
+
+			if character == " " or character == "\t" or
+			   character == "\r" or character == "\n" or
+			   character == "{" or character == "}" then
+				break
+			end
+
+			if character == "/" and input:sub(position + 1, position + 1) == "/" then
+				break
+			end
+
+			position = position + 1
+		end
+
+		return input:sub(tokenStart, position - 1)
+	end
+
+	local function addValue(object, key, value)
+		local existingValue = object[key]
+		if existingValue == nil then
+			object[key] = value
+		elseif existingValue.__array then
+			existingValue[#existingValue + 1] = value
+		else
+			object[key] = {
+				__array = true,
+				existingValue,
+				value
+			}
+		end
+	end
+
+	local function parseBlock()
+		local object = {}
+		while true do
+			local key, keyError = readToken()
+			if keyError then
+				return nil, keyError
+			end
+
+			if key == nil then
+				return nil, "unexpected end of file; expected '}'"
+			end
+
+			if key == "}" then
+				return object
+			end
+
+			if key == "{" then
+				return nil, "unexpected '{'"
+			end
+
+			local value, valueError = readToken()
+			if valueError then
+				return nil, valueError
+			end
+
+			if value == nil then
+				return nil, "unexpected end of file after key '" .. key .. "'"
+			end
+
+			if value == "{" then
+				value, valueError = parseBlock()
+
+				if valueError then
+					return nil, valueError
+				end
+			elseif value == "}" then
+				return nil, "unexpected '}' after key '" .. key .. "'"
+			end
+
+			addValue(object, key, value)
+		end
+	end
+
+	if input:sub(1, 3) == "\239\187\191" then
+		input = input:sub(4)
+		length = #input
+	end
+
+	local root = {}
+	while true do
+		local key, keyError = readToken()
+		if keyError then
+			return nil, keyError
+		end
+
+		if key == nil then
+			return root
+		end
+
+		if key == "{" or key == "}" then
+			return nil, ("VMF parse error at line %d: unexpected '%s'"):format(line, key)
+		end
+
+		local openingBrace, valueError = readToken()
+		if valueError then
+			return nil, valueError
+		end
+
+		if openingBrace ~= "{" then
+			return nil, ("VMF parse error at line %d: expected '{' after '%s'"):format(line, key)
+		end
+
+		local object, blockError = parseBlock()
+		if blockError then
+			return nil, ("VMF parse error at line %d: %s"):format(line, blockError)
+		end
+
+		addValue(root, key, object)
+	end
 end
 
 function parseMDL(filePath)

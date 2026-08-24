@@ -48,6 +48,45 @@ local vmfFilePath = "../" .. vmfFile .. "/" .. vmfFile
 local vmfMaterials, vmfModels = readVMF(vmfFilePath .. ".vmf")
 LoadAdditionalContentFile(vmfFilePath .. ".lua", vmfMaterials, vmfModels)
 
+
+local entProcessFuncs = {
+	["ambient_generic"] = function(ent)
+		AddContent("sound/" .. ent.message)
+	end,
+	["sc_audio_playsound"] = function(ent)
+		local soundPath = SafePath(ent.soundPath)
+		if soundPath:sub(1, 6) ~= "sound/" then
+			soundPath = "sound/" .. soundPath
+		end
+
+		if soundPath:find("*") then
+			for _, filePath in ipairs(FindFiles(soundPath)) do
+				AddContent(filePath)
+			end
+		else
+			AddContent(soundPath)
+		end
+	end,
+}
+
+local function LoadMapContents()
+	local vmf, err = parseVMF(ReadFile(vmfFilePath .. ".vmf"))
+	if not vmf then
+		error(err)
+		return
+	end
+
+	for idx, ent in ipairs(vmf.entity) do
+		print(idx, ent, ent.classname)
+		local entFunc = entProcessFuncs[ent.classname]
+		if entFunc then
+			entFunc(ent)
+		end
+	end
+end
+
+LoadMapContents()
+
 if not vmfMaterials then
 	error("::error:: No map!")
 end
