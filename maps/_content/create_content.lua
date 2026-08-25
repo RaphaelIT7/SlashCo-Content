@@ -16,19 +16,24 @@ BuildFileList()
 
 CreateDir(({...})[2] or "__content_map")
 
-local content_list = {}
+local vmfFile = ({...})[1]
+local vmfFilePath = "../" .. vmfFile .. "/" .. vmfFile
+
+local contentList = {}
 function RecursiveAdd(tbl)
 	for _, path in pairs(tbl) do
 		if type(path) == "table" then
 			RecursiveAdd(path)
 		else
-			table.insert(content_list, path)
+			contentList[path] = true
+			table.insert(contentList, path)
 		end
 	end
 end
 
 function MaterialContent(path)
-	table.insert(content_list, path)
+	contentList[path] = true
+	table.insert(contentList, path)
 
 	local tbl = parseVMT(ReadFile(path))
 	local res = getVMTRessources(tbl)
@@ -36,22 +41,40 @@ function MaterialContent(path)
 end
 
 local function AddContent(path)
-	if FileExists(path) then
-		table.insert(content_list, path)
+	if not contentList[path] and FileExists(path) then
+		contentList[path] = true
+		table.insert(contentList, path)
 	else
 		print("Invalid path! (" .. path .. ")")
 	end
 end
 
-local vmfFile = ({...})[1]
-local vmfFilePath = "../" .. vmfFile .. "/" .. vmfFile
-local vmfMaterials, vmfModels = readVMF(vmfFilePath .. ".vmf")
-LoadAdditionalContentFile(vmfFilePath .. ".lua", vmfMaterials, vmfModels)
+local function FindSoundScape()
+	local fullPath = FindFile("scripts/soundscapes_" .. vmfFile .. ".txt")
+	if fullPath then
+		AddContent(fullPath)
+	end
+end
 
+FindSoundScape()
+
+local function AddSingleFile(fileName)
+	if not fileName then return end
+
+	local fullPath = FindFile(SafePath(fileName))
+	if fullPath then
+		AddContent(fullPath)
+	end
+end
 
 local entProcessFuncs = {
 	["ambient_generic"] = function(ent)
-		AddContent("sound/" .. ent.message)
+		local soundPath = SafePath(ent.message)
+		if soundPath:sub(1, 6) ~= "sound/" then
+			soundPath = "sound/" .. soundPath
+		end
+
+		AddSingleFile(soundPath)
 	end,
 	["sc_audio_playsound"] = function(ent)
 		local soundPath = SafePath(ent.soundPath)
@@ -64,8 +87,42 @@ local entProcessFuncs = {
 				AddContent(filePath)
 			end
 		else
-			AddContent(soundPath)
+			AddSingleFile(soundPath)
 		end
+	end,
+	["prop_physics"] = function(ent)
+		AddSingleFile(ent.model)
+	end,
+	["prop_static"] = function(ent)
+		AddSingleFile(ent.model)
+	end,
+	["prop_dynamic"] = function(ent)
+		AddSingleFile(ent.model)
+	end,
+	["prop_dynamic_override"] = function(ent)
+		AddSingleFile(ent.model)
+	end,
+	["prop_door_rotating"] = function(ent)
+		AddSingleFile(ent.model)
+	end,
+	["prop_ragdoll"] = function(ent)
+		AddSingleFile(ent.model)
+	end,
+	["env_sprite"] = function(ent)
+		AddSingleFile(ent.model)
+	end,
+	["info_overlay"] = function(ent)
+		AddSingleFile(ent.material)
+	end,
+	["infodecal"] = function(ent)
+		AddSingleFile(ent.texture)
+	end,
+	["move_rope"] = function(ent)
+		AddSingleFile(ent.RopeMaterial)
+	end,
+	["env_sun"] = function(ent)
+		AddSingleFile(ent.material)
+		AddSingleFile(ent.overlaymaterial)
 	end,
 }
 
@@ -86,6 +143,11 @@ local function LoadMapContents()
 end
 
 LoadMapContents()
+
+if false then return end
+
+local vmfMaterials, vmfModels = readVMF(vmfFilePath .. ".vmf")
+LoadAdditionalContentFile(vmfFilePath .. ".lua", vmfMaterials, vmfModels)
 
 if not vmfMaterials then
 	error("::error:: No map!")
@@ -110,7 +172,8 @@ for _, model in ipairs(vmfModels) do
 			MaterialContent(path:lower())
 		else
 			local filename = path:sub(0, path:len() - 4)
-			table.insert(content_list, path)
+			contentList[path] = true
+			table.insert(contentList, path)
 			--AddContent(filename .. ".dx80.vtx")
 			AddContent(filename .. ".dx90.vtx")
 			AddContent(filename .. ".phy")
@@ -159,7 +222,7 @@ for _, model in ipairs(vmfModels) do
 end
 
 print("\nContent:")
-for _, path in pairs(content_list) do
+for _, path in ipairs(contentList) do
 	path = SafePath(path)
 	print(path)
 	CopyFile(path, (({...})[2] or "__content_map/") .. GetPathWithoutFirst(path))
