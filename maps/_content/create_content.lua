@@ -64,8 +64,10 @@ function AddMaterial(path)
 	local contents = ReadFile(path)
 	if contents then
 		local vmt = parseKV(contents)
-		local res = getVMTRessources(vmt)
-		RecursiveMaterialAdd(res)
+		if vmt then
+			local res = getVMTRessources(vmt)
+			RecursiveMaterialAdd(res)
+		end
 	end
 end
 
