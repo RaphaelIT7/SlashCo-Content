@@ -1,8 +1,8 @@
 --[[
 	This file exposes these functions:
 	bool IsFile(file)
-	String SafePath(path) 
-		Replaces \ with / and Trims any spaces
+	String NormalizePath(path) 
+		Replaces \ with / and Trims any spaces and makes it lowercase
 	String GetPath(path) 
 		Example: somefolder/anotherfolder/file.txt -> somefolder/anotherfolder/
 	String GetPathWithoutFirst(path) 
@@ -87,8 +87,8 @@ function IsFile(dir)
 	return string.find(dir, ".", 1, true)
 end
 
-function SafePath(path)
-	return string.Trim(string.Replace(string.Replace(path, [[\]], [[/]]), [[//]], [[/]]))
+function NormalizePath(path)
+	return string.lower(string.Trim(string.Replace(string.Replace(path, [[\]], [[/]]), [[//]], [[/]])))
 end
 
 function GetPath(file)
@@ -144,24 +144,39 @@ function CreateDir(name)
 	created_dirs[name] = true
 end
 
+local contentList = {}
 function ReadFile(path)
+	if contentList[path] then
+		-- From normalized to disk path
+		path = contentList[path]
+	end
+
 	local file = io.open(path, "rb")
-	local content = file:read("*a")
-	file:close()
-	return content
+	if file then
+		local content = file:read("*a")
+		file:close()
+		return content
+	end
+
+	return nil
 end
 
 function WriteFile(path, content)
+	if not content then return false end
+
 	local file = io.open(path, "wb")
 	if file then
 		local content = file:write(content)
 		file:close()
+		return true
 	end
+
+	return false
 end
 
 function CopyFile(from, to)
 	CreateDir(GetPath(to))
-	WriteFile(to, ReadFile(from))
+	return WriteFile(to, ReadFile(from))
 end
 
 function RemoveSpaces(inputString)
@@ -181,17 +196,6 @@ function string.Replace(str, rep, new)
 	end
 
 	return new_str
-end
-
-function FileExists(filePath)
-	local file = io.open(filePath, "r")
-
-	if file then
-		io.close(file)
-		return true
-	else
-		return false
-	end
 end
 
 local content_searchpaths
@@ -216,74 +220,60 @@ local function istable(val)
 end
 
 function EndsWith(str, find)
-	return str:sub(#str - #find - 1) == find
+	return str:sub(#str - #find + 1) == find
 end
 
-function BuildFilePath(fileList, list, path)
+function StartsWith(str, find)
+	return str:sub(1, #find) == find
+end
+
+function BuildFilePath(fileList, contentList, folderPath, rootFolder)
+	local relativeFolderPath = folderPath:sub(#rootFolder+2)
 	for folderName, fileName in pairs(fileList) do -- folderName is only valid if fileName is a table.
 		if istable(fileName) then
-			BuildFilePath(fileName, list, path == "" and (path .. folderName) or (path .. "/" .. folderName))
+			BuildFilePath(fileName, contentList, folderPath == "" and (folderPath .. folderName) or (folderPath .. "/" .. folderName), rootFolder)
 		else
-			local p = path == "" and (path .. fileName) or (path .. "/" .. fileName)
-			list[p] = p
-			list[p:lower()] = p
-			list[SafePath(p)] = p
-			list[SafePath(p):lower()] = p
+			local entryName = relativeFolderPath == "" and (relativeFolderPath .. fileName) or (relativeFolderPath .. "/" .. fileName)
+			contentList[NormalizePath(entryName)] = folderPath .. "/" .. fileName
 		end
 	end
 end
 
-local content_filelist = {}
 function BuildFileList()
 	if not content_searchpaths then
 		content_searchpaths = BuildPaths() -- Creates all search paths once
 	end
 
 	for _, folder in ipairs(content_searchpaths) do
-		BuildFilePath(ScanDir(folder, true), content_filelist, folder)
+		BuildFilePath(ScanDir(folder, true), contentList, folder, folder)
 	end
-
-	--for k, v in pairs(content_filelist) do
-	--	print(k, v)
-	--end
 end
 
-local missing = {}
-function FindFileInList(name)
-	local lowername = name:lower()
-	if missing[lowername] then return end
+function FileExistsInList(filePath)
+	if gmodContent and gmodContent[filePath] then
+		return true
+	end
 
-	local ret = nil
-	local fk, err = pcall(function()
-		for str, real in pairs(content_filelist) do -- I really don't like to touch the stuff below. One issue and it could break all VMTs
-			--[[local found, finish = string.find(str, name)
-			if found then
-				ret = real
-				break
-			end]]
+	return contentList[filePath] ~= nil
+end
 
-			local found, finish = string.find(str, lowername)
-			if found then
-				ret = real
-				break
-			end
-		end
-	end)
+function GetFileFromList(filePath)
+	return contentList[filePath]
+end
 
-	if not fk then
-		print("ERROR |" .. name .. "|" .. err)
+function FileExists(filePath)
+	if contentList[filePath] then
+		return true
+	end
+
+	local file = io.open(filePath, "r")
+
+	if file then
+		io.close(file)
+		return true
 	else
-		if ret then
-			return ret
-		end
+		return false
 	end
-
-	local ret = FindFile(name)
-	if ret then
-		return ret
-	end
-
-	missing[lowername] = true
 end
 
 --[[
@@ -371,22 +361,22 @@ function FindFiles(glob)
 		content_searchpaths = BuildPaths()
 	end
 
-	if next(content_filelist) == nil then
+	if next(contentList) == nil then
 		BuildFileList()
 	end
 
-	glob = SafePath(glob):lower()
+	glob = NormalizePath(glob):lower()
 
 	local pattern = {}
 	for position = 1, #glob do
 		local character = glob:sub(position, position)
-
 		if character == "*" then
-			pattern[#pattern + 1] = ".*"
+			table.insert(pattern, ".*")
 		elseif character == "?" then
-			pattern[#pattern + 1] = "."
+			table.insert(pattern, ".")
 		else
-			pattern[#pattern + 1] = string.PatternSafe(character)
+			local safePattern = string.PatternSafe(character)
+			table.insert(pattern, safePattern)
 		end
 	end
 
@@ -394,16 +384,10 @@ function FindFiles(glob)
 
 	local matches = {}
 	local found = {}
-	for relativePath, realPath in pairs(content_filelist) do
-		for _, folder in ipairs(content_searchpaths) do
-			local find = relativePath:find(folder, 1, true)
-			if find then
-				localPath = relativePath:sub(find + #folder + 1)
-				if not found[realPath] and localPath:lower():match(pattern) then
-					found[realPath] = true
-					matches[#matches + 1] = realPath
-				end
-			end
+	for normalizedPath, realPath in pairs(contentList) do
+		if not found[realPath] and normalizedPath:lower():match(pattern) then
+			found[realPath] = true
+			table.insert(matches, realPath)
 		end
 	end
 
@@ -413,43 +397,7 @@ end
 --[[
 	Map reader
 ]]
-function readVMF(filePath)
-	local file = io.open(filePath, "r")
-
-	if not file then
-		print("::error:: Could not open .vmf file. \"" .. filePath .. "\"")
-		return
-	end
-
-	local invmaterials = {}
-	local invmodels = {}
-
-	local materials = {}
-	local models = {}
-
-	local inMaterialBlock = false
-	local inModelBlock = false
-
-	for line in file:lines() do
-		local mat = line:match('"material"%s+"([^"]+)"')
-		if mat and not invmaterials[mat] then
-			table.insert(materials, mat)
-			invmaterials[mat] = true
-		end
-
-		local mod = line:match('"model"%s+"([^"]+)"')
-		if mod and not invmodels[mod] then
-			table.insert(models, mod)
-			invmodels[mod] = true
-		end
-	end
-
-	file:close()
-
-	return materials, models
-end
-
-function parseVMF(input)
+function parseKV(input)
 	local position = 1
 	local length = #input
 	local line = 1
@@ -507,24 +455,7 @@ function parseVMF(input)
 						return nil, "unterminated escape sequence"
 					end
 
-					character = input:sub(position, position)
-
-					if character == "n" then
-						value[#value + 1] = "\n"
-					elseif character == "r" then
-						value[#value + 1] = "\r"
-					elseif character == "t" then
-						value[#value + 1] = "\t"
-					elseif character == "\\" then
-						value[#value + 1] = "\\"
-					elseif character == '"' then
-						value[#value + 1] = '"'
-					else
-						value[#value + 1] = "\\"
-						value[#value + 1] = character
-					end
-
-					position = position + 1
+					value[#value + 1] = character
 				else
 					value[#value + 1] = character
 
@@ -659,6 +590,10 @@ function parseMDL(filePath)
 	if not filePath or filePath:sub(-4) ~= ".mdl" then
 		print("::warning:: Not a model you retarded code :< - \"" .. (filePath or "") .. "\"")
 		return
+	end
+
+	if contentList[filePath] then
+		filePath = contentList[filePath]
 	end
 
 	local file = io.open(filePath, "rb")
@@ -875,126 +810,60 @@ end
 --[[
 	Material reader
 ]]
-function parseVMT(vmtContent)
-	local lines = {}
-	local scope = {}
-	local vmtTable = {}
-	local currentMaterial
+local vmtMaterialKeys = {
+	["$basetexture"] = true,
+	["$basetexture2"] = true,
+	["$basetexturetransform"] = false,
 
-	local current_tbl = nil
-	for line in vmtContent:gmatch("[^\r\n]+") do
-		if line:match("//") then
-			local pos = string.find(line, "//")
-			line = line:sub(0, pos - 1)
-		end
+	["$bumpmap"] = true,
+	["$bumpmap2"] = true,
 
-		if line:match("{") then
-			if not current_tbl then
-				current_tbl = vmtTable
-			else
-				table.insert(scope, current_tbl)
-				local new_tbl = {}
-				current_tbl[RemoveSpaces(lines[#lines])] = new_tbl
-				current_tbl = new_tbl
-			end
-		elseif line:match("}") then
-			current_tbl = scope[#scope]
-			scope[#scope] = nil
-		else
-			local key, value = line:match([["([^"]+)"%s*"([^"]+)"]]) -- "([^"]+)"\s*"\s*([^"]+)"
-			if not key then
-				key, value = line:match([[([^%s]+)%s([^%*]+)]]) -- ([^%s]+)\s([^*]+) (Match things like $bumpmap without "")
-			end
+	["$normalmap"] = true,
+	["$normalmap2"] = true,
 
-			if key then
-				if value then
-					local val_match = value:match([["([^"]+)"]])
-					if val_match then -- Read strings properly
-						value = val_match:lower()
-					end
+	["$detail"] = true,
+	["$detail2"] = true,
 
-					if not current_tbl then
-						print("::warning:: Invalid Stack? Look into it")
-					else
-						current_tbl[RemoveSpaces(key)] = value
-					end
-				else
-					error("::error:: WHAT TF. HOW TF. WHY TF.")
-				end
-			else
-				if #lines > 1 and line:match("^%s*$") == nil then -- Skip the first line and empty ones.
-					print("::warning:: Failed to find a VMT match!", "'", line, "'")
-				end
-			end
-		end
+	["$blendmodulatetexture"] = true,
+	["$blendmodulatetexture2"] = true,
 
-		table.insert(lines, line)
-	end
+	["$envmap"] = true,
+	["$envmapmask"] = true,
 
-	return vmtTable
-end
+	["$phongexponenttexture"] = true,
+
+	["$selfillummask"] = true,
+
+	["$selfillumtexture"] = true,
+
+	["$emissiveblendtexture"] = true,
+	["$emissiveblendbasetexture"] = true,
+	["$emissiveblendflowtexture"] = true,
+
+	["$fleshinteriortexture"] = true,
+	["$fleshsubsurfaceTexture"] = true,
+
+	["$sheenmap"] = true,
+
+	["$lightwarptexture"] = true,
+}
 
 local no_extension = {
 	[".vtf"] = true,
 	[".vmt"] = true
 }
-function getVMTRessources(vmt_tbl)
-	local tbl = {}
-	for k, v in pairs(vmt_tbl) do
-		if type(v) == "table" then
-			tbl[k] = getVMTRessources(v)
-		else
-			local n = tonumber(v)
-			if not n and not v:match('%[([^*]+)%]') and not (k == "$surfaceprop") then
-				if no_extension[v:sub(v:len() - 3)] then
-					v = v:sub(0, v:len() - 4)
-				end
-
-				local filePath = SafePath(v:lower())
-				if not (v == "env_cubemap") then
-					local found = false
-					local path = FindFile("materials/" .. filePath .. ".vmt")
-					if path then
-						tbl["materials/" .. filePath .. ".vmt"] = path
-						found = true
-					end
-
-					local path = FindFile("materials/" .. filePath .. ".vtf") -- Smack both vtf and vmt in there :D
-					if path then
-						tbl["materials/" .. filePath .. ".vtf"] = path
-						found = true
-					end
-
-
-					if not found then -- Fallback. Why are we even doing this. Idk, but I don't wanna just remove it as maybe some ugly ass file depends on this?
-						if filePath:sub(0, 10) == "materials/" then
-							filePath = filePath:sub(11)
-
-							local path = FindFile("materials/" .. filePath .. ".vmt")
-							if path then
-								tbl["materials/" .. filePath .. ".vmt"] = path
-								found = true
-							else -- Do we really need this print?
-								print("::notice:: Failed to find: materials/" .. filePath .. ".vmt" .. " (" .. filePath .. ")")
-							end
-
-							local path = FindFile("materials/" .. filePath .. ".vtf")
-							if path then
-								tbl["materials/" .. filePath .. ".vtf"] = path
-								found = true
-							end
-						end
-					end
-
-					if not found then
-						print("::warning:: Failed to find: " .. v .. " (" .. filePath .. ")")
-					end
-				end
+function getVMTRessources(vmt)
+	local results = {}
+	for _, entry in pairs(vmt) do
+		for key, material in pairs(entry) do
+			if vmtMaterialKeys[key] then
+				-- We must later filter out env_cubemap
+				table.insert(results, material)
 			end
 		end
 	end
 
-	return tbl
+	return results
 end
 
 function getFileName(filePath)

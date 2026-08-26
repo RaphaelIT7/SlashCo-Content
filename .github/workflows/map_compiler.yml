@@ -231,7 +231,7 @@ jobs:
             cd ${{env.CONTENT_PATH}}
             ./bspzip-list.out __content_map
             cd ~
-            wine ${{env.GMOD_PATH}}/bin/bspzip.exe -addlist "${{env.COMPILE_PATH}}.bsp_export" "${{env.CONTENT_PATH}}/__content_map.txt" "${{env.COMPILE_PATH}}.bsp" -game "${{env.GMOD_PATH}}/garrysmod"
+            wine ${{env.GMOD_PATH}}/bin/bspzip.exe -addlist "${{env.COMPILE_PATH}}.bsp_export" "${{env.CONTENT_PATH}}/__content_map.txt" "${{env.COMPILE_PATH}}.bsp"
 
       # We don't want the unpacked bsp? then Nuke it.
       - name: Removing unpacked BSP
