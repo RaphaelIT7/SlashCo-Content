@@ -122,6 +122,14 @@ jobs:
             ln -sf ../../gmod/garrysmod/garrysmod_002.vpk ${{env.GMOD_PATH}}/garrysmod/garrysmod_002.vpk
             ln -sf ../../gmod/garrysmod/garrysmod_dir.vpk ${{env.GMOD_PATH}}/garrysmod/garrysmod_dir.vpk
 
+            cat > ${{env.GMOD_PATH}}/garrysmod/cfg/mount.cfg <<'EOF'
+            "mountcfg"
+            {
+              "map" "Z:\root\${{env.CONTENT_PATH}}\__content_map"
+              "slashco" "Z:\root\slashco_content"
+            }
+            EOF
+
 
       # We upload the repo onto the server, why don't we use SFTP? because... welll... I tried & it failed as the docker container the compiler is running in doesn't seem to allow SFTP.
       - name: Upload repo
@@ -142,8 +150,6 @@ jobs:
             mv /var/www/uploads/repo.zip${{ github.run_id }} ./
             unzip ${{env.DEBUG_ARGS}} repo.zip${{ github.run_id }}
             rm -f repo.zip${{ github.run_id }}
-            cd ~
-            rsync -av ./${{env.CONTENT_PATH}}/__content_map/ ./${{env.GMOD_PATH}}/garrysmod/
 
       # VBSP fun
       - name: VBSP
