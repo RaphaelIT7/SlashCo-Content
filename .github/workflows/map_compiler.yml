@@ -59,7 +59,7 @@ jobs:
     name: Prepare and Compile
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - uses: leafo/gh-actions-lua@01aab24c4de9555717b685f9b142a2abbe12ef14
         with:
