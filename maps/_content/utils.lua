@@ -179,6 +179,11 @@ function CopyFile(from, to)
 	return WriteFile(to, ReadFile(from))
 end
 
+function RemoveFile(path)
+	path = NormalizePath(path)
+	return os.remove(path)
+end
+
 function RemoveSpaces(inputString)
 	return inputString:gsub("[%s\t]", "")
 end
@@ -856,7 +861,7 @@ function getVMTRessources(vmt)
 	local results = {}
 	for _, entry in pairs(vmt) do
 		for key, material in pairs(entry) do
-			if vmtMaterialKeys[key] then
+			if vmtMaterialKeys[string.lower(key)] then
 				-- We must later filter out env_cubemap
 				table.insert(results, material)
 			end
@@ -898,4 +903,26 @@ function LoadAdditionalContentFile(filePath, materials, models)
 	for _, entry in ipairs(entries or {}) do
 		table.insert(models, entry)
 	end
+end
+
+function LoadGModContentList()
+	local gmodList = {}
+	local file = io.open("gmod_content.txt", "r")
+	for line in file:lines() do
+		gmodList[NormalizePath(line)] = true
+	end
+	file:close()
+
+	return gmodList
+end
+
+function LoadGModSoundScriptList()
+	local gmodList = {}
+	local file = io.open("gmod_soundscripts.txt", "r")
+	for line in file:lines() do
+		gmodList[line] = true
+	end
+	file:close()
+
+	return gmodList
 end

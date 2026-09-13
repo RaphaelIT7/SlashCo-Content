@@ -238,6 +238,7 @@ jobs:
             ./bspzip-list.out __content_map
             cd ~
             wine ${{env.GMOD_PATH}}/bin/bspzip.exe -addlist "${{env.COMPILE_PATH}}.bsp_export" "${{env.CONTENT_PATH}}/__content_map.txt" "${{env.COMPILE_PATH}}.bsp"
+            wine ${{env.GMOD_PATH}}/bin/bspzip.exe -repack -compress "${{env.COMPILE_PATH}}.bsp"
 
       # We don't want the unpacked bsp? then Nuke it.
       - name: Removing unpacked BSP

@@ -1,13 +1,15 @@
 require("utils")
 
 function BuildPaths() -- Expose this for BuildFileList to call initially.
-	local paths = {}
-	local files = ScanDir("../_content")
+	local paths = {
+		"_content_pack"
+	}
+	--[[local files = ScanDir("../_content")
 	for k, folder in pairs(files) do
 		if not IsFile(folder) then
 			table.insert(paths, folder)
 		end
-	end
+	end]]
 
 	return paths
 end
@@ -19,30 +21,7 @@ CreateDir(({...})[2] or "__content_map")
 local vmfFile = ({...})[1]
 local vmfFilePath = "../" .. vmfFile .. "/" .. vmfFile
 
-local function LoadGModContentList()
-	local gmodList = {}
-	local file = io.open("gmod_content.txt", "r")
-	for line in file:lines() do
-		gmodList[NormalizePath(line)] = true
-	end
-	file:close()
-
-	return gmodList
-end
-
 gmodContent = LoadGModContentList()
-
-local function LoadGModSoundScriptList()
-	local gmodList = {}
-	local file = io.open("gmod_soundscripts.txt", "r")
-	for line in file:lines() do
-		gmodList[line] = true
-	end
-	file:close()
-
-	return gmodList
-end
-
 gmodSoundScripts = LoadGModSoundScriptList()
 
 local contentList = {}
@@ -134,11 +113,13 @@ local function AddModelFile(fileName)
 
 	local mdl = parseMDL(fileName)
 	if not mdl then
-		print("::warning:: Failed to parse model \"" .. fileName .. "\"")
+		-- Not needed since parseMDL prints warnings in failures already
+		--print("::warning:: Failed to parse model \"" .. fileName .. "\"")
 		return
 	end
 
 	local foundMaterials = {}
+	local missingMaterials = {}
 	for _, textureDirectory in ipairs(mdl.texturedirs or {}) do
 		textureDirectory = NormalizePath(textureDirectory)
 
@@ -153,16 +134,30 @@ local function AddModelFile(fileName)
 				for _, candidate in ipairs(candidates) do
 					if FileExistsInList(candidate) then
 						foundMaterials[textureName] = true
+						missingMaterials[textureName] = nil
 						AddMaterialFile(candidate)
 						break
 					end
 				end
 
 				if not foundMaterials[textureName] then
-					print("::warning:: Failed to find material \"" .. textureName .. "\" for model \"" .. fileName .."\"")
+					missingMaterials[textureName] = true
 				end
 			end
 		end
+	end
+
+	if next(missingMaterials) then
+		local count = 0
+		local missingList = ""
+		for textureName, _ in pairs(missingMaterials) do
+			count = count + 1
+			missingList = missingList .. "\"" .. textureName .. "\", "
+		end
+
+		missingList = missingList:sub(0, missingList:len() - 2)
+
+		print("::warning:: Failed to find material" .. (count > 1 and "s" or "") .. " " .. missingList .. " for model \"" .. fileName .."\"")
 	end
 end
 
@@ -292,7 +287,15 @@ local function GuessContent(ent)
 	AddMaterialFile(ent.overlaymaterial)
 	AddMaterialFile(ent.RopeMaterial)
 	AddMaterialFile(ent.SmokeMaterial)
-	AddSolid(ent.solid) -- func_brush can have them as a example
+	if ent.solid then
+		if ent.solid.__array then -- Check if it's an array (our parser sucks & may not make it always be one)
+			for _, solid in ipairs(ent.solid) do
+				AddSolid(solid) -- func_brush can have them as a example
+			end
+		else
+			AddSolid(ent.solid)
+		end
+	end
 end
 
 local function ParseEntities(vmf)
@@ -391,12 +394,10 @@ ParseWorld(vmf)
 --PrintTable(contentList)
 
 local function CleanContentList()
-	local gmodList = LoadGModContentList()
-
 	local idx = 0
 	while idx <= #contentList do
 		local filePath = contentList[idx]
-		if gmodList[filePath] then
+		if gmodContent[filePath] then
 			table.remove(contentList, idx)
 			contentList[filePath] = nil
 			print("Removing GMod file from content list \"" .. filePath .. "\"")
@@ -411,8 +412,8 @@ CleanContentList()
 print("\nContent:")
 for _, path in ipairs(contentList) do
 	print(path)
-	local fullPath = GetFileFromList(path) or path
-	if not CopyFile(fullPath, (({...})[2] or "__content_map/") .. GetPathWithoutFirst(fullPath)) then
-		print("::warning:: Missing content file \"" .. path .. "\"")
+	local fullPath = GetFileFromList(path)
+	if not fullPath or not CopyFile(fullPath, (({...})[2] or "__content_map/") .. (StartsWith(fullPath, "_content_pack") and GetPathWithoutFirst(fullPath) or fullPath)) then
+		print("::warning:: Missing content file \"" .. path .. "\" (\"" .. (fullPath or "nil") .. "\")")
 	end
 end

@@ -1,7 +1,0 @@
-LightmappedGeneric
-{
-	"$basetexture"	"wood\milflr003"
-	//"$bumpmap" "wood\milflr003_normal"
-	"$surfaceprop" "wood_plank"
-
-}
