@@ -165,12 +165,20 @@ jobs:
           password: ${{secrets.HOST_PASSWORD}}
           port: ${{secrets.HOST_PORT}}
           script: |
-            wine ${{env.GMOD_PATH}}/bin/vbsp.exe -threads ${{env.THREADS}} -notjunc -game "${{env.GMOD_PATH}}/garrysmod" "${{env.COMPILE_PATH}}"
+            cat > ${{env.GMOD_PATH}}/garrysmod/cfg/mount.cfg <<'EOF'
+            "mountcfg"
+            {
+              "map" "/root/${{env.CONTENT_PATH}}/__content_map"
+              "slashco" "/root/slashco_content"
+            }
+            EOF
+
+            #wine ${{env.GMOD_PATH}}/bin/vbsp.exe -threads ${{env.THREADS}} -notjunc -game "${{env.GMOD_PATH}}/garrysmod" "${{env.COMPILE_PATH}}"
             # BUG: We cannot use vbsp++ as else when loading into the map we get a Light style overflow
-            #chmod +x ${{env.GMOD_PATH}}/bin/vbsp++
-            #/opt/glibc-2.31/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2 \
-            #  --library-path /opt/glibc-2.31/lib/x86_64-linux-gnu \
-            #  ${{env.GMOD_PATH}}/bin/vbsp++ -threads ${{env.THREADS}} -notjunc -game "${{env.GMOD_PATH}}/garrysmod" "${{env.COMPILE_PATH}}"
+            chmod +x ${{env.GMOD_PATH}}/bin/vbsp++
+            /opt/glibc-2.31/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2 \
+              --library-path /opt/glibc-2.31/lib/x86_64-linux-gnu \
+              ${{env.GMOD_PATH}}/bin/vbsp++ -threads ${{env.THREADS}} -notjunc -game "${{env.GMOD_PATH}}/garrysmod" "${{env.COMPILE_PATH}}"
 
             if [ -f "${{env.COMPILE_PATH}}.lin" ]; then
               echo "::error::Map has a leak! Fix it."
