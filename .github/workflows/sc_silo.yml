@@ -15,4 +15,6 @@ jobs:
       fastcompile: false
       createexportbsp: false
       debug: false
+      vrad: "-StaticPropLighting -StaticPropPolys -textureshadows"
+      vrad_mode: "-both"
       map: "sc_silo"
