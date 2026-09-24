@@ -1,0 +1,8 @@
+"VertexlitGeneric"
+{
+"$basetexture" "models/props/nd_aljaber/generic/portabletank02_aj"
+"$surfaceprop" "Metal"
+"$model" "1"
+
+}
+

@@ -1,0 +1,10 @@
+"lightmappedgeneric"
+{
+        "$basetexture" "maps/nd_syrdakh/sr_wood/wood_plywood_03_sr"
+
+	"$surfaceprop" "wood"
+
+
+
+	"%keywords" "nucleardawn"
+}

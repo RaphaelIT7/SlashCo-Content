@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props/fences/chainlinkfence01_alpha"
+	"$AlphaTest" "1"
+	"$AlphaTestReference" "0.3"
+	$nocull 1
+
+	$AllowFenceRenderStateHack 1
+	$FlashlightNoLambert 1
+	$nodecal 1
+}

@@ -1,0 +1,6 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "rus1_worldtex/wor_rus1_general/wor_rus1_yellow_truss"
+	
+	"$surfaceprop" "metal"
+}

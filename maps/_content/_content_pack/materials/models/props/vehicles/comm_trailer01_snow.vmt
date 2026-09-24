@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	$basetexture "models/props/vehicles/comm_trailer01_snow.vtf"
+
+	$surfaceprop "Metal"
+	$model "1"
+}

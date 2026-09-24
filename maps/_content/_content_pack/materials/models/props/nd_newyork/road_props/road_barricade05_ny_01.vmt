@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props/nd_newyork/road_props/road_barricade05_ny_01"
+	"$model" 1
+	"$sufaceprop" concrete
+}

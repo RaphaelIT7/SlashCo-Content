@@ -1,0 +1,17 @@
+"lightmappedgeneric"
+{
+        "$basetexture" "maps/nd_vyksa/vk_walls/metal_door01_vk"
+	"$bumpmap" "maps/nd_vyksa/vk_walls/metal_door01_vk_normal"
+
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmaptint" "[.20 .20 .20]"
+	"$surfaceprop" "metal"
+
+	
+
+
+	"%keywords" "nucleardawn"
+}
+
+	

@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/nd_syrdakh/structures/watchtower01_sr"
+	"$surfaceprop" "Metal"
+	"$model" 1
+}

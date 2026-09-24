@@ -1,0 +1,15 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/nd_syrdakh/fittings/radome01_sr"
+    "$bumpmap" "models/props/nd_syrdakh/fittings/radome01_sr_normal"
+	"$model" 1
+
+	$normalmapalphaenvmapmask 1
+
+	vertexlitgeneric_HDR_dx9
+	{
+	    $envmaptint "[1 1 1]"
+	    $envmapcontrast ".7"
+	    $envmapsaturation ".4"
+	}
+}

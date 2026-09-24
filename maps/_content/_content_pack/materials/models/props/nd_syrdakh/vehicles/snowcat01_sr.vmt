@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/nd_syrdakh/vehicles/snowcat01_sr.vtf"
+	"$model" 1
+	  $nocull 1
+}

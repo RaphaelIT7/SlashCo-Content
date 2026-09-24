@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "RUS1_WorldTex/WOR_RUS1_Walls/WOR_RUS1_WH_Wall_04"
+//	"$bumpmap" "RUS1_WorldTex/WOR_RUS1_Walls/WOR_RUS1_WH_Wall_01_Normal"
+	
+	"$surfaceprop" "concrete"
+}

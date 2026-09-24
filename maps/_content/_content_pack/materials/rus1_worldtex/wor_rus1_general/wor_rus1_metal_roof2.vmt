@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "RUS1_WorldTex/WOR_RUS1_General/WOR_RUS1_Metal_Roof2"
+	
+	"$surfaceprop" "metal"
+}

@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "maps/nd_newyork/ny_windows/win01_ny"
+	"$surfaceprop" "glass"
+	"%keywords" "nucleardawn"
+}

@@ -1,0 +1,8 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/vehicles/Truck_Box01_Diffuse"
+	"$envmapmask" "models/props/vehicles/truck_box01_spec"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[ 0.8 0.8 0.8 ]"
+	"$model" 1
+}

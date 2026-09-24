@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/rooftops/Antenna_Diffuse.vtf"
+	"$surfaceprop" "Metal"
+}

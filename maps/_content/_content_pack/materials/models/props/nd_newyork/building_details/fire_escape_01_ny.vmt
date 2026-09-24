@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props/nd_newyork/building_details/fire_escape_01_ny"
+	"$nocull" 1
+	"$model" 1
+}	

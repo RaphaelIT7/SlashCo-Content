@@ -1,0 +1,12 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/nd_vyksa/industrial/ammocrate01_vk"
+	"$bumpmap" "models/props/nd_vyksa/industrial/ammocrate01_vk_normal"
+	"$surfaceprop" "Wood_Crate"
+$nocull 1
+	$envmap env_cubemap
+	$normalmapalphaenvmapmask 1
+	$envmaptint "[0.5 0.5 0.5]"
+	$envmapcontrast ".9"
+	$envmapsaturation ".4"
+}

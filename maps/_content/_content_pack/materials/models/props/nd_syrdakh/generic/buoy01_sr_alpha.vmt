@@ -1,0 +1,11 @@
+"VertexlitGeneric"
+{
+"$basetexture" "models/props/nd_syrdakh/generic/buoy01_sr_alpha"
+"$surfaceprop" "glass"
+"$model" "1"
+"$alphatest" 1
+"$nodecal" "1"
+"$nocull" 1
+$AlphaTestReference "0.1"
+
+}

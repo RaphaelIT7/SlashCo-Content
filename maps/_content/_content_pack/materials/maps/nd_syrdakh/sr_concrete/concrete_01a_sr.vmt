@@ -1,0 +1,12 @@
+"lightmappedgeneric"
+{
+        "$basetexture" "maps/nd_syrdakh/sr_concrete/concrete_01a_sr"
+
+	"$surfaceprop" "concrete"
+	
+
+
+
+
+	"%keywords" "nucleardawn"
+}

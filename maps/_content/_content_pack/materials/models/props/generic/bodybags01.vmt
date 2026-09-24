@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/generic/bodybags01"
+		$envmapmask "models/props/generic/bodybags01_spec"
+	"$surfaceprop" "plastic"
+	$nocull 1
+}

@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/nd_syrdakh/industrial/cargocontainer01_sr"
+	"$surfaceprop" "Metal"
+	$envmapmask "models/props/nd_syrdakh/industrial/cargocontainer01_sr_s"
+	$blendtintbybasealpha 1 
+}

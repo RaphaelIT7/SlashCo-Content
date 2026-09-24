@@ -1,0 +1,10 @@
+"VertexlitGeneric"
+{
+"$basetexture" "models/props/nd_aljaber/generic/gaspump_aj"
+"$surfaceprop" "Metal"
+"$model" "1"
+"$envmaptint" "[ .2 .2 .2 ]"
+"$envmap" "env_cubemap"
+
+}
+

@@ -1,0 +1,8 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/nd_syrdakh/fittings/buildingsupport01_sr"
+    "$bumpmap" "models/props/nd_syrdakh/fittings/buildingsupport01_sr_normal"
+	"$model" 1
+
+	$normalmapalphaenvmapmask 1
+}

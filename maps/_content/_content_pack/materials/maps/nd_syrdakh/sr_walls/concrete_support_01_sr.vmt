@@ -1,0 +1,14 @@
+"lightmappedgeneric"
+{
+        "$basetexture" "maps/nd_syrdakh/sr_walls/concrete_support_01_sr"
+	"$bumpmap" "maps/nd_syrdakh/sr_walls/concrete_support_01_sr_normal"
+
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" "env_cubemap"
+	"$surfaceprop" "concrete"
+	
+	
+	"$envmaptint" "[.5 .5 .5]"
+
+	"%keywords" "nucleardawn"
+}

@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props/lights/cagelight_red"
+	"$model" 1
+}

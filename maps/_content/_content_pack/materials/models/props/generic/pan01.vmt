@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+"$basetexture" "models/props/generic/pan01"
+"$surfaceprop" "Metal"
+"$model" "1"
+}
+

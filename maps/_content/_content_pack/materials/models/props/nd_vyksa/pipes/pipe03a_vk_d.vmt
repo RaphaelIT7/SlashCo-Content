@@ -1,0 +1,12 @@
+VertexLitGeneric
+{
+	$basetexture "models/props/nd_vyksa/pipes/pipe03a_vk_d.vtf"
+	$envmapmask "models/props/nd_vyksa/pipes/pipe03a_vk_s.vtf"
+	"$model" 1
+
+	$envmap env_cubemap
+	$normalmapalphaenvmapmask 1
+	$envmaptint "[0.5 0.5 0.5]"
+	$envmapcontrast ".9"
+	$envmapsaturation ".4"
+}

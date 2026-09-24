@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "RUS1_WorldTex/WOR_RUS1_General/WOR_RUS1_General_Windows_decal2"
+	"$decal" 1
+	"$translucent" 1
+	"$decalscale" 0.50
+}

@@ -1,0 +1,9 @@
+"lightmappedgeneric"
+{
+        "$basetexture" "maps/nd_syrdakh/sr_metal/metal_plates_03b_sr"
+
+	"$surfaceprop" "metal"
+
+
+	"%keywords" "nucleardawn"
+}

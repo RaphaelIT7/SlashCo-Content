@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props/lights/cagelight_red"
+	"$translucent" "1"
+	"$nodecal" "1"
+	"$envmap" "env_cubemap"
+}

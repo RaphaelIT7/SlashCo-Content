@@ -1,0 +1,11 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/nd_vyksa/industrial/ammocrate01a_vk"
+	$basealphaenvmapmask 1
+	"$surfaceprop" "Metal"
+
+	$envmap env_cubemap
+	$envmaptint "[0.2 0.2 0.2]"
+	$envmapcontrast ".9"
+	$envmapsaturation ".4"
+}

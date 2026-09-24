@@ -1,0 +1,11 @@
+"LightmappedGeneric"
+{
+	"$vertexcolor" "1"
+	"$vertexalpha" "1"
+	"$translucent" 1
+	"$basetexture" "maps/nd_syrdakh/sr_decals/snow_decal_01_sr"
+	"$decal" 1
+	"$decalscale" .25
+
+	"%keywords" "nucleardawn"
+}

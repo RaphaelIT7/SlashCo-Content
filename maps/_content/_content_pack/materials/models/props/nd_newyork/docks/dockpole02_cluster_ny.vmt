@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props/nd_newyork/docks/dockpole02_cluster_ny"
+	"$surfaceprop" "wood"
+	"$model" 1
+
+}

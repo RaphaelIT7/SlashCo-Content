@@ -1,0 +1,14 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "maps/nd_syrdakh/sr_windows/window_04c_sr"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "maps/nd_syrdakh/sr_windows/window_04c_sr_spec"
+
+	"$surfaceprop" "glass"
+
+	"$envmaptint" "[.6 .6 .6]"
+
+
+	"%keywords" "nucleardawn"
+
+}

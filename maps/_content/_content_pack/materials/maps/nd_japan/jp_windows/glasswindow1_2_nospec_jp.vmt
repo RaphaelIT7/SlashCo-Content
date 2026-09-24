@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+    	"$basetexture" 	"maps/nd_japan/jp_windows/glasswindow1_2_jp"
+    	"$translucent" 1
+   	"$surfaceprop" "glass"
+    	"%keywords" "japan"
+}

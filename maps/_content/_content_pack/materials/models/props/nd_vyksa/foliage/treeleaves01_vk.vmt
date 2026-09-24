@@ -1,0 +1,36 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props/nd_vyksa/foliage/treeleaves01_vk"
+	"$envmapmask" "JAP1_Furniture/Trees_Tokyo1/cherryleafes01_spec"
+	"$envmap" "env_cubemap" 
+	"$envmapcontrast" 1
+	"$envmapsaturation" 1
+	"$envmaptint" "[.1 .1 .1]"
+
+	"$surfaceprop" "foliage"
+	"$selfillum_envmapmask_alpha" 1
+	
+		$AlphaTest 1
+$AlphaTestReference ".3"
+        "$nocull" 1
+        "$model" 1
+	
+$vertexfog 1 
+$treeSway 1
+$treeSwayHeight 1
+$treeSwayStartHeight "20"  
+$treeSwayRadius 450
+$treeSwayStartRadius "0.1"  
+$treeSwaySpeed "1"
+$treeSwayStrength 1
+$treeSwayScrumbleSpeed "0.5"  
+$treeSwayScrumbleStrength "0.5"  
+$treeSwayScrumbleFrequency 5
+$treeSwayFalloffExp "1.5"  
+$treeSwayScrumbleFalloffExp 0.1
+$treeSwaySpeedHighWindMultiplier "1"  
+$treeSwaySpeedLerpStart "2.0"  
+$treeSwaySpeedLerpEnd "10.0"  
+
+		
+}

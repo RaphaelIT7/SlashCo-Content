@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "RUS1_Furniture/FUR_RUS1_Bollard/FUR_RUS1_Bollard01_01"
+//	"$bumpmap" "RUS1_Furniture/FUR_RUS1_Bollard/FUR_RUS1_Bollard01_01_norm"
+//	"$normalmapalphaenvmapmask" 1
+//	"$envmap" "env_cubemap"
+//	"$envmapsaturation" 1
+	"$model" 1
+}

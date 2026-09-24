@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$basetexture"
+"models/props/nd_newyork/rooftops/ventunit05_ny_color"
+	"$envmap" "env_cubemap"
+	"$model" 1
+
+	"$envmaptint" "{ 5 5 10}"
+
+
+}

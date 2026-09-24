@@ -1,0 +1,24 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "maps/nd_syrdakh/sr_decals/ice_hanging_01_sr"
+
+	"$envmap" "env_cubemap"
+//	"$envmaptint" "[10 10 10]"		//for night environments
+	"$envmaptint" "[4 4 4]"			//for daytime environments		
+
+	"$surfaceprop" "snow"
+
+	"$envmapmask" "maps/nd_syrdakh/sr_decals/ice_hanging_01_sr_spec"
+	"$envmapsaturation" "0" 
+
+	"$vertexcolor" "1"
+	"$vertexalpha" "1"
+	"$alphatest" 1
+	//"$translucent" 1
+	$AlphaTestReference ".3"
+	"$nocull" 1
+	"$decal" 1
+	"$decalscale" .25
+
+	"%keywords" "nucleardawn"
+}

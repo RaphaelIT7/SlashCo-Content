@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "maps/nd_japan/jp_decal/housedecal4b_jp"
+	"$decal" 1
+	"$decalscale" 1.0
+	"$translucent" 1
+}

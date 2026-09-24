@@ -1,0 +1,11 @@
+"VertexlitGeneric"
+{
+"$basetexture" "models/props/furniture/stove01"
+"$surfaceprop" "Metal"
+"$model" "1"
+"$envmap" "env_cubemap"
+"$envmaptint" "[ .2 .2 .2 ]"
+
+$basealphaenvmapmask 1
+}
+

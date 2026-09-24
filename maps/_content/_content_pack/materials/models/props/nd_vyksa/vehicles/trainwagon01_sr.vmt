@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/nd_vyksa/vehicles/trainwagon01_sr"
+	"$surfaceprop" "Metal"
+	"$model" 1
+
+}

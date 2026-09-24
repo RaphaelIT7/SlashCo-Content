@@ -1,0 +1,32 @@
+"WorldVertexTransition"
+{
+        "$basetexture" "maps/nd_syrdakh/sr_nature/snowdirt_01c_sr"
+	"$bumpmap" "maps/nd_syrdakh/sr_floors/asphalt_floor_01b2_sr_normal"
+
+//	"$basetexture2" "maps/nd_syrdakh/sr_nature/snow1_sr"
+//	"$bumpmap2" "maps/nd_syrdakh/sr_nature/snow1_sr_normal4"
+
+	"$baseTexture2" "maps/nd_syrdakh/sr_nature/snow3_sr"
+	"$bumpmap2" "maps/nd_syrdakh/sr_nature/snow04_sr_normal2_spec2" //lower bump and lower spec
+	
+
+//	"$envmapmask" "maps/nd_syrdakh/sr_nature/snow04_sr_spec2"
+
+	"$normalmapalphaenvmapmask" "1"
+	"$normalmapalphaenvmapmask2" "1"
+
+	"$envmap" "env_cubemap"
+//	"$envmaptint" "[25 25 25]"		//for night environments
+//	"$envmaptint" "[4 4 4]"			//for daytime environments
+	"$envmaptint" "[2 2 2]"			//reduced for daytime environments-Temp if lighting issues get fixed
+
+	"$surfaceprop" "asphalt"
+	"$surfaceprop2" "snow"
+
+	"$blendmodulatetexture" "maps/nd_syrdakh/sr_nature/snowblend_03_sr"
+
+//	"%detailtype"	"grass_sydakh"
+
+
+	"%keywords" "nucleardawn"
+}

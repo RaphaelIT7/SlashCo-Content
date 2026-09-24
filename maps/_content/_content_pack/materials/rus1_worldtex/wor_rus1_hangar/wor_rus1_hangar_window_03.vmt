@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "RUS1_WorldTex/WOR_RUS1_Hangar/WOR_RUS1_Hangar_Window_03"
+//	"$envmapmask" "RUS1_WorldTex/WOR_RUS1_Hangar/WOR_RUS1_Hangar_Window_Spec"   
+//	"$envmap" "env_cubemap"
+	"$surfaceprop" "glass"
+}

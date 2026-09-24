@@ -1,0 +1,16 @@
+"lightmappedgeneric"
+{
+    "$basetexture" 	"maps/nd_vyksa/vk_walls/bricks_wall_03b_vk"
+	"$bumpmap" 		"maps/nd_vyksa/vk_walls/bricks_wall_03_vk_normal"
+	
+	$envmap env_cubemap
+	$normalmapalphaenvmapmask 1
+	$envmaptint "[0.5 0.5 0.5]"
+	$envmapcontrast "0.9"
+	$envmapsaturation ".4"
+	"$surfaceprop" "brick"
+
+	"%keywords" "nucleardawn"
+}
+
+	

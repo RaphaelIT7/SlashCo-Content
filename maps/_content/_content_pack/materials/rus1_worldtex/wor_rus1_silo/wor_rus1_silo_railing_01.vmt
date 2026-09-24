@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "RUS1_WorldTex/WOR_RUS1_Silo/WOR_RUS1_Silo_Railing_01"
+	"$surfaceprop" "metal"
+	"$alphatest" 1
+	"$allowalphatocoverage" 1
+	"$nocull" 1
+}

@@ -1,0 +1,17 @@
+VertexLitGeneric
+{
+	$basetexture "models/props/nd_vyksa/foliage/rock_vk.vtf"
+	$bumpmap "models/props/nd_vyksa/foliage/rock_vk_normal.vtf"
+	"$model" 1
+
+	$envmap env_cubemap
+	$normalmapalphaenvmapmask 1
+	$envmaptint "[0.5 0.5 0.5]"
+	$envmapcontrast ".9"
+	$envmapsaturation ".4"
+
+//	$phong 1
+//	$phongexponent 0.2
+//	$phongboost 0.2
+
+}

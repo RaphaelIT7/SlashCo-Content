@@ -1,0 +1,5 @@
+VertexLitGeneric
+{
+	$basetexture "models/props/nd_vyksa/vehicles/sideloader01_vk_diffuse.vtf"
+	"$model" 1
+}

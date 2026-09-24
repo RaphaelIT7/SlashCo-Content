@@ -1,0 +1,14 @@
+"lightmappedgeneric"
+{
+        "$basetexture" "maps/nd_syrdakh/sr_metal/metal_plates_14_sr"
+	"$bumpmap" "maps/nd_syrdakh/sr_metal/metal_plates_14_sr_normal2"
+
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" "env_cubemap"
+	"$surfaceprop" "metal"
+	
+	
+	"$envmaptint" "[.4 .4 .4]"
+
+	"%keywords" "nucleardawn"
+}

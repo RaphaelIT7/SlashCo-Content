@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/nd_vyksa/industrial/shelf01_vk.vtf"
+	"$model" 1
+}

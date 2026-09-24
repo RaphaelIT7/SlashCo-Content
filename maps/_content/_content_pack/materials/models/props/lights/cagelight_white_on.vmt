@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props/lights/cagelight_white"
+	"$basealphaenvmapmask" "1"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[1 1 1]"
+	"$envmapcontrast" ".9"
+	"$envmapsaturation" ".4"
+	"$selfillummask" "cagelight_white_illum"
+	"$selfillumtint" "white float"
+
+	
+
+}

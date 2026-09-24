@@ -1,0 +1,19 @@
+"lightmappedgeneric"
+{
+      	"$basetexture" "maps/nd_syrdakh/sr_metal/metal_bulkheads_01a_sr_snow"
+	"$bumpmap" "maps/nd_syrdakh/sr_metal/metal_bulkheads_01a_sr_snow_normal" //sharper version
+
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" "env_cubemap"
+	"$surfaceprop" "metal"
+	
+	
+
+	"$envmaptint" "[.5 .5 .5]"
+
+
+
+
+
+	"%keywords" "nucleardawn"
+}

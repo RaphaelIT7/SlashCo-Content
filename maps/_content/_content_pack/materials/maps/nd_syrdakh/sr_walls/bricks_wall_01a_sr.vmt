@@ -1,0 +1,11 @@
+"lightmappedgeneric"
+{
+        "$basetexture" "maps/nd_syrdakh/sr_walls/bricks_wall_01a_sr"
+
+	"$surfaceprop" "concrete_block"
+
+	//original texture made by original ND team
+
+
+	"%keywords" "nucleardawn"
+}

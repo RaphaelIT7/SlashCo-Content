@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "maps/nd_syrdakh/sr_nature/snow3_sr"
+
+	"$surfaceprop" "snow" 
+
+
+	
+	"%keywords" "nucleardawn"
+}

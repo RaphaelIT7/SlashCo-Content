@@ -1,0 +1,10 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/furniture/storagecloset01_diffuse"
+	"$envmapmask" "models/props/furniture/storagecloset01_spec"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.8 .8 .8]"
+	"$model" "1"	
+	
+}	

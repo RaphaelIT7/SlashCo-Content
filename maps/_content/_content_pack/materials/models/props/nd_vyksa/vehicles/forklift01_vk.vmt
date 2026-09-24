@@ -1,0 +1,6 @@
+VertexLitGeneric
+
+{
+$baseTexture "models/props/nd_vyksa/vehicles/forklift01_vk.vtf"
+"$model" 1
+}

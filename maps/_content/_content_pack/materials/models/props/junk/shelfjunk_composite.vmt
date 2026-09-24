@@ -1,0 +1,9 @@
+"VertexlitGeneric"
+{
+"$basetexture" "models/props/junk/shelfjunk_composite"
+"$surfaceprop" "Metal"
+"$nocull"	"1"
+"$detail" "RUS1_WorldTex/WOR_RUS1_Details/WOR_RUS1_metal_detail_05"
+"$detailscale" 6
+}
+

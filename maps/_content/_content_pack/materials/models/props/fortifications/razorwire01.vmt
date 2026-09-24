@@ -1,0 +1,9 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/fortifications/razorwire01"
+	"$surfaceprop" "Metal"
+	"$alphatest" 1
+                "$nocull" 1
+                "$model" 1
+	"$allowalphatocoverage" 1
+}

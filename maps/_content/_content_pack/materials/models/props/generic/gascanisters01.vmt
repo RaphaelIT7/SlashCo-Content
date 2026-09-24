@@ -1,0 +1,8 @@
+"VertexlitGeneric"
+{
+"$basetexture" "models/props/generic/gascanisters01"
+"$surfaceprop" "Metal"
+$blendtintbybasealpha 1
+
+$nocull 1
+}

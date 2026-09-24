@@ -1,0 +1,35 @@
+"WorldVertexTransition"
+{
+        "$basetexture" "maps/nd_syrdakh/sr_floors/tiles_floor_03e2_sr"
+//	"$basetexture2" "maps/nd_syrdakh/sr_nature/snow04_sr"
+//	"$basetexture2" "maps/nd_syrdakh/sr_nature/snow1_sr"		//previous version
+	"$baseTexture2" "maps/nd_syrdakh/sr_nature/snow3_sr"
+
+
+
+
+	"$bumpmap" "maps/nd_syrdakh/sr_floors/tiles_floor_03c_sr_normal"
+//    	"$bumpmap2" "maps/nd_syrdakh/sr_nature/snow1_sr_normal4"	//previous version		
+    	"$bumpmap2" "maps/nd_syrdakh/sr_nature/snow04_sr_normal2_spec2"
+
+
+	"$normalmapalphaenvmapmask" "1"
+//	"$basetexturenoenvmap" "1" 
+	"$normalmapalphaenvmapmask2" "1"
+
+	"$envmap" "env_cubemap"
+	"$surfaceprop" "concrete"
+	"$surfaceprop2" "snow"
+
+//	"$envmaptint2" "[.25 .35 .45]"
+
+	"$blendmodulatetexture" "maps/nd_syrdakh/sr_nature/snowblend_01_sr"
+
+	"$nodecal" "1"
+	
+	
+
+
+
+	"%keywords" "nucleardawn"
+}

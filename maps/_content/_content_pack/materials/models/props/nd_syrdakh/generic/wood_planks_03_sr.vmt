@@ -1,0 +1,6 @@
+"Vertexlitgeneric"
+{
+        "$basetexture" "maps/nd_syrdakh/sr_wood/wood_planks_03_sr"
+
+	"$surfaceprop" "wood"
+}

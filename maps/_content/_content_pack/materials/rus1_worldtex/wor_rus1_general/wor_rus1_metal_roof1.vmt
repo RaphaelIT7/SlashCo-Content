@@ -1,0 +1,15 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "RUS1_WorldTex/WOR_RUS1_General/WOR_RUS1_Metal_Roof1"
+//	"$bumpmap" "RUS1_WorldTex/WOR_RUS1_General/WOR_RUS1_Tarmac_Floor_01_normal"
+//	"$normalmapalphaenvmapmask" 1
+
+//	"$envmap" "env_cubemap"
+
+//	"$envmapcontrast" 1
+//	"$envmapsaturation" .5
+//	"$envmaptint" "[.5 .5 .5]"
+	
+	"$surfaceprop" "metal"
+
+}

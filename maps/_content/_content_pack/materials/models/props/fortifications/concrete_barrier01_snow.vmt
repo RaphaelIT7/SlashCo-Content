@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props/fortifications/concrete_barrier01_snow"
+	"$model"	"1"
+}

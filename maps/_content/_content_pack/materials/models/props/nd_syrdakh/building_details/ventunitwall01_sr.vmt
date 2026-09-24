@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/nd_syrdakh/building_details/ventunitwall01_sr"
+	"$surfaceprop" "MetalVent"
+	"$model" 1
+}

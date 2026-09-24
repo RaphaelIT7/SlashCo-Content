@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "RUS1_WorldTex/WOR_RUS1_General/WOR_RUS1_Metal_Truss001b"
+	"$surfaceprop" "metal"
+	"$alphatest" 1
+	  $AlphaTestReference ".6"
+	
+}

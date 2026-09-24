@@ -1,0 +1,14 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/nd_syrdakh/vehicles/snowplough01_glass_sr.vtf"
+     $envmapmask "models/props/nd_syrdakh/vehicles/snowplough01_glass_spec_sr.vtf"
+	$envmap env_cubemap
+	$translucent 1
+	$envmaptint "[1 1 1]"
+	$envmapcontrast ".9"
+	$envmapsaturation ".4"
+$nocull 1
+	$phong 1
+	$phongexponent 0.2
+	$phongboost 0.2
+}

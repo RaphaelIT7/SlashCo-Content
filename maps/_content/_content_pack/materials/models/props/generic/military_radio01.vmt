@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/generic/military_radio01"
+	"$surfaceprop" "metal"
+	$nocull 1
+}

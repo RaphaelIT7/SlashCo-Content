@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+    "$basetexture" "maps/nd_japan/jp_windows/glasswindow1_2_jp"
+    "$translucent" 1
+    "$envmapmask" "maps/nd_japan/jp_windows/glasswindow1_spec_jp"
+    "$envmaptint" "[ 0.05 0.05 0.05 ]"
+    "$envmap" "env_cubemap"
+    "$surfaceprop" "glass"
+    "%keywords" "japan"
+}

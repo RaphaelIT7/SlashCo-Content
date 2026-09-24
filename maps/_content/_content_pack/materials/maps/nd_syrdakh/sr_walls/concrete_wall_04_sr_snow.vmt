@@ -1,0 +1,11 @@
+"lightmappedgeneric"
+{
+        "$basetexture" "maps/nd_syrdakh/sr_walls/concrete_wall_04_sr_snow"
+
+	"$surfaceprop" "concrete"
+
+	//original basetexture made by original ND team
+
+
+	"%keywords" "nucleardawn"
+}

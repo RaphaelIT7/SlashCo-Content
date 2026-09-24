@@ -1,0 +1,9 @@
+VertexLitGeneric
+{
+	$basetexture "models/props/nd_vyksa/structures/oiltank01_vk_diffuse.vtf"
+	"$model" 1
+	
+	$envmaptint "[0.5 0.5 0.5]"
+	$envmapcontrast ".9"
+	$envmapsaturation ".4"
+}

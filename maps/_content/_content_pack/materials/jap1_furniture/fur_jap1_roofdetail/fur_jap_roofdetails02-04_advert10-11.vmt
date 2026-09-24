@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "JAP1_Furniture/FUR_JAP1_RoofDetail/FUR_JAP_RoofDetails02-04_Advert10-11"
+
+	//"$envmap" "env_cubemap"
+}

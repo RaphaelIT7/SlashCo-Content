@@ -1,0 +1,7 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "rus1_worldtex/wor_rus1_reactor/wor_rus1_truss01"
+//	"$alphatest" 1
+	"$translucent" 1
+	"$surfaceprop" "metal"
+}

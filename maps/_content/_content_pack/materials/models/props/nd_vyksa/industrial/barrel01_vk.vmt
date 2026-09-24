@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/nd_vyksa/industrial/barrel01_vk"
+	"$surfaceprop" "Metal"
+	"$model" 1
+
+}

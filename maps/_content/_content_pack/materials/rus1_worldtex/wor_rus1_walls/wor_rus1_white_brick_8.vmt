@@ -1,0 +1,12 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "RUS1_WorldTex/WOR_RUS1_Walls/WOR_RUS1_White_Brick_8"
+	"$envmapmask" "RUS1_WorldTex/WOR_RUS1_Walls/WOR_RUS1_White_Brick_8_spec"  
+	"$envmap" "env_cubemap"
+
+	"$detail" "RUS1_WorldTex/WOR_RUS1_Details/WOR_RUS1_paint_detail_02"
+	"$detailscale" 9
+	"$surfaceprop"	"concrete"
+
+
+}

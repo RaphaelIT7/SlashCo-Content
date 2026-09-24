@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "RUS1_WorldTex/WOR_RUS1_Walls/WOR_RUS1_Concrete_Wall_07"
+	"$detail" "RUS1_WorldTex/WOR_RUS1_Details/WOR_RUS1_concrete_detail_05"
+	"$detailscale" 8
+	"$surfaceprop" "concrete"
+}

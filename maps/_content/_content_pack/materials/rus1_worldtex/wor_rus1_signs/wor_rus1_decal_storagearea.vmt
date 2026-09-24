@@ -1,0 +1,18 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "RUS1_WorldTex/WOR_RUS1_Signs/WOR_RUS1_Sign_StorageArea"
+
+	"$translucent" 1
+
+	//"$bumpmap" "RUS1_WorldTex/WOR_RUS1_Signs/WOR_RUS1_Sign01_normal"
+
+	"$decal" 1
+	"$decalscale" 0.25
+
+	//"$envmapmask" "RUS1_WorldTex/WOR_RUS1_Signs/WOR_RUS1_Sign_StorageArea_spec"
+
+	//"$envmap" "env_cubemap"
+
+
+
+}

@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/nd_vyksa/structures/substation01_vk"
+
+	"$model" 1
+}

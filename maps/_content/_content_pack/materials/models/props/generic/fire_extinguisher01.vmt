@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props/generic/fire_extinguisher01"
+	"$surfaceprop" "Metal"
+ 	"$envmap" "env_cubemap"
+	"$envmaptint" "[0.25 0.25 0.25]"
+	"$envmapsaturation" 0.90
+}

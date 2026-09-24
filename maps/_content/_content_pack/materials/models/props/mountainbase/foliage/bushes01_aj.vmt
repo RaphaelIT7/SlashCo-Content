@@ -1,0 +1,11 @@
+"VertexlitGeneric"
+{
+"$basetexture" "models/props/nd_aljaber/nature/bushes01_aj"
+"$envmapmask" "models/props/nd_aljaber/nature/bushes01_aj_spec"
+
+"$surfaceprop" "Leaves"
+
+$alphatest 1
+$nocull 1
+
+}

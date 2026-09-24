@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/generic/corpses_frozen01"
+$basealphaenvmapmask 1
+	"$surfaceprop" "bloodyflesh"
+	$nocull 1
+}

@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "RUS1_Furniture/FUR_RUS1_Storage/FUR_RUS1_Box_01b"
+	"$envmapmask"  "RUS1_Furniture/FUR_RUS1_Storage/FUR_RUS1_Box_01_Spec"
+	"$envmap" "env_cubemap"
+}

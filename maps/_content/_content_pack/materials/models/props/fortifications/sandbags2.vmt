@@ -1,0 +1,7 @@
+VertexLitGeneric
+{
+	$baseTexture "models/props/fortifications/sandbags2"
+	$model 1
+
+
+}

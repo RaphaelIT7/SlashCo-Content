@@ -1,0 +1,14 @@
+"lightmappedgeneric"
+{
+        "$basetexture" "maps/nd_syrdakh/sr_metal/metal_wood_support_01b_sr"
+	"$envmapmask" "maps/nd_syrdakh/sr_metal/metal_wood_support_01_sr_spec"
+	
+	"$envmap" "env_cubemap"
+	"$surfaceprop" "metal"
+
+	"$envmapsaturation" "0" 
+	
+	"$envmaptint" "[.1 .1 .1]"
+
+	"%keywords" "nucleardawn"
+}

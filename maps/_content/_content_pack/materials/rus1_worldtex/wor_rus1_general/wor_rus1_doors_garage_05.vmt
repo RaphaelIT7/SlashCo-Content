@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "RUS1_WorldTex/WOR_RUS1_General/WOR_RUS1_Doors_Garage_05"
+	"$surfaceprop" "metal"
+	"$envmapmask" "RUS1_WorldTex/WOR_RUS1_General/WOR_RUS1_Doors_Garage_05_spec"   
+	"$envmap" "env_cubemap" 
+	"$detail" "RUS1_WorldTex/WOR_RUS1_Details/WOR_RUS1_metal_detail_03"
+	"$detailscale" 7
+
+}

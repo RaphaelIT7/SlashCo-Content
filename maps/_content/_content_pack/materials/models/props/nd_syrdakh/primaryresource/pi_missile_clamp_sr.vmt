@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/nd_syrdakh/primaryresource/pi_missile_clamp_sr.vtf"
+	"$surfaceprop" "Metal"
+	"$model" 1
+}
+

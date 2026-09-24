@@ -1,0 +1,13 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/generic/coolingtank01_snow"
+	"$surfaceprop" "Metal"
+     $basealphaenvmapmask 1
+
+	vertexlitgeneric_HDR_dx9
+	{
+	$envmaptint "[1 1 1]"
+	$envmapcontrast ".7"
+	$envmapsaturation ".4"
+}
+}

@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/nd_syrdakh/foliage/logs01a_sr"
+	$envmapmask "models/props/nd_syrdakh/foliage/logs01_sr_spec"
+	"$surfaceprop" "Wood_Solid"
+        "$model" 1
+}

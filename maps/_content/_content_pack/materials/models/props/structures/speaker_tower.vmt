@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/structures/speaker_tower01.vtf"
+	"$surfaceprop" "Metal"
+
+}
+

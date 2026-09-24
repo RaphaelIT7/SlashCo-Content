@@ -1,0 +1,9 @@
+"VertexlitGeneric"
+{
+"$basetexture" "models/props/furniture/desk01"
+"$envmapmask" "models/props/furniture/desk01_spec"
+"$model" "1"
+"$envmap" "env_cubemap"
+"$envmaptint" "[ .8 .8 .8 ]"
+}
+

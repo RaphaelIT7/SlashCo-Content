@@ -1,0 +1,12 @@
+"LightmappedGeneric"
+{
+	"$basetexture"  "maps/nd_london/ld_road/london_decal_roaddirt005b"
+
+	"$decal" 1
+	"$decalscale" .25
+	"$vertexcolor" "1"
+	"$vertexalpha" "1"
+	"$translucent" 1
+
+	"%keywords" "nucleardawn"
+}

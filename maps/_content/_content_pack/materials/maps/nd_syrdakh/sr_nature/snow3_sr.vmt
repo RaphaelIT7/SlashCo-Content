@@ -1,0 +1,20 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "maps/nd_syrdakh/sr_nature/snow3_sr"
+//    	"$bumpmap" "maps/nd_syrdakh/sr_nature/snow3_sib_normal_s4spec1" //intenser bump and intenser spec map
+//    	"$bumpmap" "maps/nd_syrdakh/sr_nature/snow04_sr_normal2"	//intenser spec map and lower bump
+	"$bumpmap" "maps/nd_syrdakh/sr_nature/snow04_sr_normal2_spec2" //lower bump and lower spec
+//	"$bumpmap" "maps/nd_syrdakh/sr_nature/snow3_sib_normal_s4spec2" //intenser bump lower spec
+//   	"$bumpmap" "maps/nd_syrdakh/sr_nature/snow1_sr_normal2"         //**OLD with patches in bump and spec as snow1**
+	
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" "env_cubemap"
+	"$surfaceprop" "snow" 
+
+//	"$envmaptint" "[.38 .52 .48]"
+//	"$envmaptint" "[25 25 25]"		//for night environments
+//	"$envmaptint" "[4 4 4]"			//for daytime environments
+	"$envmaptint" "[2 2 2]"			//reduced for daytime environments-Temp if lighting issues get fixed
+	
+	"%keywords" "nucleardawn"
+}

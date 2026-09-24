@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "RUS1_Furniture/FUR_RUS1_Armoury/FUR_RUS1_Ammocrate_01"
+	"$model" 1
+	"$detail" "RUS1_WorldTex/WOR_RUS1_Details/WOR_RUS1_wood_detail_01"
+	"$detailscale" 7
+}

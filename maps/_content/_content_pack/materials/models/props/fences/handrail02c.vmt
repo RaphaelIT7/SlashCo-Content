@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{	
+	
+	"$model" "1"
+	"$basetexture" "models/props/fences/handrail02c"
+	$envmapmask "models/props/fences/handrail02_spec"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[ .3 .3 .3]"
+}

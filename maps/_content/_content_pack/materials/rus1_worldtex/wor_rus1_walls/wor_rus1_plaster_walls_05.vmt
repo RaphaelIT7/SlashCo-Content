@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "RUS1_WorldTex/WOR_RUS1_Walls/WOR_RUS1_Plaster_Walls_05"
+
+	"$detail" "RUS1_WorldTex/WOR_RUS1_Details/WOR_RUS1_paint_detail_01"
+	"$detailscale" 6
+	"$surfaceprop"	"plaster"
+}

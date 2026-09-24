@@ -1,0 +1,9 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/mountainbase/foliage/plants01_mb"
+		$AlphaTest 1
+$AlphaTestReference ".4"
+        "$nocull" 1
+        "$model" 1
+
+}

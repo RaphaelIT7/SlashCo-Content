@@ -1,0 +1,6 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "rus1_furniture/fur_rus1_storage/fur_rus1_box_01b"
+	"$envmapmask"  "rus1_furniture/fur_rus1_storage/fur_rus1_box_01_spec"
+	"$envmap" "env_cubemap"
+}

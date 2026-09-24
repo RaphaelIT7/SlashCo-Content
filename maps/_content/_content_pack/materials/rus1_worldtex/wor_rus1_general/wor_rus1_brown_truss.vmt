@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "RUS1_WorldTex/WOR_RUS1_General/WOR_RUS1_Brown_Truss"
+	
+	"$surfaceprop" "metal"
+}

@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	$basetexture "models/props/vehicles/generator_trailer"
+	$surfaceprop "Metal"
+	$model "1"
+}

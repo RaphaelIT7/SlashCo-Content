@@ -1,0 +1,11 @@
+"lightmappedgeneric"
+{
+        "$basetexture" "maps/nd_vyksa/vk_walls/metal_plate_wall01a_topa_vk_snow"
+
+	"$surfaceprop" "metal"
+
+
+
+
+	"%keywords" "nucleardawn"
+}

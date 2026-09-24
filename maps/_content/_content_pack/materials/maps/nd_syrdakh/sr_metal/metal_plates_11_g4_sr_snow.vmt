@@ -1,0 +1,20 @@
+"lightmappedgeneric"
+{
+        "$basetexture" "maps/nd_syrdakh/sr_metal/metal_plates_11_g4_sr_snow2"
+	"$bumpmap" "maps/nd_syrdakh/sr_metal/metal_plates_11_a4_sr_normal_snow"
+
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" "env_cubemap"
+	"$surfaceprop" "metal"
+	
+	
+	"$envmaptint" "[.4 .4 .4]"
+
+//	"$detail" "maps/nd_syrdakh/sr_metal/metal_plates_11_sr_detail" //original name
+	"$detail" "maps/nd_syrdakh/sr_detail/metal_plates_detail_01_sr"
+	"$detailscale" "3"
+	"$detailblendfactor" .8
+	"$detailblendmode" "0"
+
+	"%keywords" "nucleardawn"
+}

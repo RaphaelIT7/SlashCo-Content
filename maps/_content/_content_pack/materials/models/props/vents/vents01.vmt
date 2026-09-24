@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{	
+	
+	"$model" "1"
+	"$basetexture" "models/props/vents/vents01"
+	"$envmapmask" "models/props/vents/vents01_spec"
+
+	"$envmap" "env_cubemap"
+
+
+
+
+
+}

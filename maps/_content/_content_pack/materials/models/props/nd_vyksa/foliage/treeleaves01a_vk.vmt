@@ -1,0 +1,27 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props/nd_vyksa/foliage/treeleaves01a_vk"
+		"$surfaceprop" "Wood_Solid"
+		$AlphaTest 1
+$AlphaTestReference ".3"
+        "$nocull" 1
+        "$model" 1
+	
+$vertexfog 1 
+$treeSway 1
+$treeSwayHeight 1
+$treeSwayStartHeight "20"  
+$treeSwayRadius 450
+$treeSwayStartRadius "0.1"  
+$treeSwaySpeed "1"
+$treeSwayStrength 1
+$treeSwayScrumbleSpeed "0.3"  
+$treeSwayScrumbleStrength "0.3"  
+$treeSwayScrumbleFrequency 5
+$treeSwayFalloffExp "1.5"  
+$treeSwayScrumbleFalloffExp 0.1
+$treeSwaySpeedHighWindMultiplier "1"  
+$treeSwaySpeedLerpStart "2.0"  
+$treeSwaySpeedLerpEnd "10.0"  
+
+}

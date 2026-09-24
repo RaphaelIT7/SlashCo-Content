@@ -1,0 +1,11 @@
+"vertexlitgeneric"
+{
+        "$basetexture" "maps/nd_syrdakh/sr_walls/concrete_wall_02b_sr"
+
+	"$surfaceprop" "concrete"
+
+
+	//original texture made by original nd team
+
+	"%keywords" "nucleardawn"
+}

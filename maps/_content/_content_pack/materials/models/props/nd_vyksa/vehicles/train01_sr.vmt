@@ -1,0 +1,11 @@
+VertexLitGeneric
+{
+	$basetexture "models/props/nd_vyksa/vehicles/train01_sr.vtf"
+	$envmapmask "models/props/nd_vyksa/vehicles/train01_spec.vtf"
+		"$model" 1
+"$surfaceprop" "Metal"
+	$envmap env_cubemap
+	$envmaptint "[0.5 0.5 0.5]"
+	$envmapcontrast ".9"
+	$envmapsaturation ".4"
+}

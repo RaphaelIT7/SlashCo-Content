@@ -1,0 +1,21 @@
+VertexLitGeneric
+{
+	$basetexture "models/props/nd_vyksa/vehicles/sideloader01_glass_vk_diffuse.vtf"
+	$bumpmap "models/props/nd_vyksa/vehicles/sideloader01_glass_vk_normal.vtf"
+	"$model" 1
+	
+	$translucent 1
+	
+	"$phong"						"1"
+	"$phongboost"					"15"
+	"$phongexponent"				"5" 
+	"$phongfresnelranges"			"[0.1 0.5 1.0]"
+
+
+	$envmap env_cubemap
+	$normalmapalphaenvmapmask 1
+	$envmaptint "[0.5 0.5 0.5]"
+	$envmapcontrast ".9"
+	$envmapsaturation ".4"
+
+}

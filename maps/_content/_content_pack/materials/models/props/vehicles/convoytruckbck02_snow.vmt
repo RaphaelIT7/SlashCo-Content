@@ -1,0 +1,5 @@
+VertexLitGeneric
+{
+$baseTexture "models/props/vehicles/convoytruckbck02_snow"
+$model 1
+}

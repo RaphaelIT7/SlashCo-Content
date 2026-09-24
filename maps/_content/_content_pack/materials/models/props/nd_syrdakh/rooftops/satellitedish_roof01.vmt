@@ -1,0 +1,9 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/nd_syrdakh/rooftops/satellitedish_roof01.vtf"
+	"$surfaceprop" "Metal"
+	"$envmaptint" "[.02 .02 .02]"
+	"$envmapcontrast" ".7"
+	"$envmapsaturation" ".4"
+}
+

@@ -1,0 +1,16 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/nd_syrdakh/building_details/ventduct01_sr"
+	"$surfaceprop" "MetalVent"
+	
+
+ $basealphaenvmapmask 1
+
+
+	vertexlitgeneric_HDR_dx9
+	{
+	$envmaptint "[1 1 1]"
+	$envmapcontrast ".7"
+	$envmapsaturation ".4"
+}
+}

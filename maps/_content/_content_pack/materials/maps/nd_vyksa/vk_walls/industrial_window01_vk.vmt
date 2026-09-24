@@ -1,0 +1,13 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" 	"maps/nd_vyksa/vk_walls/industrial_window01_vk"
+	"$bumpmap" 		"maps/nd_vyksa/vk_walls/industrial_window01_normal_vk"
+	
+    "$envmap" 		"env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmaptint" 	"[.3 .3 .3]"
+	"$surfaceprop" 	"glass"
+	
+	"%keywords" "nucleardawn"
+
+}

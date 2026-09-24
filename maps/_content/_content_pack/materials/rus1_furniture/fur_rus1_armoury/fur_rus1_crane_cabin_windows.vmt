@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "RUS1_Furniture/FUR_RUS1_Armoury/FUR_RUS1_Crane_Cabin_Windows"
+	"$envmapmask" "RUS1_Furniture/FUR_RUS1_Armoury/FUR_RUS1_Crane_Cabin_Windows_Spec"
+	"$envmap" "env_cubemap"
+	"$model" 1
+	"$translucent" 1
+}

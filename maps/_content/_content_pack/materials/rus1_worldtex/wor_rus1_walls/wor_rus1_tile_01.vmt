@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "RUS1_WorldTex/WOR_RUS1_Walls/WOR_RUS1_Tile_01"
+	"$envmapmask" "RUS1_WorldTex/WOR_RUS1_Walls/WOR_RUS1_Tile_01_spec"  
+
+	"$detail" "RUS1_WorldTex/WOR_RUS1_Details/WOR_RUS1_metal_detail_03"
+	"$detailscale" 8
+	"$envmap" "env_cubemap"
+	"$surfaceprop" "tile"
+}

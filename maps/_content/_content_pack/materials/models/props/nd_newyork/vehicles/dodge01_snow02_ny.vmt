@@ -1,0 +1,5 @@
+VertexLitGeneric
+{
+$baseTexture "models/props/nd_newyork/vehicles/dodge01_snow02_ny"
+$model "1"
+}

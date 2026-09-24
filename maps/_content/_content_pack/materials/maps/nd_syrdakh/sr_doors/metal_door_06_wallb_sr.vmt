@@ -1,0 +1,12 @@
+"lightmappedgeneric"
+{
+        "$basetexture" "maps/nd_syrdakh/sr_doors/metal_door_06_wallb2_sr"
+
+	"$surfaceprop" "metal"
+
+//	"$decal" 1
+//	"$decalscale" .2	
+
+
+	"%keywords" "nucleardawn"
+}

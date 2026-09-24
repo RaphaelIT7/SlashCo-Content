@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "RUS1_WorldTex/WOR_RUS1_Medlab/WOR_RUS1_medlabdecal_02"
+	"$decal" 1
+	"$translucent" 1
+
+	"$detail" "RUS1_WorldTex/WOR_RUS1_Details/WOR_RUS1_metal_detail_01"
+	"$detailscale" 5
+}

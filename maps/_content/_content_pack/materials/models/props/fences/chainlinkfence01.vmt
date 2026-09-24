@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props/fences/chainlinkfence01"
+	"$model" 1
+	"$surfaceprop" "metal"
+}

@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/vehicles/Truck_Flatbed01_Diffuse"
+	"$model" 1
+}

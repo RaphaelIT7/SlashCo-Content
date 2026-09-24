@@ -1,0 +1,9 @@
+"lightmappedgeneric"
+{
+	"$basetexture" "maps/nd_syrdakh/sr_roof/roof_plating_02_sr"
+	
+	"$surfaceprop" "metal"
+
+
+	"%keywords" "nucleardawn"
+}

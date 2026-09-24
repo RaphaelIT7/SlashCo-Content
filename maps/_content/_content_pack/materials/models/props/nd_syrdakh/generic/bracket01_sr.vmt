@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+"$basetexture" "models/props/nd_syrdakh/generic/bracket01_sr"
+"$surfaceprop" "metal"
+"$model" "1"
+
+}

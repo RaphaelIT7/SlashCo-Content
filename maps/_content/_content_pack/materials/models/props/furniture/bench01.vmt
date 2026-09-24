@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props/furniture/Bench01_Diffuse"
+	"$model" "1"	
+	"$surfaceprop" "wood"
+	
+}	
