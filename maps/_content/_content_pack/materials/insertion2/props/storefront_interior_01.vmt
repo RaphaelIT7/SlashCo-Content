@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "insertion2/props/storefront_interior_01"
+//	"$bumpmap" "insertion2/props/metal_plate_01_normal"
+
+	"$surfaceprop" "default"
+	"$nodecal" 1
+
+}
+

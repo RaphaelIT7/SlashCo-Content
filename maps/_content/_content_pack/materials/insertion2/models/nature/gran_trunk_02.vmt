@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+
+	$basetexture "insertion2/models/nature/gran_trunk_02"
+	$bumpmap "insertion2/models/nature/gran_trunk_02_normal"
+	"$surfaceprop" "wood"
+
+}

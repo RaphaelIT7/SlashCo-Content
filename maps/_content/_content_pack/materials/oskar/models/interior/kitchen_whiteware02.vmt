@@ -1,0 +1,12 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "Oskar/models/interior/kitchen_whiteware02"
+	"$bumpmap" "Oskar/models/interior/kitchen_whiteware02_normal"
+	"$surfaceprop" "MetalPanel"
+
+	$phong 1
+	$phongexponent 12
+	$phongboost	3
+	$phongfresnelranges	"[0.05 0.5 1]"
+
+}

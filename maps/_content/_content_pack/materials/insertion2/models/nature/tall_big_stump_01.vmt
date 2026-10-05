@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "Insertion2/models/nature/Tall_big_stump_01"
+	"$bumpmap" "Insertion2/models/nature/Tall_big_stump_01_normal"
+	"$surfaceprop" "wood"
+
+}

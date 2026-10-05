@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "insertion2/props/glass_store_02"
+	"$surfaceprop" "Glass"
+	"$nodecal" 1
+	"$nocull" 1
+	"$alphatest" 1
+
+}

@@ -1,0 +1,12 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "insertion2/models/vehicles/buss_01"
+//	$bumpmap "insertion2/models/trainstation/trainstation_props_01_normal"
+
+	"$surfaceprop" "metal"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.35 .35 .35]"
+	"$basealphaenvmapmask" 1
+
+
+}

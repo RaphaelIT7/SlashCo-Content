@@ -1,0 +1,12 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "insertion2/props/glass_window_covered_01"
+	"$envmap" "env_cubemap"
+	"$basealphaenvmapmask" 1
+	
+	"$envmaptint" "[.5 .5 .5]"
+
+	"$surfaceprop" "glass"
+
+}
+

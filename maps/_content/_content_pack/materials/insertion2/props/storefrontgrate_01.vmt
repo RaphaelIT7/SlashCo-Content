@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "insertion2/props/storefrontgrate_01"
+	//"$bumpmap" "insertion2/props/metal_plate_01_normal"
+
+	"$surfaceprop" "metal"
+
+}
+

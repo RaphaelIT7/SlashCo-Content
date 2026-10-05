@@ -1,0 +1,10 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "Oskar/models/interior/whiteboards02"
+	"$surfaceprop" "MetalPanel"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.5 .5 .5]"
+
+"$basealphaenvmapmask" 1
+}

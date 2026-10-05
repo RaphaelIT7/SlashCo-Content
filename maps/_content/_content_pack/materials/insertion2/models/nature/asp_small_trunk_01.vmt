@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+
+	$basetexture "insertion2/models/nature/asp_small_trunk_01"
+	$bumpmap "insertion2/models/nature/asp_small_trunk_01_normal"
+	"$surfaceprop" "wood"
+}

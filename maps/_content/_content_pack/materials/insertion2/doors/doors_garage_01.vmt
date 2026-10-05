@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "insertion2/doors/doors_garage_01"
+//	"$bumpmap" "insertion2/doors/doors_garage_01_normal"
+
+	"$surfaceprop" "metal"
+
+}
+

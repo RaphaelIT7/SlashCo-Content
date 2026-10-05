@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "insertion2/props/sign_panel_02"
+
+	"$surfaceprop" "metal"
+	"$selfillum" 1
+}
+

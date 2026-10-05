@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "insertion2/props/wood_plank_koloonibox_01"
+//	"$bumpmap" "insertion2/props/wood_beam_01_normal"
+
+	"$surfaceprop" "wood"
+
+}
+

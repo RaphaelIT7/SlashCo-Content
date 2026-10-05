@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+
+	$basetexture "insertion2/models/interior/interior_props_01"
+
+	//$bumpmap "insertion2/models/interior/interior_props_01_normal"
+
+	"$surfaceprop" "metal"
+
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.55 .55 .55]"
+	"$translucent" 1
+
+}

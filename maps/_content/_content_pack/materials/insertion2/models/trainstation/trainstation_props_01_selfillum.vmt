@@ -1,0 +1,11 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "insertion2/models/trainstation/trainstation_props_01"
+	//$bumpmap "insertion2/models/trainstation/trainstation_props_01_normal"
+
+	"$surfaceprop" "metal"
+
+	"$selfillum" 1
+
+
+}

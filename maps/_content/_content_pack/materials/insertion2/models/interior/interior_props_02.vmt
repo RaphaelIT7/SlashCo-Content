@@ -1,0 +1,17 @@
+"VertexLitGeneric"
+{
+
+	$basetexture "insertion2/models/interior/interior_props_02"
+
+	$bumpmap "insertion2/models/interior/interior_props_02_normal"
+
+	"$surfaceprop" "metal"
+
+	$phong 1
+	$phongexponent 60
+	$phongboost	6
+	$phongfresnelranges	"[0.05 0.5 1]"
+
+
+
+}

@@ -1,0 +1,12 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "Oskar/models/vehicles/hkp15_diffuse"
+	"$bumpmap" "Oskar/models/vehicles/hkp15_diffuse_normal"
+	"$surfaceprop" "MetalPanel"
+
+	$phong 1
+	$phongexponent 5
+	$phongboost	3
+	$phongfresnelranges	"[0.05 0.5 1]"
+
+}

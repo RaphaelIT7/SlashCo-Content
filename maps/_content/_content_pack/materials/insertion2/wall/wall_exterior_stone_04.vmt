@@ -1,0 +1,10 @@
+
+"LightmappedGeneric"
+{
+	"$basetexture" "insertion2/wall/wall_exterior_stone_04"
+	"$surfaceprop" "rock"
+//	"$envmap" "env_cubemap"
+//	"$normalmapalphaenvmapmask" 1
+//	"$envmaptint" "[.5 .5 .5]"
+}
+

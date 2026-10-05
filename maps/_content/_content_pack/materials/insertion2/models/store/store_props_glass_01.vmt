@@ -1,0 +1,10 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "insertion2/models/store/store_props_glass_01"
+
+	"$envmap" "env_cubemap"
+//	"$envmaptint" "[.55 .55 .55]"
+	"$surfaceprop" "Glass"
+	"$translucent" 1
+//	"$nocull" 1
+}

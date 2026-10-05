@@ -1,0 +1,9 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "kontor/models/interior/monitor_screen"
+	"$envmap" "env_cubemap"
+	"$basealphaenvmapmask" 1
+	"$surfaceprop" "metal"
+
+
+}

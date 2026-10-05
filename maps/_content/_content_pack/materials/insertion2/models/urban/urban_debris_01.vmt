@@ -1,0 +1,10 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "insertion2/models/urban/urban_debris_01"
+	$bumpmap "insertion2/models/urban/urban_debris_01_normal"
+
+	"$surfaceprop" "concrete"
+
+
+
+}

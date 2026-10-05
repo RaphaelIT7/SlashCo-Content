@@ -1,0 +1,14 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "kontor/models/interior/table01"
+	"$bumpmap" "kontor/models/interior/table01_normal"
+	"$surfaceprop" "wood"
+
+	$phong 1
+	$phongexponent 30
+	$phongboost	6
+	$phongfresnelranges	"[0.1 0.5 1]"
+
+
+
+}

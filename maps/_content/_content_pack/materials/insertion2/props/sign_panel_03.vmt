@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "insertion2/props/sign_panel_03"
+//	"$bumpmap" "insertion2/props/sign_panel_02_normal"
+
+	"$surfaceprop" "metal"
+
+}
+

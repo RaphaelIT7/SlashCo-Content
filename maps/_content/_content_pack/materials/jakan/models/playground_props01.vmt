@@ -1,0 +1,8 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "jakan/models/playground_props01"
+	"$surfaceprop" "Wood_Panel"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.7 .7 .7]"
+	"$basealphaenvmapmask" 1
+}

@@ -1,0 +1,11 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "insertion2/models/store/store_props_selfillum"
+
+
+	"$surfaceprop" "metal"
+
+
+	"$selfillum" 1
+
+}

@@ -1,0 +1,11 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "insertion2/models/store/pizzamenu_01"
+
+
+	"$surfaceprop" "metal"
+
+
+	"$selfillum" 1
+
+}

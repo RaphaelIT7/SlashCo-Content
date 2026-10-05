@@ -1,0 +1,10 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "insertion2/models/trainstation/glass_01"
+	"$surfaceprop" "glass"
+	"$envmap" "env_cubemap"
+
+
+	"$translucent" 1
+	"$nocull" 1
+}

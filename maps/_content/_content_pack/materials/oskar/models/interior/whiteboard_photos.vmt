@@ -1,0 +1,8 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "Oskar/models/interior/whiteboard_photos"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.6 .6 .6]"
+
+}

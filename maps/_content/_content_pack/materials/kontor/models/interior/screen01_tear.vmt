@@ -1,0 +1,8 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "kontor/models/interior/screen01_tear"
+	"$alphatest" 1
+	"$nocull" 1
+	"$surfaceprop" "wood"
+
+}

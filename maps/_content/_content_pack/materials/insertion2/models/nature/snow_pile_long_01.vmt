@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "Insertion2/models/nature/snow_pile_long_01_alpha"
+	"$bumpmap" "Insertion2/models/nature/snow_pile_long_01_normal"
+	"$surfaceprop" "snow"
+
+}

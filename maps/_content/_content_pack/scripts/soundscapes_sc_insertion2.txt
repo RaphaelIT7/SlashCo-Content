@@ -1,0 +1,775 @@
+// cs_insertion2_dusk soundscapes
+// Author: Oskmos
+
+
+//------------------------------------------------------------------------------------------
+
+//Industrial Urban outside
+
+"insertion2.Outside"
+{
+"fadetime"  "3.0"
+	"dsp" "1"
+	"playlooping"
+	{
+		"volume"	"1.5"
+		"pitch"		"100"
+		"wave"		"cs_insertion2/ambience_ext_main_stereo_01.wav"
+	}
+
+
+	"playsoundscape"
+	{
+		"volume"		"1"
+		"positionoverride"	"0"
+		"name"						"insertion2.Trains"
+	}
+	"playsoundscape"
+	{
+		"volume"		"1"
+		"name"						"insertion2.HelicoptersAndPlanesAndThings"
+	}
+
+
+}
+//------------------------------------------------------------------------------------------
+
+//Industrial Urban outside
+
+"insertion2.OutsideTunnel"
+{
+
+	"dsp" "7"
+	"playlooping"
+	{
+		"volume"	"1.5"
+		"pitch"		"100"
+		"wave"		"cs_insertion2/ambience_int_trainstation_sub_level_stereo_01.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.5"
+		"pitch"		"100"
+		"wave"		"cs_insertion2/ambience_ext_main_stereo_01.wav"
+	}
+
+
+	"playsoundscape"
+	{
+		"volume"		"1.5"
+		"positionoverride"	"0"
+		"name"						"insertion2.Trains"
+	}
+		"playsoundscape"
+	{
+		"volume"		"1"
+		"name"						"insertion2.HelicoptersAndPlanesAndThings"
+	}
+
+
+
+}
+//------------------------------------------------------------------------------------------
+
+//Forest nature outside
+
+"insertion2.OutsideForest"
+{
+
+	"dsp" "1"
+	"playlooping"
+	{
+		"volume"	"1.5"
+		"pitch"		"100"
+		"wave"		"cs_insertion2/ambience_ext_forest_stereo_01.wav"
+	}
+
+
+
+	"playsoundscape"
+	{
+		"volume"		"1.5"
+		"positionoverride"	"0"
+		"name"						"insertion2.Trains"
+	}
+		"playsoundscape"
+	{
+		"volume"		"1"
+		"name"						"insertion2.HelicoptersAndPlanesAndThings"
+	}
+
+
+
+
+}
+
+//------------------------------------------------------------------------------------------
+
+//outside residential area
+
+"insertion2.OutsideResidential"
+{
+
+	"dsp" "21"
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"cs_insertion2/ambience_ext_main_stereo_01.wav"
+	}
+
+		"playlooping"
+	{
+		"volume"	"1.0"
+		"position"  "4"
+		"pitch"		"100"
+		"soundlevel"  	"SNDLVL_85dB"
+		"wave"		"cs_insertion2/ambience_emitter_helicopter_engine_far_01.wav"
+	}
+
+
+
+
+	"playsoundscape"
+	{
+		"volume"		"1"
+		"positionoverride"	"0"
+		"name"						"insertion2.Trains"
+	}
+
+	"playsoundscape"
+	{
+		"volume"		"1"
+		"name"						"insertion2.HelicoptersAndPlanesAndThings"
+	}
+
+
+
+
+}
+//------------------------------------------------------------------------------------------
+
+//outside kolonilott area
+
+"insertion2.OutsideKoloni"
+{
+
+	"dsp" "1"
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"cs_insertion2/ambience_ext_main_stereo_01.wav"
+	}
+
+		"playlooping"
+	{
+		"volume"	"1.0"
+		"position"  "4"
+		"pitch"		"100"
+		"soundlevel"  	"SNDLVL_85dB"
+		"wave"		"cs_insertion2/ambience_emitter_helicopter_engine_far_01.wav"
+	}
+
+
+
+
+	"playsoundscape"
+	{
+		"volume"		"1"
+		"positionoverride"	"0"
+		"name"						"insertion2.Trains"
+	}
+		"playsoundscape"
+	{
+		"volume"		"1"
+		"name"						"insertion2.HelicoptersAndPlanesAndThings"
+	}
+
+
+}
+//------------------------------------------------------------------------------------------
+
+//outside helikopter area
+
+"insertion2.OutsideHostageRescue"
+{
+	"dsp" "1"
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"cs_insertion2/ambience_ext_main_stereo_01.wav"
+	}
+
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"position"  "1"
+		"pitch"		"100"
+		"soundlevel"  	"SNDLVL_95dB"
+		"wave"		"cs_insertion2/ambience_emitter_helicopter_engine_close_01.wav"
+	}
+
+	"playsoundscape"
+	{
+		"volume"		"1"
+		"positionoverride"	"0"
+		"name"						"insertion2.Trains"
+	}
+
+}
+
+
+//------------------------------------------------------------------------------------------
+
+//outside industrial area
+
+"insertion2.OutsideIndustrial"
+{
+
+	"dsp" "1"
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"cs_insertion2/ambience_ext_main_stereo_01.wav"
+	}
+
+		"playlooping"
+	{
+		"volume"	"1.0"
+		"position"  "4"
+		"pitch"		"100"
+		"soundlevel"  	"SNDLVL_85dB"
+		"wave"		"cs_insertion2/ambience_emitter_helicopter_engine_far_01.wav"
+	}
+
+
+	"playsoundscape"
+	{
+		"volume"		"1"
+		"positionoverride"	"0"
+		"name"						"insertion2.Trains"
+	}
+
+}
+
+
+//------------------------------------------------------------------------------------------
+
+
+"insertion2.OfficeCellar"
+{
+	"fadetime"  "1.6"
+	"dsp" "6"
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"cs_insertion2/ambience_int_office_cellar_01.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"		"0"	
+		"soundlevel"  	"SNDLVL_70dB"
+		"wave"		"cs_insertion2/ambience_ext_main_stereo_01.wav"
+	}
+		"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"		"1"	
+		"soundlevel"  	"SNDLVL_70dB"
+		"wave"		"cs_insertion2/ambience_ext_main_stereo_01.wav"
+	}
+
+}
+
+//------------------------------------------------------------------------------------------
+
+
+"insertion2.OfficeSideroom"
+{
+	"fadetime"  "1.6"
+	"dsp" "12"
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"cs_insertion2/ambience_int_office_stereo_01.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"		"0"	
+		"soundlevel"  	"SNDLVL_70dB"
+		"wave"		"cs_insertion2/ambience_ext_main_stereo_01.wav"
+	}
+
+
+}
+
+//------------------------------------------------------------------------------------------
+
+"insertion2.OfficeStairwell"
+{
+	"fadetime"  "1.6"
+	"dsp" "7"
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"cs_insertion2/ambience_stairwell_generic_01.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"		"0"	
+		"soundlevel"  	"SNDLVL_70dB"
+		"wave"		"cs_insertion2/ambience_ext_main_stereo_01.wav"
+	}
+		"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"		"1"	
+		"soundlevel"  	"SNDLVL_70dB"
+		"wave"		"cs_insertion2/ambience_ext_main_stereo_01.wav"
+	}
+}
+
+
+//------------------------------------------------------------------------------------------
+
+"insertion2.OfficeCubicles"
+{
+"fadetime"  "1.6"
+	"dsp" "12"
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"wave"		"cs_insertion2/ambience_int_office_stereo_01.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"		"0"	
+		"soundlevel"  	"SNDLVL_70dB"
+		"wave"		"cs_insertion2/ambience_ext_main_stereo_01.wav"
+	}
+}
+
+
+//------------------------------------------------------------------------------------------
+
+"insertion2.TrainstationTunnel"
+{
+"fadetime"  "2.0"
+	"dsp" "7"
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"cs_insertion2/ambience_int_trainstation_sub_level_stereo_01.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"		"0"	
+		"soundlevel"  	"SNDLVL_70dB"
+		"wave"		"cs_insertion2/ambience_ext_main_stereo_01.wav"
+	}
+		"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"position"		"1"	
+		"soundlevel"  	"SNDLVL_70dB"
+		"wave"		"cs_insertion2/ambience_ext_main_stereo_01.wav"
+	}
+
+}
+
+//------------------------------------------------------------------------------------------
+
+"insertion2.TrainstationMainhall"
+{
+"fadetime"  "2.0"
+	"dsp" "9"
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"cs_insertion2/ambience_int_trainstation_top_level_stereo_01.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"		"0"	
+		"soundlevel"  	"SNDLVL_70dB"
+		"wave"		"cs_insertion2/ambience_ext_main_stereo_01.wav"
+	}
+		"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"		"1"	
+		"soundlevel"  	"SNDLVL_70dB"
+		"wave"		"cs_insertion2/ambience_ext_main_stereo_01.wav"
+	}
+
+}
+
+//------------------------------------------------------------------------------------------
+
+"insertion2.PizzeriaFront"
+{
+"fadetime"  "1.6"
+	"dsp" "13"
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"cs_insertion2/ambience_int_pizzeria_stereo_01.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.9"
+		"pitch"		"100"
+		"position"		"0"	
+		"soundlevel"  	"SNDLVL_70dB"
+		"wave"		"cs_insertion2/ambience_ext_main_stereo_01.wav"
+	}
+
+		"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"position"		"1"	
+		"soundlevel"  	"SNDLVL_60dB"
+		"wave"		"cs_insertion2/ambience_emitter_store_fridge_01_mono.wav"
+	}
+
+}
+
+//------------------------------------------------------------------------------------------
+
+"insertion2.PizzeriaBack"
+{
+"fadetime"  "1.6"
+	"dsp" "12"
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"cs_insertion2/ambience_int_pizzeria_stereo_01.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.9"
+		"pitch"		"100"
+		"position"		"0"	
+		"soundlevel"  	"SNDLVL_70dB"
+		"wave"		"cs_insertion2/ambience_ext_main_stereo_01.wav"
+	}
+
+}
+//------------------------------------------------------------------------------------------
+
+"insertion2.Dentist"
+{
+"fadetime"  "1.6"
+	"dsp" "12"
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"cs_insertion2/ambience_int_dentist_stereo_01.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"position"		"0"	
+		"soundlevel"  	"SNDLVL_70dB"
+		"wave"		"cs_insertion2/ambience_ext_main_stereo_01.wav"
+	}
+
+
+}
+//------------------------------------------------------------------------------------------
+
+"insertion2.StoreMain"
+{
+"fadetime"  "1.6"
+	"dsp" "13"
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"wave"		"cs_insertion2/ambience_int_store_mainhall_stereo_01.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"position"		"0"	
+		"soundlevel"  	"SNDLVL_70dB"
+		"wave"		"cs_insertion2/ambience_ext_main_stereo_01.wav"
+	}
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"position"		"1"	
+		"soundlevel"  	"SNDLVL_55dB"
+		"wave"		"cs_insertion2/ambience_emitter_store_fridge_01_mono.wav"
+	}
+		"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"position"		"2"	
+		"soundlevel"  	"SNDLVL_55dB"
+		"wave"		"cs_insertion2/ambience_emitter_store_fridge_02_mono.wav"
+	}
+			"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"position"		"3"	
+		"soundlevel"  	"SNDLVL_55dB"
+		"wave"		"cs_insertion2/ambience_emitter_store_fridge_02_mono.wav"
+	}
+		"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"position"		"4"	
+		"soundlevel"  	"SNDLVL_55dB"
+		"wave"		"cs_insertion2/ambience_emitter_store_fridge_03_mono.wav"
+	}
+		"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"position"		"5"	
+		"soundlevel"  	"SNDLVL_55dB"
+		"wave"		"cs_insertion2/ambience_emitter_store_fridge_04_mono.wav"
+	}
+		"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"position"		"6"	
+		"soundlevel"  	"SNDLVL_70dB"
+		"wave"		"cs_insertion2/ambience_ext_main_stereo_01.wav"
+	}
+			"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"position"		"7"	
+		"soundlevel"  	"SNDLVL_IDLE"
+		"wave"		"cs_insertion2/ambience_emitter_store_electrical_switch_01_mono.wav"
+	}
+}
+
+//------------------------------------------------------------------------------------------
+
+"insertion2.StoreBackhall"
+{
+"fadetime"  "1.6"
+	"dsp" "9"
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"cs_insertion2/ambience_int_store_backhall_stereo_01.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1"
+		"pitch"		"100"
+		"position"		"0"	
+		"soundlevel"  	"SNDLVL_70dB"
+		"wave"		"cs_insertion2/ambience_ext_main_stereo_01.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"position"		"1"	
+		"soundlevel"  	"SNDLVL_IDLE"
+		"wave"		"cs_insertion2/ambience_emitter_store_fridge_05_mono.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"position"		"2"	
+		"soundlevel"  	"SNDLVL_55dB"
+		"wave"		"cs_insertion2/ambience_emitter_ac_unit_06.wav"
+	}
+
+}
+
+
+//------------------------------------------------------------------------------------------
+
+
+"insertion2.Tspawn"
+{
+	"dsp" "4"
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"wave"		"cs_insertion2/ambience_int_tspawn_stereo_01.wav"
+	}
+
+
+
+}
+
+
+//------------------------------------------------------------------------------------------
+
+"insertion2.CTspawn"
+{
+	"dsp" "10"
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"cs_insertion2/ambience_int_ctspawn_stereo_01.wav"
+	}
+
+
+
+}
+//------------------------------------------------------------------------------------------
+
+"insertion2.anomaly"
+{
+	"dsp" "21"
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"cs_insertion2/ambience_ext_main_stereo_01.wav"
+	}
+
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"position"		"0"	
+		"soundlevel"  	"SNDLVL_70dB"
+		"wave"		"cs_insertion2/ambience_anomaly_01.wav"
+	}	
+
+
+
+}
+
+
+
+//------------------------------------------------------------------------------------------
+
+// base
+
+"insertion2.Trains"
+{
+	"dsp" "1"
+	"playrandom"
+	{
+		"time"			"60,140"
+		"pitch"			"100"
+		"position"		"0"	
+		"volume"		"0.2, 0.5"
+		"soundlevel"  	"SNDLVL_NONE"
+
+		"rndwave"
+		{
+			"wave"		"cs_insertion2/ambience_ext_trains_distant_mono_01.wav"
+			"wave"		"cs_insertion2/ambience_ext_trains_distant_mono_02.wav"
+			"wave"		"cs_insertion2/ambience_ext_trains_distant_mono_03.wav"
+		}
+	}
+}
+
+//------------------------------------------------------------------------------------------
+
+
+
+"insertion2.HelicoptersAndPlanesAndThings"
+{
+	"dsp" "1"
+	"playrandom"
+	{
+
+		"time"			"40,220"
+		"pitch"			"100"
+		"position"		"random"	
+		"volume"		"0.2, 0.5"
+		"soundlevel"  	"SNDLVL_NONE"
+
+		"rndwave"
+		{
+			"wave"		"cs_insertion2/ambience_emitter_helicopter_passby_01.wav"
+			"wave"		"cs_insertion2/ambience_emitter_helicopter_passby_02.wav"
+			"wave"		"cs_insertion2/ambience_emitter_helicopter_passby_03.wav"
+			
+		}
+	}
+
+		"playrandom"
+	{
+
+		"time"			"20,100"
+		"pitch"			"100"
+		"position"		"random"	
+		"volume"		"0.6, 1.0"
+		"soundlevel"  	"SNDLVL_NONE"
+
+		"rndwave"
+		{
+			"wave"		"cs_insertion2/ambience_emitter_airplane_passby_01.wav"
+
+			
+		}
+	}
+}	
+
+//------------------------------------------------------------------------------------------
+
+
+
+
+

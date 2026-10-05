@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "insertion2/terrain/terrain_ditch_02"
+	"$bumpmap" "insertion2/terrain/terrain_ditch_02_normal"
+
+	"$surfaceprop" "dirt"
+
+}
+

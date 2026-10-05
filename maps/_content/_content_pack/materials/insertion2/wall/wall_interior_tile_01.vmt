@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "insertion2/wall/wall_interior_tile_01"
+	"$bumpmap" "insertion2/wall/wall_interior_tile_01_normal"
+	"$surfaceprop" "tile"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmaptint" "[.3 .3 .3]"
+}
+

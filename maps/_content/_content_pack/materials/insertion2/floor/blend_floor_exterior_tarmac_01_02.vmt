@@ -1,0 +1,11 @@
+"WorldVertexTransition"
+{
+	"$basetexture" "insertion2/floor/floor_exterior_tarmac_01"
+	"$basetexture2" "insertion2/floor/floor_exterior_tarmac_02"
+	"$surfaceprop" concrete
+	"$bumpmap" "insertion2/floor/floor_exterior_tarmac_01_normal"
+	"$bumpmap2" "insertion2/floor/floor_exterior_tarmac_02_normal"
+
+	"$blendmodulatetexture" "insertion2/terrain/blendmod01"
+
+}

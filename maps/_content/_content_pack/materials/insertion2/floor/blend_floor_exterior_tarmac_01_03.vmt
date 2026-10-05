@@ -1,0 +1,14 @@
+"WorldVertexTransition"
+{
+	"$basetexture" "insertion2/floor/floor_exterior_tarmac_03"
+	"$basetexture2" "insertion2/floor/floor_exterior_tarmac_01"
+	"$surfaceprop" concrete
+	"$bumpmap" "insertion2/floor/floor_exterior_tarmac_03_normal"
+	"$bumpmap2" "insertion2/floor/floor_exterior_tarmac_01_normal"
+
+	"$blendmodulatetexture" "insertion2/terrain/blendmod01"
+//	"$basetexture2noenvmap" 1
+//	"$envmap" env_cubemap
+//	"$envmaptint" "[.5 .5 .5]"
+//	"$normalmapalphaenvmapmask" 1
+}

@@ -1,0 +1,9 @@
+
+"lightmappedGeneric"
+{
+	"$baseTexture" "insertion2/overlay/overlay_sign_04"
+	"$translucent" 1
+	"$decal" 1
+	"$decalscale" .125
+	
+}

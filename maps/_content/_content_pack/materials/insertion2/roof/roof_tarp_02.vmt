@@ -1,0 +1,9 @@
+
+"LightmappedGeneric"
+{
+	"$basetexture" "insertion2/roof/roof_tarp_02"
+//	"$bumpmap" "insertion2/roof/roof_tarp_01_normal"
+	"$surfaceprop" "metal"
+
+}
+

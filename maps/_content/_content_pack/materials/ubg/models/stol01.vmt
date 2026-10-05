@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "ubg/models/stol01"
+	"$bumpmap" "ubg/models/stol01_normal"
+	"model" 1
+	
+	"$phong" "1"
+	"$phongexponent" 40
+	"$phongboost"	"12"
+	"$phongfresnelranges"	"[0.05 0.6 1]"
+}

@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "insertion2/floor/floor_road_small_03"
+	"$bumpmap" "insertion2/floor/floor_road_small_03_normal"
+
+	"$surfaceprop" "concrete"
+
+}
+

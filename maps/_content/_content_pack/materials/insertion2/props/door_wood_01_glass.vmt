@@ -1,0 +1,12 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "insertion2/props/door_wood_01"
+
+
+	"$surfaceprop" "glass"
+	"$envmap" "env_cubemap"
+
+	"$envmaptint" "[0.3 0.3 0.3]"
+
+}
+

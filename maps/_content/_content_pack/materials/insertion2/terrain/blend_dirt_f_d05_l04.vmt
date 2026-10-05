@@ -1,0 +1,26 @@
+"WorldVertexTransition"
+{
+	"$basetexture" "insertion2/terrain/terrain_gravel_05"
+	"$basetexture2" "insertion2/terrain/terrain_grass_tall_05"
+	"$surfaceprop" grass
+	"$bumpmap" "insertion2/terrain/terrain_gravel_05_normal"
+	"$bumpmap2" "insertion2/terrain/terrain_grass_tall_05_normal"
+
+	"$blendmodulatetexture" "insertion2/terrain/blendmod01"
+
+//	"$envmap" env_cubemap
+//	"$envmaptint" "[.3 .3 .3]"
+//	"$envmapmask" "insertion2/terrain/ "
+//	"$normalmapalphaenvmapmask" 1
+}
+
+
+
+
+//"$phong" "1"//Enables phong highlights
+//"$phongexponent" "41.0" //how sharp the highlight is 1=soft 100=sharp
+//"$phongexponent2" "191.0" //how sharp the highlight is 1=soft 100=sharp
+//"$phongMaskContrastBrightness" "[2 .7]" //increases the contrast of the phong mask
+//"$phongAmount" "[0.25 0.22 0.2 1]" //RGBA values that can boost, tint or lower highlight strength
+//"$phongAmount2" "[38 34 28 0.8]"
+

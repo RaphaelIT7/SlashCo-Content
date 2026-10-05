@@ -1,0 +1,15 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "insertion2/models/urban/urban_fence_picket_01"
+	$bumpmap "insertion2/models/urban/urban_fence_picket_01_normal"
+
+	"$surfaceprop" "wood"
+
+	$phong 1
+	$phongexponent 20
+	$phongboost	3
+	$phongfresnelranges	"[0.05 0.4 1]"
+
+
+
+}

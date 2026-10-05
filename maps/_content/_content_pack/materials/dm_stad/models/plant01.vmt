@@ -1,0 +1,9 @@
+"vertexlitgeneric"
+{
+	"$baseTexture" "dm_stad/models/plant01"
+	"$nodecal" 1
+	"$nocull" 1
+//	"$translucent" 1
+	"$alphatest" 1
+
+}

@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "insertion2/models/kolonilott/trim_brick_koloni_01"
+
+
+	"$surfaceprop" "brick"
+
+}
+

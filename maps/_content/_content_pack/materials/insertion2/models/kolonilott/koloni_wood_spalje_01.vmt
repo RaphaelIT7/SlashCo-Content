@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+
+	$basetexture "insertion2/models/kolonilott/koloni_wood_spalje_01"
+//	$bumpmap "insertion2/models/kolonilott/koloni_props_01_normal"
+
+	"$surfaceprop" "wood"
+}

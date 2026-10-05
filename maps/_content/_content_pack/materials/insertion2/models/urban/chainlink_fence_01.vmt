@@ -1,0 +1,12 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "insertion2/models/urban/chainlink_fence_01"
+//	$bumpmap "insertion2/models/urban/urban_debris_01_normal"
+
+	"$surfaceprop" "chainlink"
+	"$alphatest" 1
+	"$AlphaTestReference" "0.3"
+	"$nodecal" 1
+	"$nocull" 1
+	"$translucent" 1
+}

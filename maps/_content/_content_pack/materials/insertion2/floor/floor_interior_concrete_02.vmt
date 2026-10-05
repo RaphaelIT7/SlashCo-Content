@@ -1,0 +1,11 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "insertion2/floor/floor_interior_concrete_02"
+	"$bumpmap" "insertion2/floor/floor_interior_concrete_01_normal"
+
+	"$surfaceprop" "concrete"
+
+
+
+}
+

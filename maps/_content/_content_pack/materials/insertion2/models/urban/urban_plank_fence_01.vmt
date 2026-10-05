@@ -1,0 +1,11 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "insertion2/models/urban/urban_plank_fence_01"
+//	$bumpmap "insertion2/models/urban/urban_road_fence_01_normal"
+
+	"$surfaceprop" "wood"
+
+
+
+
+}

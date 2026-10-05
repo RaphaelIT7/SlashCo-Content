@@ -1,0 +1,14 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "insertion2/models/urban/urban_sign_gg"
+	$bumpmap "insertion2/models/urban/urban_sign_gg_normal"
+
+	"$surfaceprop" "plastic"
+
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmaptint" "[0.75 0.75 0.75]"
+
+
+
+}

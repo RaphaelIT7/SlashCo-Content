@@ -1,0 +1,15 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "kontor/models/interior/workspaceGear01"
+	"$bumpmap" "kontor/models/interior/workspaceGear01_normal"
+
+	"$surfaceprop" "metal"
+
+	$phong 1
+	$phongexponent 30
+	$phongboost	6
+	$phongfresnelranges	"[0.1 0.5 1]"
+
+
+
+}

@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "insertion2/floor/floor_wood_02_trim"
+//	"$bumpmap" "insertion2/floor/floor_wood_02_normal"
+	"$surfaceprop" "wood"
+
+}
+

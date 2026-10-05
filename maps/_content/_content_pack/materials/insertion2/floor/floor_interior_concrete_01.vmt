@@ -1,0 +1,13 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "insertion2/floor/floor_interior_concrete_01"
+	"$bumpmap" "insertion2/floor/floor_interior_concrete_01_normal"
+
+	"$surfaceprop" "concrete"
+
+//	"$envmap" "env_cubemap"
+//	"$normalmapalphaenvmapmask" 1
+//	"$envmaptint" "[0.75 0.75 0.75]"
+
+}
+

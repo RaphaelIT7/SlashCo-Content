@@ -1,0 +1,15 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "insertion2/models/trainstation/trainstation_props_02"
+	$bumpmap "insertion2/models/trainstation/trainstation_props_02_normal"
+
+	"$surfaceprop" "metal"
+
+	$phong 1
+	$phongexponent 40
+	$phongboost	8
+	$phongfresnelranges	"[0.05 0.5 1]"
+
+
+
+}

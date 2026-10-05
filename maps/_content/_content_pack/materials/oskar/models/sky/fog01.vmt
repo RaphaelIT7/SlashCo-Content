@@ -1,0 +1,17 @@
+"UnlitGeneric"
+{
+	"$basetexture" "Oskar/models/sky/fog01"
+	"$translucent" 1
+	"Proxies"
+	{
+
+
+		"TextureScroll"
+		{
+			"texturescrollvar" "$basetexturetransform"
+			"texturescrollrate" 0.012
+			"texturescrollangle" 0
+		}
+
+	}
+}

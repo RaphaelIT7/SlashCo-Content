@@ -1,0 +1,9 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "Insertion2/models/nature/rocks_cliff_01"
+	"$bumpmap" "Insertion2/models/nature/rocks_cliff_01_normal"
+	"$surfaceprop" "rock"
+//	"$envmap" env_cubemap
+//	"$envmaptint" "[.1 .1 .1]"
+//	"$normalmapalphaenvmapmask" 1
+}

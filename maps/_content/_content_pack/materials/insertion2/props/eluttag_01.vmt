@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "insertion2/props/eluttag_01"
+//	"$bumpmap" "insertion2/props/door_wood_02_normal"
+
+	"$surfaceprop" "plastic"
+
+
+}
+

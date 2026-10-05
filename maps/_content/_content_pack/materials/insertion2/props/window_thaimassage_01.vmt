@@ -1,0 +1,12 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "insertion2/props/window_thaimassage_01"
+
+
+	"$surfaceprop" "glass"
+	"$envmap" "env_cubemap"
+
+	"$envmaptint" "[0.5 0.5 0.5]"
+
+}
+

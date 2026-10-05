@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "Oskar/skybox/insertion2"
+	"$nofog" 1
+	$ignorez 1
+}

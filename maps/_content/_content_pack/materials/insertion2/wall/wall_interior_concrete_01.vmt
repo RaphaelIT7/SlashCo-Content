@@ -1,0 +1,9 @@
+
+"LightmappedGeneric"
+{
+	"$basetexture" "insertion2/wall/wall_interior_concrete_01"
+//	"$bumpmap" "insertion2/wall/wall_exterior_concrete_06_normal"
+	"$surfaceprop" "concrete"
+
+}
+

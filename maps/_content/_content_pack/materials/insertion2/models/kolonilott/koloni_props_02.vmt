@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+
+	$basetexture "insertion2/models/kolonilott/koloni_props_02"
+//	$bumpmap "insertion2/models/kolonilott/koloni_props_02_normal"
+
+	"$surfaceprop" "wood"
+
+//	$phong 1
+//	$phongexponent 40
+//	$phongboost	6
+//	$phongfresnelranges	"[0.05 0.4 1]"
+
+
+
+}

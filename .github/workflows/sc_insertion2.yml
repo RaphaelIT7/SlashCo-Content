@@ -1,0 +1,20 @@
+name: sc_insertion2
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'maps/sc_insertion2/**'
+      - '.github/workflows/sc_insertion2.yml'
+
+jobs:
+  compile:
+    uses: RaphaelIT7/SlashCo-Content/.github/workflows/map_compiler.yml@main
+    secrets: inherit
+    with:
+      fastcompile: false
+      createexportbsp: false
+      debug: false
+      vrad: "-StaticPropLighting -StaticPropPolys -textureshadows"
+      vrad_mode: "-both"
+      map: "sc_insertion2"

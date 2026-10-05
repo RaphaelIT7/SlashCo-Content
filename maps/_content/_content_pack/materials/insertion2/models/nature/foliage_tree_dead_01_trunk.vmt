@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "Insertion2/models/nature/foliage_tree_dead_01_trunk"
+	"$bumpmap" "Insertion2/models/nature/foliage_tree_dead_01_trunk_normal"
+	"$surfaceprop" "wood"
+
+}

@@ -1,0 +1,12 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "insertion2/props/door_wood_01"
+	"$bumpmap" "insertion2/props/door_wood_01_normal"
+
+	"$surfaceprop" "wood"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmaptint" "[0.3 0.3 0.3]"
+
+}
+

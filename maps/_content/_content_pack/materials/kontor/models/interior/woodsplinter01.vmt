@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "kontor/models/interior/woodsplinter01"
+
+	"$surfaceprop" "wood"
+
+}

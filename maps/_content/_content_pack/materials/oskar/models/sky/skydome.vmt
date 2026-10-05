@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+	"$basetexture" "Oskar/models/sky/skydome"
+	"$nodecal" 1
+	"$nofog" 1
+
+}
+

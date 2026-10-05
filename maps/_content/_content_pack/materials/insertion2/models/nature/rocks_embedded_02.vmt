@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "Insertion2/models/nature/rocks_embedded_02"
+	"$bumpmap" "Insertion2/models/nature/rocks_embedded_02_normal"
+	"$surfaceprop" "rock"
+
+}

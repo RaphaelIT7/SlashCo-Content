@@ -1,0 +1,8 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "insertion2/roof/roof_tarp_01"
+//	"$bumpmap" "insertion2/roof/roof_tarp_01_normal"
+	"$surfaceprop" "wood"
+        "$notint" 1
+}
+

@@ -1,0 +1,9 @@
+
+"LightmappedGeneric"
+{
+	"$basetexture" "insertion2/wall/trim_exterior_metal_07"
+//	"$bumpmap" "insertion2/wall/trim_exterior_metal_03_normal"
+	"$surfaceprop" "metal"
+
+}
+

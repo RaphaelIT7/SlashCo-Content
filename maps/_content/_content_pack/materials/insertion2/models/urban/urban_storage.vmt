@@ -1,0 +1,10 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "insertion2/models/urban/urban_storage"
+
+//	"$color" "[.8 .6 .8]"
+	"$blendtintbybasealpha" 1
+	"$surfaceprop" "wood"
+
+
+}

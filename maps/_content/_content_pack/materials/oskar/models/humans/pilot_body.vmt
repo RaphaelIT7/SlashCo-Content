@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "Oskar/models/humans/Pilot_body"
+	"$bumpmap" "Oskar/models/humans/Pilot_body_normal"
+
+
+}

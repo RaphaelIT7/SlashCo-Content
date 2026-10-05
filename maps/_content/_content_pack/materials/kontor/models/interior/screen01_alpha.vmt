@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "kontor/models/interior/screen01"
+	"$alphatest" 1
+	"$surfaceprop" "metal"
+
+}

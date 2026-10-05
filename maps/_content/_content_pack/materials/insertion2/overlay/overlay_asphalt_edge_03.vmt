@@ -1,0 +1,8 @@
+"lightmappedGeneric"
+{
+	"$baseTexture" "insertion2/overlay/overlay_asphalt_edge_03"
+	"$translucent" 1
+	"$decal" 1
+	"$decalscale" .1
+	
+}
