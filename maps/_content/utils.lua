@@ -390,9 +390,9 @@ function FindFiles(glob)
 	local matches = {}
 	local found = {}
 	for normalizedPath, realPath in pairs(contentList) do
-		if not found[realPath] and normalizedPath:lower():match(pattern) then
-			found[realPath] = true
-			table.insert(matches, realPath)
+		if not found[normalizedPath] and normalizedPath:lower():match(pattern) then
+			found[normalizedPath] = true
+			table.insert(matches, normalizedPath)
 		end
 	end
 

@@ -19,7 +19,7 @@ BuildFileList()
 CreateDir(({...})[2] or "__content_map")
 
 local vmfFile = ({...})[1]
-local vmfFilePath = "../" .. vmfFile .. "/" .. vmfFile
+local vmfFilePath = "../" .. vmfFile .. "/" .. vmfFile .. ".vmf"
 
 gmodContent = LoadGModContentList()
 gmodSoundScripts = LoadGModSoundScriptList()
@@ -381,7 +381,7 @@ local function ParseWorld(vmf)
 	--PrintTable(vmf.world)
 end
 
-local vmf, err = parseKV(ReadFile(vmfFilePath .. ".vmf"))
+local vmf, err = parseKV(ReadFile(vmfFilePath))
 if not vmf then
 	error(err)
 	return
